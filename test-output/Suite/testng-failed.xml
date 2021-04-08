@@ -6,13 +6,73 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="net.assuresign.scenario_4.Scenario_4_11">
+      <class name="net.assuresign.scenario_3.Scenario_3_18">
         <methods>
           <include name="reportUp"/>
-          <include name="submit_deprecated" invocation-numbers="0"/>
+          <include name="submit_WrongConditionalLogic" invocation-numbers="0"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- net.assuresign.scenario_4.Scenario_4_11 -->
+      </class> <!-- net.assuresign.scenario_3.Scenario_3_18 -->
+      <class name="net.assuresign.scenario_3.Scenario_3_11">
+        <methods>
+          <include name="submit_withPwdToEditFile" invocation-numbers="0"/>
+          <include name="submit_withPwdToOpenFile" invocation-numbers="0"/>
+          <include name="reportUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- net.assuresign.scenario_3.Scenario_3_11 -->
+      <class name="net.assuresign.scenario_3.Scenario_3_1">
+        <methods>
+          <include name="reportUp"/>
+          <include name="tearDown"/>
+          <include name="submitHybridCall_InvalidDocName" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- net.assuresign.scenario_3.Scenario_3_1 -->
+      <class name="net.assuresign.scenario_3.Scenario_3_4">
+        <methods>
+          <include name="reportUp"/>
+          <include name="tearDown"/>
+          <include name="submit_DifferentFileType" invocation-numbers="0"/>
+          <include name="submit_HybridCallDifferentFileType" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- net.assuresign.scenario_3.Scenario_3_4 -->
+      <class name="net.assuresign.scenario_3.Scenario_3_12">
+        <methods>
+          <include name="submitSSTemplate_signerPassword" invocation-numbers="0"/>
+          <include name="reportUp"/>
+          <include name="tearDown"/>
+          <include name="submitSSTemplate_delayedStep" invocation-numbers="0"/>
+          <include name="submitSSTemplate_invalidID" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- net.assuresign.scenario_3.Scenario_3_12 -->
+      <class name="net.assuresign.scenario_3.Scenario_3_3">
+        <methods>
+          <include name="reportUp"/>
+          <include name="submit_LargeFile" invocation-numbers="0"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- net.assuresign.scenario_3.Scenario_3_3 -->
+      <class name="net.assuresign.scenario_3.Scenario_3_9">
+        <methods>
+          <include name="reportUp"/>
+          <include name="submit_Doc128Char" invocation-numbers="0"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- net.assuresign.scenario_3.Scenario_3_9 -->
+      <class name="net.assuresign.scenario_3.Scenario_3_10">
+        <methods>
+          <include name="reportUp"/>
+          <include name="submit_HybridCallMissingDocName" invocation-numbers="0"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- net.assuresign.scenario_3.Scenario_3_10 -->
+      <class name="net.assuresign.scenario_3.Scenario_3_8">
+        <methods>
+          <include name="reportUp"/>
+          <include name="submitHybridCallDeprecated" invocation-numbers="0"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- net.assuresign.scenario_3.Scenario_3_8 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
