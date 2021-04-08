@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+		<listener class-name="net.assuresign.utils.ListenersTestNG"></listener>
+	</listeners>
+	<test thread-count="5" name="Test">
+		<classes>
+	<!-- 	<class name="net.assuresign.scenario_1.TokenBearer_Incorrect" />
+			<class name="net.assuresign.scenario_2.TokenBearer_Correct" />		
+ 			<class name="net.assuresign.scenario_3.Scenario_3_1" />
+			<class name="net.assuresign.scenario_3.Scenario_3_2" />
+			<class name="net.assuresign.scenario_3.Scenario_3_3" />
+			<class name="net.assuresign.scenario_3.Scenario_3_4" />
+			<class name="net.assuresign.scenario_3.Scenario_3_8" />
+			<class name="net.assuresign.scenario_3.Scenario_3_9" />
+			<class name="net.assuresign.scenario_3.Scenario_3_10" />
+			<class name="net.assuresign.scenario_3.Scenario_3_11" />
+		   	<class name="net.assuresign.scenario_3.Scenario_3_12" />
+		    <class name="net.assuresign.scenario_3.Scenario_3_13" />
+			<class name="net.assuresign.scenario_3.Scenario_3_18" />
+			<class name="net.assuresign.scenario_4.Scenario_4_1" />
+			<class name="net.assuresign.scenario_4.Scenario_4_2" />
+			<class name="net.assuresign.scenario_4.Scenario_4_3" />
+			<class name="net.assuresign.scenario_4.Scenario_4_4" />
+			<class name="net.assuresign.scenario_4.Scenario_4_5" />
+			<class name="net.assuresign.scenario_4.Scenario_4_6" />
+			<class name="net.assuresign.scenario_4.Scenario_4_7" />
+			<class name="net.assuresign.scenario_4.Scenario_4_8" />
+			<class name="net.assuresign.scenario_4.Scenario_4_9" />
+			<class name="net.assuresign.scenario_4.Scenario_4_10" />
+			<class name="net.assuresign.scenario_4.Scenario_4_11" />
+			<class name="net.assuresign.scenario_4.Scenario_4_12" />
+			<class name="net.assuresign.scenario_4.Scenario_4_14" />
+			<class name="net.assuresign.scenario_4.Scenario_4_15" />
+			<class name="net.assuresign.scenario_5.Scenario_5" />
+			<class name="net.assuresign.scenario_6.Scenario_6" />
+			<class name="net.assuresign.scenario_7.Scenario_7" />
+			<class name="net.assuresign.scenario_8.Scenario_8" />
+			<class name="net.assuresign.scenario_8.Scenario_8_1" />
+			<class name="net.assuresign.scenario_8.Scenario_8_2" />			
+			<class name="net.assuresign.scenario_8.Scenario_8_3" />		
+			<class name="net.assuresign.scenario_8.Scenario_8_4" />	
+			<class name="net.assuresign.scenario_9.Scenario_9" />			
+			<class name="net.assuresign.scenario_10.Scenario_10" />	
+			<class name="net.assuresign.scenario_11.Scenario_11" />	
+			<class name="net.assuresign.scenario_12.Scenario_12" />
+			<class name="net.assuresign.scenario_13.Scenario_13" />		 -->
+				<class name="net.assuresign.scenario_4.Scenario_4_11" />
+			
+			
+		</classes>
+	</test> 
+</suite>
