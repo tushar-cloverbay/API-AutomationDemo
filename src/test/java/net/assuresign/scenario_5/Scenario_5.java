@@ -77,7 +77,7 @@ public class Scenario_5 extends Base{
 		System.out.println(response.getBody().asString());
 		System.out.println(response.getStatusCode());
 		response.then().assertThat()
-		.statusCode(equalTo(401));
+		.statusCode(anyOf(equalTo(401),equalTo(404)));
 	}
 	
 	@Test(dataProvider = "version-data-provider",enabled = true)

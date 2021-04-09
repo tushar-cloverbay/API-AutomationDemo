@@ -1,0 +1,9 @@
+{
+  "request": {
+   "authRequest": {
+            "username": "mvadgave(Admin)@assuresign.com",
+            "password": "happy123",
+            "sessionLength": 1440
+        }
+  }
+}
