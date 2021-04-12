@@ -36,8 +36,6 @@ public class Scenario_4_14 extends Base{
 		System.out.println(response.getStatusCode());
 		response.then().assertThat()
 		.statusCode(equalTo(200))
-		.body("messages[0].details", is("Envelope Name should not be empty."))
-		.body("messages[0].messageType", is("warning"))
 		.body("result.preparedEnvelopeID", notNullValue())
 		.body("result.setupUrl", notNullValue());
 	}
@@ -79,8 +77,6 @@ public class Scenario_4_14 extends Base{
 		System.out.println(response.getStatusCode());
 		response.then().assertThat()
 		.statusCode(equalTo(200))
-		.body("messages[0].details", is("Envelope Name should not be empty."))
-		.body("messages[0].messageType", is("warning"))
 		.body("result.preparedEnvelopeID", notNullValue())
 		.body("result.setupUrl", notNullValue());
 	}

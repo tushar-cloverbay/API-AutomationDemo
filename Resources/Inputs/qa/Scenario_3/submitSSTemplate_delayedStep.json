@@ -168,7 +168,7 @@
                 "expirationDate": "12/18/2021",
                 "name": "API Envelope1",
                 "WorkflowType": 2,
-                "templatesApplied": ["f81236ac-b29d-4ccb-92b8-acf700e9a42a"],
+                "templatesApplied": ["14ff2791-ec3c-4a29-b787-ad0500aba354"],
                 "senderInputs": [],
                 "notificationSettings": {
                     "enableNotifications": true,
@@ -221,7 +221,7 @@
     "placeholders": [],
     "templates": [
       {
-        "templateID": "f81236ac-b29d-4ccb-92b8-acf700e9a42a",
+        "templateID": "14ff2791-ec3c-4a29-b787-ad0500aba354",
         "values": [
           {
             "name": "Envelope Name ",

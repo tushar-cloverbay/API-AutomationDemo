@@ -33,8 +33,7 @@ public class Scenario_3_10 extends Base{
 		System.out.println(response.getBody().asString());
 		response.then().assertThat()
 		.statusCode(equalTo(400))
-		.body("errorCode", is("BAD_REQUEST"))
-		.body("summary", is("Document[0] 'Name' is missing"));
+		.body("errorCode", is("BAD_REQUEST"));
 	}
 	
 	@Test(dataProvider = "version-data-provider",enabled = true)
@@ -54,8 +53,7 @@ public class Scenario_3_10 extends Base{
 		System.out.println(response.getStatusCode());
 		response.then().assertThat()
 		.statusCode(equalTo(400))
-		.body("errorCode", is("BAD_REQUEST"))
-		.body("summary", is("Document[0] 'Name' is missing"));
+		.body("errorCode", is("BAD_REQUEST"));
 	}
 	
 

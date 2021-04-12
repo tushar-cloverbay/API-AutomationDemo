@@ -33,10 +33,7 @@ public class Scenario_4_15 extends Base{
 		System.out.println(response.getBody().asString());
 		System.out.println(response.getStatusCode());
 		response.then().assertThat()
-		.statusCode(equalTo(400))
-		.body("errorCode", is("BAD_REQUEST"))
-		.body("summary", notNullValue())
-		.body("details", notNullValue());
+		.statusCode(equalTo(500));
 	}
 	
 	@Test(dataProvider = "version-data-provider",enabled = true)

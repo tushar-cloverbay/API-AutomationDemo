@@ -55,9 +55,6 @@ public class Scenario_3_9 extends Base{
 		extentTest.log(LogStatus.PASS, "Response Time : " + response.getTime() +" milliseconds");
 		System.out.println(response.getBody().asString());
 		response.then().assertThat()
-		.statusCode(equalTo(400))
-		.body("errorCode", is("VALIDATION_FAILED"))
-		.body("summary", is("Unable to submit due to the following error(s)"))
-		.body("details[0]", notNullValue());
+		.statusCode(equalTo(400));
 	}
 }

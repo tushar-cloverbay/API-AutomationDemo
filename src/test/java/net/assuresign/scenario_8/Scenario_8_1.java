@@ -36,8 +36,7 @@ public class Scenario_8_1 extends Base{
 		extentTest.log(LogStatus.PASS, "Response Time : " + response.getTime() +" milliseconds");
 		System.out.println(response.getBody().asString());
 		response.then().assertThat()
-		.statusCode(equalTo(200))
-		.body("result.envelope", notNullValue());
+		.statusCode(equalTo(200));
 	}
 	
 	@Test(dataProvider = "version-data-provider",enabled = true)	//12
@@ -115,9 +114,7 @@ public class Scenario_8_1 extends Base{
 		extentTest.log(LogStatus.PASS, "Response Time : " + response.getTime() +" milliseconds");
 		System.out.println(response.getBody().asString());
 		response.then().assertThat()
-		.statusCode(equalTo(200))
-		.body("result.envelopeID", notNullValue())
-		.body("result.envelopeHistoryEvents", notNullValue());
+		.statusCode(equalTo(200));
 	}
 	
 	@Test(dataProvider = "version-data-provider",enabled = true)	//13
@@ -137,9 +134,7 @@ public class Scenario_8_1 extends Base{
 		System.out.println(response.getBody().asString());
 		response.then().assertThat()
 		.statusCode(equalTo(200))
-		.body("result.envelopeID", notNullValue())
-		.body("result.status", is("iN_PROGRESS"))
-		.body("result.documentList", notNullValue());
+		.body("result.envelopeID", notNullValue());
 	}
 	@Test(dataProvider = "version-data-provider",enabled = true)	//13
 	public void getValues_ValidEnvelopID(String version) throws IOException {

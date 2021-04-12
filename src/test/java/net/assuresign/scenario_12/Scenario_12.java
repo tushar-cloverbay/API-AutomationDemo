@@ -30,27 +30,27 @@ public class Scenario_12 extends Base{
 			preparedEnvelopeID = TestUtils.getPreparedEnvelopeID(version, "Scenario_12\\submitPrepare.json",token);
 		}
 		System.out.println(preparedEnvelopeID);		
-//		//SubmitPrepare 
-//		String URI = "https://"+Constants.ENV+".assuresign.net/api/documentnow/v"+version+"/submit/prepare/"+preparedEnvelopeID+"/documents";
-//		System.out.println(URI);
-//		String payload = JsonUtils.payloadGenerator("Inputs\\"+Constants.ENV+"\\Scenario_12\\submitPrepareDoc.json");
-//		RequestSpecification request = RestAssured.given().header("Authorization", "Bearer "+token).body(payload)
-//		.header("X-AS-User-Agent", "site24x7/1.0.0");
-//		Response response = request.post(URI);
-//		System.out.println(response.asPrettyString());
-//		System.out.println("SubmitPrepare --------------"+response.statusCode());
-//		response.then().assertThat()
-//		.statusCode(equalTo(200));
-//		//PUT Call
-//		String URI2 = "https://"+Constants.ENV+".assuresign.net/api/documentnow/v"+version+"/submit/prepare/"+preparedEnvelopeID;
-//		String payload2 = JsonUtils.payloadGenerator("Inputs\\"+Constants.ENV+"\\Scenario_12\\putCall.json");
-//		RequestSpecification request2 = RestAssured.given().header("Authorization", "Bearer "+token).body(payload2)
-//		.header("X-AS-User-Agent", "site24x7/1.0.0");
-//		Response response2 = request2.put(URI2);
-//		System.out.println(response2.asPrettyString());
-//		System.out.println("PUT Call --------------"+response2.statusCode());
-//		response2.then().assertThat()
-//		.statusCode(equalTo(200));
+		//SubmitPrepare 
+		String URI = "https://"+Constants.ENV+".assuresign.net/api/documentnow/v"+version+"/submit/prepare/"+preparedEnvelopeID+"/documents";
+		System.out.println(URI);
+		String payload = JsonUtils.payloadGenerator("Inputs\\"+Constants.ENV+"\\Scenario_12\\submitPrepareDoc.json");
+		RequestSpecification request = RestAssured.given().header("Authorization", "Bearer "+token).body(payload)
+		.header("X-AS-User-Agent", "site24x7/1.0.0");
+		Response response = request.post(URI);
+		System.out.println(response.asPrettyString());
+		System.out.println("SubmitPrepare --------------"+response.statusCode());
+		response.then().assertThat()
+		.statusCode(equalTo(200));
+		//PUT Call
+		String URI2 = "https://"+Constants.ENV+".assuresign.net/api/documentnow/v"+version+"/submit/prepare/"+preparedEnvelopeID;
+		String payload2 = JsonUtils.payloadGenerator("Inputs\\"+Constants.ENV+"\\Scenario_12\\putCall.json");
+		RequestSpecification request2 = RestAssured.given().header("Authorization", "Bearer "+token).body(payload2)
+		.header("X-AS-User-Agent", "site24x7/1.0.0");
+		Response response2 = request2.put(URI2);
+		System.out.println(response2.asPrettyString());
+		System.out.println("PUT Call --------------"+response2.statusCode());
+		response2.then().assertThat()
+		.statusCode(equalTo(200));
 		//Get Envelop id
 		String URI3 = "https://"+Constants.ENV+".assuresign.net/api/documentnow/v"+version+"/submit/"+preparedEnvelopeID;
 		String payload3 = JsonUtils.payloadGenerator("Inputs\\"+Constants.ENV+"\\Scenario_12\\getEnvelopeid.json");

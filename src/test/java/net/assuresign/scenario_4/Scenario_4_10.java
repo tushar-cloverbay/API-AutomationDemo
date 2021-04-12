@@ -1,9 +1,6 @@
 package net.assuresign.scenario_4;
 
 import static org.hamcrest.Matchers.equalTo;
-import static org.hamcrest.Matchers.is;
-import static org.hamcrest.Matchers.notNullValue;
-
 import java.io.IOException;
 
 import org.testng.annotations.Test;

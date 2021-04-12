@@ -19,7 +19,7 @@ import net.assuresign.utils.TestUtils;
 public class Scenario_9 extends Base{
 	@Test(dataProvider = "version-data-provider",enabled = true)
 	public void getSSOToken(String version) throws IOException {
-		extentTest.log(LogStatus.PASS, "Test Description : " + "Scenario_9 : Test for get envelops without document type.");
+		extentTest.log(LogStatus.PASS, "Test Description : " + "Scenario_9 : Get SSO token.");
 		apiVersion = version;
 		String token =TestUtils.getToken(version);
 		String URI = "https://"+Constants.ENV+".assuresign.net/api/documentnow/v"+ version 
@@ -39,7 +39,7 @@ public class Scenario_9 extends Base{
 	
 	@Test(dataProvider = "version-data-provider",enabled = true)
 	public void getSSOToken_XASUserContext(String version) throws IOException {
-		extentTest.log(LogStatus.PASS, "Test Description : " + "Scenario_9 : Test for get envelops without document type.");
+		extentTest.log(LogStatus.PASS, "Test Description : " + "Scenario_9 : Get SSO token with XASU user context.");
 		apiVersion = version;
 		String token =TestUtils.getToken(version);
 		String URI = "https://"+Constants.ENV+".assuresign.net/api/documentnow/v"+ version 

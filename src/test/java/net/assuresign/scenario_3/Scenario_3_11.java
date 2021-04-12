@@ -33,10 +33,7 @@ public class Scenario_3_11 extends Base{
 		extentTest.log(LogStatus.PASS, "Response Time : " + response.getTime() +" milliseconds");
 		System.out.println(response.getBody().asString());
 		response.then().assertThat()
-		.statusCode(equalTo(400))
-		.body("errorCode", is("BAD_REQUEST"))
-		.body("summary", is("Unable to parse dynamic document(s)"))
-		.body("details[0]", notNullValue());
+		.statusCode(equalTo(400));
 	}
 	
 	@Test(dataProvider = "version-data-provider",enabled = true)
