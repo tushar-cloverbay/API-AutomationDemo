@@ -44,6 +44,7 @@ public class Scenario_3_8 extends Base{
 		extentTest.log(LogStatus.PASS, "API URI : " + URI);
 		String payload = JsonUtils.payloadGenerator("Inputs\\"+Constants.ENV+"\\Scenario_3\\submitHybridCallDeprecated.json");
 		String depSessionToken = getSessionToken(version);
+		System.out.println(depSessionToken);
 		RequestSpecification request = RestAssured.given().body(payload);
 		request.header("Content-Type", "application/json").header("Authorization", "X-AS-UserSessionToken "+depSessionToken);
 		Response response = request.post(URI);
