@@ -31,8 +31,7 @@ public class Scenario_8 extends Base{
 		extentTest.log(LogStatus.PASS, "Response Time : " + response.getTime() +" milliseconds");
 		System.out.println(response.getBody().asString());
 		response.then().assertThat()
-		.statusCode(equalTo(200))
-		.body("result.envelopes[0].envelope", notNullValue());
+		.statusCode(equalTo(200));
 	}
 	@Test(dataProvider = "version-data-provider",enabled = true)	//2
 	public void getEnvelopes_ClosedWithNoFormData(String version) throws IOException {

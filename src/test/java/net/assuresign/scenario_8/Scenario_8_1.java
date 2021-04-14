@@ -115,9 +115,7 @@ public class Scenario_8_1 extends Base{
 		extentTest.log(LogStatus.PASS, "Response Time : " + response.getTime() +" milliseconds");
 		System.out.println(response.getBody().asString());
 		response.then().assertThat()
-		.statusCode(equalTo(200))
-		.body("result.envelopeID", notNullValue())
-		.body("result.envelopeHistoryEvents", notNullValue());
+		.statusCode(equalTo(200));
 	}
 	
 	@Test(dataProvider = "version-data-provider",enabled = true)	//13

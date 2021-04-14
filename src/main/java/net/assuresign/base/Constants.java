@@ -2,10 +2,10 @@ package net.assuresign.base;
 
 public class Constants {
 
-	public static final String ENV = "qa-test";
+	public static final String ENV = "qa";
 
-	public static  double START_VERSION = 3.2;
-	public static  double END_VERSION = 3.2;
+	public static  double START_VERSION = 3.7;
+	public static  double END_VERSION = 3.7;
 
 	public static  String EMAIL_ACCOUNT_ID;;
 	public static  String ENVELOPE_ID = "4058fb9d-699c-4e90-a197-aca7002b5aa8";
