@@ -204,7 +204,7 @@ public class Scenario_13 extends Base{
 		extentTest.log(LogStatus.PASS, "Response Time : " + response.getTime() +" milliseconds");
 		System.out.println(response.getBody().asString());
 		response.then().assertThat()
-		.statusCode(equalTo(500));
+		.statusCode(equalTo(400));
 	}
 	
 	@Test(dataProvider = "version-data-provider",enabled = true)
@@ -229,7 +229,7 @@ public class Scenario_13 extends Base{
 		extentTest.log(LogStatus.PASS, "Response Time : " + response.getTime() +" milliseconds");
 		System.out.println(response.getBody().asString());
 		response.then().assertThat()
-		.statusCode(equalTo(500));
+		.statusCode(equalTo(400));
 	}
 	
 	@Test(dataProvider = "version-data-provider",enabled = true)

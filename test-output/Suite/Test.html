@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>28/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Apr 14 10:22:17 IST 2021</td>
+<td>Started on:</td><td>Wed Apr 14 11:51:56 IST 2021</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (303 ms)</td>
+<tr><td>Total time:</td><td>411 seconds (411404 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,198 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='net.assuresign.scenario_13.Scenario_13.submitPrepare_documentsPwdToOpenFile()'><b>submitPrepare_documentsPwdToOpenFile</b><br>Test class: net.assuresign.scenario_13.Scenario_13<br>Parameters: 3.7</td>
+<td><div><pre>java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;500&gt; but was &lt;400&gt;.
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:126)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:84)
+	at io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
+	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:136)
+	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)
+	at net.assuresign.scenario_13.Scenario_13.submitPrepare_documentsPwdToOpenFile(Scenario_13.java:207)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+... Removed 40 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1925645553", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1925645553'><pre>java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;500&gt; but was &lt;400&gt;.
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)
+	at jdk.internal.reflect.GeneratedMethodAccessor69.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:126)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:84)
+	at io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)
+	at jdk.internal.reflect.GeneratedMethodAccessor163.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
+	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:136)
+	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)
+	at net.assuresign.scenario_13.Scenario_13.submitPrepare_documentsPwdToOpenFile(Scenario_13.java:207)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>10</td>
+<td>net.assuresign.scenario_13.Scenario_13@f0da945</td></tr>
+<tr>
+<td title='net.assuresign.scenario_13.Scenario_13.submitPrepare_documentsPwdToEditFile()'><b>submitPrepare_documentsPwdToEditFile</b><br>Test class: net.assuresign.scenario_13.Scenario_13<br>Parameters: 3.7</td>
+<td><div><pre>java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;500&gt; but was &lt;400&gt;.
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:126)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:84)
+	at io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
+	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:136)
+	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)
+	at net.assuresign.scenario_13.Scenario_13.submitPrepare_documentsPwdToEditFile(Scenario_13.java:232)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+... Removed 40 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace682812632", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace682812632'><pre>java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;500&gt; but was &lt;400&gt;.
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)
+	at jdk.internal.reflect.GeneratedMethodAccessor69.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:126)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:84)
+	at io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)
+	at jdk.internal.reflect.GeneratedMethodAccessor163.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
+	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:136)
+	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)
+	at net.assuresign.scenario_13.Scenario_13.submitPrepare_documentsPwdToEditFile(Scenario_13.java:232)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>12</td>
+<td>net.assuresign.scenario_13.Scenario_13@f0da945</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -75,10 +267,145 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='net.assuresign.scenario_3.Scenario_3_8.sessionTokenDeprecated_44009()'><b>sessionTokenDeprecated_44009</b><br>Test class: net.assuresign.scenario_3.Scenario_3_8<br>Parameters: 3.7</td>
+<td title='net.assuresign.scenario_10.Scenario_10.apiUser_organizationScopes()'><b>apiUser_organizationScopes</b><br>Test class: net.assuresign.scenario_10.Scenario_10<br>Parameters: 3.7</td>
 <td></td>
-<td>0</td>
-<td>net.assuresign.scenario_3.Scenario_3_8@10d307f1</td></tr>
+<td>6</td>
+<td>net.assuresign.scenario_10.Scenario_10@3c7f66c4</td></tr>
+<tr>
+<td title='net.assuresign.scenario_10.Scenario_10.apiUser_invalidRequest()'><b>apiUser_invalidRequest</b><br>Test class: net.assuresign.scenario_10.Scenario_10<br>Parameters: 3.7</td>
+<td></td>
+<td>4</td>
+<td>net.assuresign.scenario_10.Scenario_10@3c7f66c4</td></tr>
+<tr>
+<td title='net.assuresign.scenario_13.Scenario_13.submitValidate_ssTemplate()'><b>submitValidate_ssTemplate</b><br>Test class: net.assuresign.scenario_13.Scenario_13<br>Parameters: 3.7</td>
+<td></td>
+<td>6</td>
+<td>net.assuresign.scenario_13.Scenario_13@f0da945</td></tr>
+<tr>
+<td title='net.assuresign.scenario_10.Scenario_10.apiUser_noSpecificUser()'><b>apiUser_noSpecificUser</b><br>Test class: net.assuresign.scenario_10.Scenario_10<br>Parameters: 3.7</td>
+<td></td>
+<td>4</td>
+<td>net.assuresign.scenario_10.Scenario_10@3c7f66c4</td></tr>
+<tr>
+<td title='net.assuresign.scenario_10.Scenario_10.apiUser_withoutEnvironment()'><b>apiUser_withoutEnvironment</b><br>Test class: net.assuresign.scenario_10.Scenario_10<br>Parameters: 3.7</td>
+<td></td>
+<td>4</td>
+<td>net.assuresign.scenario_10.Scenario_10@3c7f66c4</td></tr>
+<tr>
+<td title='net.assuresign.scenario_11.Scenario_11.environments_EmptyUsername()'><b>environments_EmptyUsername</b><br>Test class: net.assuresign.scenario_11.Scenario_11<br>Parameters: 3.7</td>
+<td></td>
+<td>4</td>
+<td>net.assuresign.scenario_11.Scenario_11@194bcebf</td></tr>
+<tr>
+<td title='net.assuresign.scenario_11.Scenario_11.environments_InvalidUsername()'><b>environments_InvalidUsername</b><br>Test class: net.assuresign.scenario_11.Scenario_11<br>Parameters: 3.7</td>
+<td></td>
+<td>4</td>
+<td>net.assuresign.scenario_11.Scenario_11@194bcebf</td></tr>
+<tr>
+<td title='net.assuresign.scenario_11.Scenario_11.environments_validUsername()'><b>environments_validUsername</b><br>Test class: net.assuresign.scenario_11.Scenario_11<br>Parameters: 3.7</td>
+<td></td>
+<td>5</td>
+<td>net.assuresign.scenario_11.Scenario_11@194bcebf</td></tr>
+<tr>
+<td title='net.assuresign.scenario_9.Scenario_9.getSSOToken_XASUserContext()'><b>getSSOToken_XASUserContext</b><br>Test class: net.assuresign.scenario_9.Scenario_9<br>Parameters: 3.7</td>
+<td></td>
+<td>4</td>
+<td>net.assuresign.scenario_9.Scenario_9@4d465b11</td></tr>
+<tr>
+<td title='net.assuresign.scenario_10.Scenario_10.apiUser_invalidEnvironment()'><b>apiUser_invalidEnvironment</b><br>Test class: net.assuresign.scenario_10.Scenario_10<br>Parameters: 3.7</td>
+<td></td>
+<td>9</td>
+<td>net.assuresign.scenario_10.Scenario_10@3c7f66c4</td></tr>
+<tr>
+<td title='net.assuresign.scenario_13.Scenario_13.submitPrepare_documents()'><b>submitPrepare_documents</b><br>Test class: net.assuresign.scenario_13.Scenario_13<br>Parameters: 3.7</td>
+<td></td>
+<td>14</td>
+<td>net.assuresign.scenario_13.Scenario_13@f0da945</td></tr>
+<tr>
+<td title='net.assuresign.scenario_10.Scenario_10.apiUser_noExpDate()'><b>apiUser_noExpDate</b><br>Test class: net.assuresign.scenario_10.Scenario_10<br>Parameters: 3.7</td>
+<td></td>
+<td>5</td>
+<td>net.assuresign.scenario_10.Scenario_10@3c7f66c4</td></tr>
+<tr>
+<td title='net.assuresign.scenario_13.Scenario_13.submitPrepare_documentsEmptyID()'><b>submitPrepare_documentsEmptyID</b><br>Test class: net.assuresign.scenario_13.Scenario_13<br>Parameters: 3.7</td>
+<td></td>
+<td>5</td>
+<td>net.assuresign.scenario_13.Scenario_13@f0da945</td></tr>
+<tr>
+<td title='net.assuresign.scenario_10.Scenario_10.apiUser_validRequestSpecificEnv()'><b>apiUser_validRequestSpecificEnv</b><br>Test class: net.assuresign.scenario_10.Scenario_10<br>Parameters: 3.7</td>
+<td></td>
+<td>5</td>
+<td>net.assuresign.scenario_10.Scenario_10@3c7f66c4</td></tr>
+<tr>
+<td title='net.assuresign.scenario_13.Scenario_13.submitValidate_adhoc400()'><b>submitValidate_adhoc400</b><br>Test class: net.assuresign.scenario_13.Scenario_13<br>Parameters: 3.7</td>
+<td></td>
+<td>31</td>
+<td>net.assuresign.scenario_13.Scenario_13@f0da945</td></tr>
+<tr>
+<td title='net.assuresign.scenario_10.Scenario_10.apiUser_noBaseUserName()'><b>apiUser_noBaseUserName</b><br>Test class: net.assuresign.scenario_10.Scenario_10<br>Parameters: 3.7</td>
+<td></td>
+<td>6</td>
+<td>net.assuresign.scenario_10.Scenario_10@3c7f66c4</td></tr>
+<tr>
+<td title='net.assuresign.scenario_12.Scenario_12.collectionRun_submit()'><b>collectionRun_submit</b><br>Test class: net.assuresign.scenario_12.Scenario_12<br>Parameters: 3.7</td>
+<td></td>
+<td>73</td>
+<td>net.assuresign.scenario_12.Scenario_12@17497425</td></tr>
+<tr>
+<td title='net.assuresign.scenario_13.Scenario_13.submitPrepare_putCall1()'><b>submitPrepare_putCall1</b><br>Test class: net.assuresign.scenario_13.Scenario_13<br>Parameters: 3.7</td>
+<td></td>
+<td>14</td>
+<td>net.assuresign.scenario_13.Scenario_13@f0da945</td></tr>
+<tr>
+<td title='net.assuresign.scenario_9.Scenario_9.getSSOToken()'><b>getSSOToken</b><br>Test class: net.assuresign.scenario_9.Scenario_9<br>Parameters: 3.7</td>
+<td></td>
+<td>10</td>
+<td>net.assuresign.scenario_9.Scenario_9@4d465b11</td></tr>
+<tr>
+<td title='net.assuresign.scenario_10.Scenario_10.apiUser_noScope()'><b>apiUser_noScope</b><br>Test class: net.assuresign.scenario_10.Scenario_10<br>Parameters: 3.7</td>
+<td></td>
+<td>4</td>
+<td>net.assuresign.scenario_10.Scenario_10@3c7f66c4</td></tr>
+<tr>
+<td title='net.assuresign.scenario_13.Scenario_13.submitValidate_hybridCall()'><b>submitValidate_hybridCall</b><br>Test class: net.assuresign.scenario_13.Scenario_13<br>Parameters: 3.7</td>
+<td></td>
+<td>8</td>
+<td>net.assuresign.scenario_13.Scenario_13@f0da945</td></tr>
+<tr>
+<td title='net.assuresign.scenario_10.Scenario_10.apiUser_invalidScope()'><b>apiUser_invalidScope</b><br>Test class: net.assuresign.scenario_10.Scenario_10<br>Parameters: 3.7</td>
+<td></td>
+<td>3</td>
+<td>net.assuresign.scenario_10.Scenario_10@3c7f66c4</td></tr>
+<tr>
+<td title='net.assuresign.scenario_13.Scenario_13.submitPrepare_withoutDocName()'><b>submitPrepare_withoutDocName</b><br>Test class: net.assuresign.scenario_13.Scenario_13<br>Parameters: 3.7</td>
+<td></td>
+<td>13</td>
+<td>net.assuresign.scenario_13.Scenario_13@f0da945</td></tr>
+<tr>
+<td title='net.assuresign.scenario_10.Scenario_10.apiUser_noValueBaseUserName()'><b>apiUser_noValueBaseUserName</b><br>Test class: net.assuresign.scenario_10.Scenario_10<br>Parameters: 3.7</td>
+<td></td>
+<td>4</td>
+<td>net.assuresign.scenario_10.Scenario_10@3c7f66c4</td></tr>
+<tr>
+<td title='net.assuresign.scenario_13.Scenario_13.submitPrepare_documentsInvalidID()'><b>submitPrepare_documentsInvalidID</b><br>Test class: net.assuresign.scenario_13.Scenario_13<br>Parameters: 3.7</td>
+<td></td>
+<td>5</td>
+<td>net.assuresign.scenario_13.Scenario_13@f0da945</td></tr>
+<tr>
+<td title='net.assuresign.scenario_10.Scenario_10.apiUser_noRequest()'><b>apiUser_noRequest</b><br>Test class: net.assuresign.scenario_10.Scenario_10<br>Parameters: 3.7</td>
+<td></td>
+<td>5</td>
+<td>net.assuresign.scenario_10.Scenario_10@3c7f66c4</td></tr>
+<tr>
+<td title='net.assuresign.scenario_13.Scenario_13.submitValidate_Adhoc()'><b>submitValidate_Adhoc</b><br>Test class: net.assuresign.scenario_13.Scenario_13<br>Parameters: 3.7</td>
+<td></td>
+<td>114</td>
+<td>net.assuresign.scenario_13.Scenario_13@f0da945</td></tr>
+<tr>
+<td title='net.assuresign.scenario_10.Scenario_10.apiUser_validRequest()'><b>apiUser_validRequest</b><br>Test class: net.assuresign.scenario_10.Scenario_10<br>Parameters: 3.7</td>
+<td></td>
+<td>4</td>
+<td>net.assuresign.scenario_10.Scenario_10@3c7f66c4</td></tr>
 </table><p>
 </body>
 </html>

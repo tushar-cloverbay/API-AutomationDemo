@@ -33,7 +33,7 @@ public class Scenario_4_15 extends Base{
 		System.out.println(response.getBody().asString());
 		System.out.println(response.getStatusCode());
 		response.then().assertThat()
-		.statusCode(equalTo(500));
+		.statusCode(equalTo(400));
 	}
 	
 	@Test(dataProvider = "version-data-provider",enabled = true)

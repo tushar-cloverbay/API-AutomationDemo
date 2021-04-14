@@ -31,12 +31,13 @@ public class Scenario_4_11 extends Base{
 	public void submitPrepare_deprecated(String version) throws IOException {
 		extentTest.log(LogStatus.PASS, "Test Description : " + "Scenario_4_11 : Test for getting Prepared Enveloped ID with different file type");
 		apiVersion = version;
-		String token =getSessionToken(version);
+		String sessionToken =getSessionToken(version);
+		System.out.println(sessionToken);
 		String URI = "https://"+Constants.ENV+".assuresign.net/api/documentnow/v"+ version +"/submit/prepare";
 		extentTest.log(LogStatus.PASS, "API URI : " + URI);
 		String payload = JsonUtils.payloadGenerator("Inputs\\"+Constants.ENV+"\\Scenario_4\\submitPrepareDeprecated.json");
 		RequestSpecification request = RestAssured.given().body(payload);
-		request.header("Content-Type", "application/json").header("Authorization", "X-AS-UserSessionToken "+token);
+		request.header("Content-Type", "application/json").header("Authorization", "X-AS-UserSessionToken "+sessionToken);
 		Response response = request.post(URI);
 		responseBody = response.asPrettyString();
 		extentTest.log(LogStatus.PASS, "Response Time : " + response.getTime() +" milliseconds");
@@ -52,7 +53,7 @@ public class Scenario_4_11 extends Base{
 		extentTest.log(LogStatus.PASS, "Test Description : " + "Scenario_4_11 : Test for Submit Prepare with WithSigner Password");
 		apiVersion = version;
 		String sessionToken = getSessionToken(version);
-		
+		System.out.println(sessionToken);
 		String URI1 = "https://"+Constants.ENV+".assuresign.net/api/documentnow/v"+ version +"/submit/prepare";
 		String payload1 = JsonUtils.payloadGenerator("Inputs\\"+Constants.ENV+"\\Scenario_4\\submitPrepareDeprecated.json");
 		RequestSpecification request1 = RestAssured.given().body(payload1);

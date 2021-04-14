@@ -2,7 +2,7 @@ package net.assuresign.base;
 
 public class Constants{
 
-	public static final String ENV = "qa-test";
+	public static final String ENV = "qa";
 
 	public static  double START_VERSION = 3.7;
 	public static  double END_VERSION = 3.7;
@@ -18,8 +18,7 @@ public class Constants{
 	public static  String envelopeSignerID = "mvadgave@mailinator.com";
 	
 	public static void loadVariables() {
-		if(ENV.equals("qa"))
-		{
+		if(ENV.equals("qa")){	
 			EMAIL_ACCOUNT_ID = "95d08adc-df59-4e25-b609-ace600d287c9";
 		}
 		else if(ENV.equals("qa-test")) {

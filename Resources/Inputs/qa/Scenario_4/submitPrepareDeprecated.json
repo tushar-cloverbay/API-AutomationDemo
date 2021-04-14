@@ -913,7 +913,7 @@
                 "RedirectUrl": null,
                 "TermsAndConditions": null,
                 "IncrementalSigning": false,
-                "TemplatesApplied": ["42a23d0d-cb4e-40a2-ba7b-ace70142d170"],
+                "TemplatesApplied": ["4555e1f0-7d8a-4076-8ff1-ad0500ab470e"],
                 "SenderInputs": [],
                 "EmailDesignSetID": "48096697-21ac-e111-9ee4-00221959013a",
                 "NotificationSettings": {
@@ -923,7 +923,7 @@
             },
             "notificationRecipients": [
                 {
-                    "email": "mvadgave@mailinator.com",
+                    "email": "manali@mailinator.com",
                     "label": "additional Signer",
                     "name": "Signer additional",
                     "signatureStyle": "drawn"
@@ -931,7 +931,7 @@
             ],
             "signers": [
                 {
-                    "email": "mvadgave1@mailinator.com",
+                    "email": "manali@mailinator.com",
                     "label": "Signer 1",
                     "name": "Signer one",
                     "signatureStyle": "Typed",
@@ -939,7 +939,7 @@
                     "passwordPrompt": "password is T-e-s-t"
                 },
                 {
-                    "email": "mvadgave2@mailinator.com",
+                    "email": "manali@mailinator.com",
                     "mobilePhone": "3317254626",
                     "smsAuthPhone": "3317254626",                    
                     "label": "Signer 2",

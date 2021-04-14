@@ -6,13 +6,14 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="net.assuresign.scenario_3.Scenario_3_8">
+      <class name="net.assuresign.scenario_13.Scenario_13">
         <methods>
           <include name="reportUp"/>
-          <include name="submitHybridCallDeprecated" invocation-numbers="0"/>
+          <include name="submitPrepare_documentsPwdToOpenFile" invocation-numbers="0"/>
+          <include name="submitPrepare_documentsPwdToEditFile" invocation-numbers="0"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- net.assuresign.scenario_3.Scenario_3_8 -->
+      </class> <!-- net.assuresign.scenario_13.Scenario_13 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

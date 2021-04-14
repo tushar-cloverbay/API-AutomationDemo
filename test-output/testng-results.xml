@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="30" passed="28" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-04-14T10:22:17 IST" name="Suite" finished-at="2021-04-14T10:22:18 IST" duration-ms="303">
+  <suite started-at="2021-04-14T11:51:56 IST" name="Suite" finished-at="2021-04-14T11:58:48 IST" duration-ms="411404">
     <groups>
     </groups>
-    <test started-at="2021-04-14T10:22:17 IST" name="Test" finished-at="2021-04-14T10:22:18 IST" duration-ms="303">
-      <class name="net.assuresign.scenario_3.Scenario_3_8">
-        <test-method is-config="true" signature="reportUp(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_3.Scenario_3_8@10d307f1]" started-at="2021-04-14T10:22:18 IST" name="reportUp" finished-at="2021-04-14T10:22:18 IST" duration-ms="6" status="PASS">
+    <test started-at="2021-04-14T11:51:56 IST" name="Test" finished-at="2021-04-14T11:58:48 IST" duration-ms="411404">
+      <class name="net.assuresign.scenario_10.Scenario_10">
+        <test-method is-config="true" signature="reportUp(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_10.Scenario_10@3c7f66c4]" started-at="2021-04-14T11:52:12 IST" name="reportUp" finished-at="2021-04-14T11:52:12 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=Scenario_3_8.sessionTokenDeprecated_44009(java.lang.String)[pri:0, instance:net.assuresign.scenario_3.Scenario_3_8@10d307f1] output={null}]]]>
+                <![CDATA[[TestResult name={null} status=CREATED method=Scenario_10.apiUser_invalidEnvironment(java.lang.String)[pri:0, instance:net.assuresign.scenario_10.Scenario_10@3c7f66c4] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportUp -->
-        <test-method signature="sessionTokenDeprecated_44009(java.lang.String)[pri:0, instance:net.assuresign.scenario_3.Scenario_3_8@10d307f1]" started-at="2021-04-14T10:22:18 IST" name="sessionTokenDeprecated_44009" data-provider="version-data-provider" finished-at="2021-04-14T10:22:18 IST" duration-ms="6" status="PASS">
+        <test-method signature="apiUser_invalidEnvironment(java.lang.String)[pri:0, instance:net.assuresign.scenario_10.Scenario_10@3c7f66c4]" started-at="2021-04-14T11:52:12 IST" name="apiUser_invalidEnvironment" data-provider="version-data-provider" finished-at="2021-04-14T11:52:21 IST" duration-ms="9499" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -28,19 +28,1130 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- sessionTokenDeprecated_44009 -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_3.Scenario_3_8@10d307f1]" started-at="2021-04-14T10:22:18 IST" name="tearDown" finished-at="2021-04-14T10:22:18 IST" duration-ms="3" status="PASS">
+        </test-method> <!-- apiUser_invalidEnvironment -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_10.Scenario_10@3c7f66c4]" started-at="2021-04-14T11:52:21 IST" name="tearDown" finished-at="2021-04-14T11:52:21 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=sessionTokenDeprecated_44009 status=SUCCESS method=Scenario_3_8.sessionTokenDeprecated_44009(java.lang.String)[pri:0, instance:net.assuresign.scenario_3.Scenario_3_8@10d307f1] output={null}]]]>
+                <![CDATA[[TestResult name=apiUser_invalidEnvironment status=SUCCESS method=Scenario_10.apiUser_invalidEnvironment(java.lang.String)[pri:0, instance:net.assuresign.scenario_10.Scenario_10@3c7f66c4] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- net.assuresign.scenario_3.Scenario_3_8 -->
+        <test-method is-config="true" signature="reportUp(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_10.Scenario_10@3c7f66c4]" started-at="2021-04-14T11:52:21 IST" name="reportUp" finished-at="2021-04-14T11:52:21 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=Scenario_10.apiUser_invalidRequest(java.lang.String)[pri:0, instance:net.assuresign.scenario_10.Scenario_10@3c7f66c4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportUp -->
+        <test-method signature="apiUser_invalidRequest(java.lang.String)[pri:0, instance:net.assuresign.scenario_10.Scenario_10@3c7f66c4]" started-at="2021-04-14T11:52:21 IST" name="apiUser_invalidRequest" data-provider="version-data-provider" finished-at="2021-04-14T11:52:26 IST" duration-ms="4841" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3.7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- apiUser_invalidRequest -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_10.Scenario_10@3c7f66c4]" started-at="2021-04-14T11:52:26 IST" name="tearDown" finished-at="2021-04-14T11:52:26 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=apiUser_invalidRequest status=SUCCESS method=Scenario_10.apiUser_invalidRequest(java.lang.String)[pri:0, instance:net.assuresign.scenario_10.Scenario_10@3c7f66c4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="reportUp(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_10.Scenario_10@3c7f66c4]" started-at="2021-04-14T11:52:26 IST" name="reportUp" finished-at="2021-04-14T11:52:26 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=Scenario_10.apiUser_invalidScope(java.lang.String)[pri:0, instance:net.assuresign.scenario_10.Scenario_10@3c7f66c4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportUp -->
+        <test-method signature="apiUser_invalidScope(java.lang.String)[pri:0, instance:net.assuresign.scenario_10.Scenario_10@3c7f66c4]" started-at="2021-04-14T11:52:26 IST" name="apiUser_invalidScope" data-provider="version-data-provider" finished-at="2021-04-14T11:52:30 IST" duration-ms="3865" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3.7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- apiUser_invalidScope -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_10.Scenario_10@3c7f66c4]" started-at="2021-04-14T11:52:30 IST" name="tearDown" finished-at="2021-04-14T11:52:30 IST" duration-ms="6" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=apiUser_invalidScope status=SUCCESS method=Scenario_10.apiUser_invalidScope(java.lang.String)[pri:0, instance:net.assuresign.scenario_10.Scenario_10@3c7f66c4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="reportUp(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_10.Scenario_10@3c7f66c4]" started-at="2021-04-14T11:52:30 IST" name="reportUp" finished-at="2021-04-14T11:52:30 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=Scenario_10.apiUser_noBaseUserName(java.lang.String)[pri:0, instance:net.assuresign.scenario_10.Scenario_10@3c7f66c4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportUp -->
+        <test-method signature="apiUser_noBaseUserName(java.lang.String)[pri:0, instance:net.assuresign.scenario_10.Scenario_10@3c7f66c4]" started-at="2021-04-14T11:52:30 IST" name="apiUser_noBaseUserName" data-provider="version-data-provider" finished-at="2021-04-14T11:52:37 IST" duration-ms="6700" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3.7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- apiUser_noBaseUserName -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_10.Scenario_10@3c7f66c4]" started-at="2021-04-14T11:52:37 IST" name="tearDown" finished-at="2021-04-14T11:52:37 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=apiUser_noBaseUserName status=SUCCESS method=Scenario_10.apiUser_noBaseUserName(java.lang.String)[pri:0, instance:net.assuresign.scenario_10.Scenario_10@3c7f66c4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="reportUp(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_10.Scenario_10@3c7f66c4]" started-at="2021-04-14T11:52:37 IST" name="reportUp" finished-at="2021-04-14T11:52:37 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=Scenario_10.apiUser_noExpDate(java.lang.String)[pri:0, instance:net.assuresign.scenario_10.Scenario_10@3c7f66c4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportUp -->
+        <test-method signature="apiUser_noExpDate(java.lang.String)[pri:0, instance:net.assuresign.scenario_10.Scenario_10@3c7f66c4]" started-at="2021-04-14T11:52:37 IST" name="apiUser_noExpDate" data-provider="version-data-provider" finished-at="2021-04-14T11:52:43 IST" duration-ms="5768" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3.7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- apiUser_noExpDate -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_10.Scenario_10@3c7f66c4]" started-at="2021-04-14T11:52:43 IST" name="tearDown" finished-at="2021-04-14T11:52:43 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=apiUser_noExpDate status=SUCCESS method=Scenario_10.apiUser_noExpDate(java.lang.String)[pri:0, instance:net.assuresign.scenario_10.Scenario_10@3c7f66c4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="reportUp(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_10.Scenario_10@3c7f66c4]" started-at="2021-04-14T11:52:43 IST" name="reportUp" finished-at="2021-04-14T11:52:43 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=Scenario_10.apiUser_noRequest(java.lang.String)[pri:0, instance:net.assuresign.scenario_10.Scenario_10@3c7f66c4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportUp -->
+        <test-method signature="apiUser_noRequest(java.lang.String)[pri:0, instance:net.assuresign.scenario_10.Scenario_10@3c7f66c4]" started-at="2021-04-14T11:52:43 IST" name="apiUser_noRequest" data-provider="version-data-provider" finished-at="2021-04-14T11:52:48 IST" duration-ms="5424" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3.7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- apiUser_noRequest -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_10.Scenario_10@3c7f66c4]" started-at="2021-04-14T11:52:48 IST" name="tearDown" finished-at="2021-04-14T11:52:48 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=apiUser_noRequest status=SUCCESS method=Scenario_10.apiUser_noRequest(java.lang.String)[pri:0, instance:net.assuresign.scenario_10.Scenario_10@3c7f66c4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="reportUp(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_10.Scenario_10@3c7f66c4]" started-at="2021-04-14T11:52:48 IST" name="reportUp" finished-at="2021-04-14T11:52:48 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=Scenario_10.apiUser_noScope(java.lang.String)[pri:0, instance:net.assuresign.scenario_10.Scenario_10@3c7f66c4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportUp -->
+        <test-method signature="apiUser_noScope(java.lang.String)[pri:0, instance:net.assuresign.scenario_10.Scenario_10@3c7f66c4]" started-at="2021-04-14T11:52:48 IST" name="apiUser_noScope" data-provider="version-data-provider" finished-at="2021-04-14T11:52:53 IST" duration-ms="4886" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3.7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- apiUser_noScope -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_10.Scenario_10@3c7f66c4]" started-at="2021-04-14T11:52:53 IST" name="tearDown" finished-at="2021-04-14T11:52:53 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=apiUser_noScope status=SUCCESS method=Scenario_10.apiUser_noScope(java.lang.String)[pri:0, instance:net.assuresign.scenario_10.Scenario_10@3c7f66c4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="reportUp(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_10.Scenario_10@3c7f66c4]" started-at="2021-04-14T11:52:53 IST" name="reportUp" finished-at="2021-04-14T11:52:53 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=Scenario_10.apiUser_noSpecificUser(java.lang.String)[pri:0, instance:net.assuresign.scenario_10.Scenario_10@3c7f66c4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportUp -->
+        <test-method signature="apiUser_noSpecificUser(java.lang.String)[pri:0, instance:net.assuresign.scenario_10.Scenario_10@3c7f66c4]" started-at="2021-04-14T11:52:53 IST" name="apiUser_noSpecificUser" data-provider="version-data-provider" finished-at="2021-04-14T11:52:57 IST" duration-ms="4390" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3.7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- apiUser_noSpecificUser -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_10.Scenario_10@3c7f66c4]" started-at="2021-04-14T11:52:57 IST" name="tearDown" finished-at="2021-04-14T11:52:57 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=apiUser_noSpecificUser status=SUCCESS method=Scenario_10.apiUser_noSpecificUser(java.lang.String)[pri:0, instance:net.assuresign.scenario_10.Scenario_10@3c7f66c4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="reportUp(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_10.Scenario_10@3c7f66c4]" started-at="2021-04-14T11:52:57 IST" name="reportUp" finished-at="2021-04-14T11:52:57 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=Scenario_10.apiUser_noValueBaseUserName(java.lang.String)[pri:0, instance:net.assuresign.scenario_10.Scenario_10@3c7f66c4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportUp -->
+        <test-method signature="apiUser_noValueBaseUserName(java.lang.String)[pri:0, instance:net.assuresign.scenario_10.Scenario_10@3c7f66c4]" started-at="2021-04-14T11:52:57 IST" name="apiUser_noValueBaseUserName" data-provider="version-data-provider" finished-at="2021-04-14T11:53:02 IST" duration-ms="4483" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3.7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- apiUser_noValueBaseUserName -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_10.Scenario_10@3c7f66c4]" started-at="2021-04-14T11:53:02 IST" name="tearDown" finished-at="2021-04-14T11:53:02 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=apiUser_noValueBaseUserName status=SUCCESS method=Scenario_10.apiUser_noValueBaseUserName(java.lang.String)[pri:0, instance:net.assuresign.scenario_10.Scenario_10@3c7f66c4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="reportUp(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_10.Scenario_10@3c7f66c4]" started-at="2021-04-14T11:53:02 IST" name="reportUp" finished-at="2021-04-14T11:53:02 IST" duration-ms="6" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=Scenario_10.apiUser_organizationScopes(java.lang.String)[pri:0, instance:net.assuresign.scenario_10.Scenario_10@3c7f66c4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportUp -->
+        <test-method signature="apiUser_organizationScopes(java.lang.String)[pri:0, instance:net.assuresign.scenario_10.Scenario_10@3c7f66c4]" started-at="2021-04-14T11:53:02 IST" name="apiUser_organizationScopes" data-provider="version-data-provider" finished-at="2021-04-14T11:53:08 IST" duration-ms="6384" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3.7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- apiUser_organizationScopes -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_10.Scenario_10@3c7f66c4]" started-at="2021-04-14T11:53:08 IST" name="tearDown" finished-at="2021-04-14T11:53:08 IST" duration-ms="7" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=apiUser_organizationScopes status=SUCCESS method=Scenario_10.apiUser_organizationScopes(java.lang.String)[pri:0, instance:net.assuresign.scenario_10.Scenario_10@3c7f66c4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="reportUp(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_10.Scenario_10@3c7f66c4]" started-at="2021-04-14T11:53:08 IST" name="reportUp" finished-at="2021-04-14T11:53:08 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=Scenario_10.apiUser_validRequest(java.lang.String)[pri:0, instance:net.assuresign.scenario_10.Scenario_10@3c7f66c4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportUp -->
+        <test-method signature="apiUser_validRequest(java.lang.String)[pri:0, instance:net.assuresign.scenario_10.Scenario_10@3c7f66c4]" started-at="2021-04-14T11:53:08 IST" name="apiUser_validRequest" data-provider="version-data-provider" finished-at="2021-04-14T11:53:13 IST" duration-ms="4787" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3.7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- apiUser_validRequest -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_10.Scenario_10@3c7f66c4]" started-at="2021-04-14T11:53:13 IST" name="tearDown" finished-at="2021-04-14T11:53:13 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=apiUser_validRequest status=SUCCESS method=Scenario_10.apiUser_validRequest(java.lang.String)[pri:0, instance:net.assuresign.scenario_10.Scenario_10@3c7f66c4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="reportUp(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_10.Scenario_10@3c7f66c4]" started-at="2021-04-14T11:53:13 IST" name="reportUp" finished-at="2021-04-14T11:53:13 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=Scenario_10.apiUser_validRequestSpecificEnv(java.lang.String)[pri:0, instance:net.assuresign.scenario_10.Scenario_10@3c7f66c4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportUp -->
+        <test-method signature="apiUser_validRequestSpecificEnv(java.lang.String)[pri:0, instance:net.assuresign.scenario_10.Scenario_10@3c7f66c4]" started-at="2021-04-14T11:53:13 IST" name="apiUser_validRequestSpecificEnv" data-provider="version-data-provider" finished-at="2021-04-14T11:53:19 IST" duration-ms="5851" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3.7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- apiUser_validRequestSpecificEnv -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_10.Scenario_10@3c7f66c4]" started-at="2021-04-14T11:53:19 IST" name="tearDown" finished-at="2021-04-14T11:53:19 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=apiUser_validRequestSpecificEnv status=SUCCESS method=Scenario_10.apiUser_validRequestSpecificEnv(java.lang.String)[pri:0, instance:net.assuresign.scenario_10.Scenario_10@3c7f66c4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="apiUser_withoutEnvironment(java.lang.String)[pri:0, instance:net.assuresign.scenario_10.Scenario_10@3c7f66c4]" started-at="2021-04-14T11:53:19 IST" name="apiUser_withoutEnvironment" data-provider="version-data-provider" finished-at="2021-04-14T11:53:23 IST" duration-ms="4059" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3.7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- apiUser_withoutEnvironment -->
+        <test-method is-config="true" signature="reportUp(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_10.Scenario_10@3c7f66c4]" started-at="2021-04-14T11:53:19 IST" name="reportUp" finished-at="2021-04-14T11:53:19 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=Scenario_10.apiUser_withoutEnvironment(java.lang.String)[pri:0, instance:net.assuresign.scenario_10.Scenario_10@3c7f66c4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportUp -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_10.Scenario_10@3c7f66c4]" started-at="2021-04-14T11:53:23 IST" name="tearDown" finished-at="2021-04-14T11:53:23 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=apiUser_withoutEnvironment status=SUCCESS method=Scenario_10.apiUser_withoutEnvironment(java.lang.String)[pri:0, instance:net.assuresign.scenario_10.Scenario_10@3c7f66c4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- net.assuresign.scenario_10.Scenario_10 -->
+      <class name="net.assuresign.scenario_12.Scenario_12">
+        <test-method is-config="true" signature="reportUp(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_12.Scenario_12@17497425]" started-at="2021-04-14T11:53:37 IST" name="reportUp" finished-at="2021-04-14T11:53:37 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=Scenario_12.collectionRun_submit(java.lang.String)[pri:0, instance:net.assuresign.scenario_12.Scenario_12@17497425] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportUp -->
+        <test-method signature="collectionRun_submit(java.lang.String)[pri:0, instance:net.assuresign.scenario_12.Scenario_12@17497425]" started-at="2021-04-14T11:53:37 IST" name="collectionRun_submit" data-provider="version-data-provider" finished-at="2021-04-14T11:54:50 IST" duration-ms="73519" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3.7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- collectionRun_submit -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_12.Scenario_12@17497425]" started-at="2021-04-14T11:54:50 IST" name="tearDown" finished-at="2021-04-14T11:54:50 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=collectionRun_submit status=SUCCESS method=Scenario_12.collectionRun_submit(java.lang.String)[pri:0, instance:net.assuresign.scenario_12.Scenario_12@17497425] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- net.assuresign.scenario_12.Scenario_12 -->
+      <class name="net.assuresign.scenario_13.Scenario_13">
+        <test-method is-config="true" signature="reportUp(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_13.Scenario_13@f0da945]" started-at="2021-04-14T11:54:50 IST" name="reportUp" finished-at="2021-04-14T11:54:50 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=Scenario_13.submitPrepare_documents(java.lang.String)[pri:0, instance:net.assuresign.scenario_13.Scenario_13@f0da945] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportUp -->
+        <test-method signature="submitPrepare_documents(java.lang.String)[pri:0, instance:net.assuresign.scenario_13.Scenario_13@f0da945]" started-at="2021-04-14T11:54:50 IST" name="submitPrepare_documents" data-provider="version-data-provider" finished-at="2021-04-14T11:55:05 IST" duration-ms="14091" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3.7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitPrepare_documents -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_13.Scenario_13@f0da945]" started-at="2021-04-14T11:55:05 IST" name="tearDown" finished-at="2021-04-14T11:55:05 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=submitPrepare_documents status=SUCCESS method=Scenario_13.submitPrepare_documents(java.lang.String)[pri:0, instance:net.assuresign.scenario_13.Scenario_13@f0da945] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="submitPrepare_documentsEmptyID(java.lang.String)[pri:0, instance:net.assuresign.scenario_13.Scenario_13@f0da945]" started-at="2021-04-14T11:55:05 IST" name="submitPrepare_documentsEmptyID" data-provider="version-data-provider" finished-at="2021-04-14T11:55:10 IST" duration-ms="5883" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3.7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitPrepare_documentsEmptyID -->
+        <test-method is-config="true" signature="reportUp(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_13.Scenario_13@f0da945]" started-at="2021-04-14T11:55:05 IST" name="reportUp" finished-at="2021-04-14T11:55:05 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=Scenario_13.submitPrepare_documentsEmptyID(java.lang.String)[pri:0, instance:net.assuresign.scenario_13.Scenario_13@f0da945] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportUp -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_13.Scenario_13@f0da945]" started-at="2021-04-14T11:55:10 IST" name="tearDown" finished-at="2021-04-14T11:55:10 IST" duration-ms="42" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=submitPrepare_documentsEmptyID status=SUCCESS method=Scenario_13.submitPrepare_documentsEmptyID(java.lang.String)[pri:0, instance:net.assuresign.scenario_13.Scenario_13@f0da945] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="reportUp(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_13.Scenario_13@f0da945]" started-at="2021-04-14T11:55:10 IST" name="reportUp" finished-at="2021-04-14T11:55:10 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=Scenario_13.submitPrepare_documentsInvalidID(java.lang.String)[pri:0, instance:net.assuresign.scenario_13.Scenario_13@f0da945] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportUp -->
+        <test-method signature="submitPrepare_documentsInvalidID(java.lang.String)[pri:0, instance:net.assuresign.scenario_13.Scenario_13@f0da945]" started-at="2021-04-14T11:55:10 IST" name="submitPrepare_documentsInvalidID" data-provider="version-data-provider" finished-at="2021-04-14T11:55:16 IST" duration-ms="5950" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3.7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitPrepare_documentsInvalidID -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_13.Scenario_13@f0da945]" started-at="2021-04-14T11:55:16 IST" name="tearDown" finished-at="2021-04-14T11:55:16 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=submitPrepare_documentsInvalidID status=SUCCESS method=Scenario_13.submitPrepare_documentsInvalidID(java.lang.String)[pri:0, instance:net.assuresign.scenario_13.Scenario_13@f0da945] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="submitPrepare_documentsPwdToEditFile(java.lang.String)[pri:0, instance:net.assuresign.scenario_13.Scenario_13@f0da945]" started-at="2021-04-14T11:55:16 IST" name="submitPrepare_documentsPwdToEditFile" data-provider="version-data-provider" finished-at="2021-04-14T11:55:29 IST" duration-ms="12102" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3.7]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[1 expectation failed.
+Expected status code <500> but was <400>.
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected status code <500> but was <400>.
+
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)
+at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)
+at jdk.internal.reflect.GeneratedMethodAccessor69.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:126)
+at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:84)
+at io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)
+at jdk.internal.reflect.GeneratedMethodAccessor163.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
+at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
+at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:136)
+at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)
+at net.assuresign.scenario_13.Scenario_13.submitPrepare_documentsPwdToEditFile(Scenario_13.java:232)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitPrepare_documentsPwdToEditFile -->
+        <test-method is-config="true" signature="reportUp(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_13.Scenario_13@f0da945]" started-at="2021-04-14T11:55:16 IST" name="reportUp" finished-at="2021-04-14T11:55:16 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=Scenario_13.submitPrepare_documentsPwdToEditFile(java.lang.String)[pri:0, instance:net.assuresign.scenario_13.Scenario_13@f0da945] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportUp -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_13.Scenario_13@f0da945]" started-at="2021-04-14T11:55:29 IST" name="tearDown" finished-at="2021-04-14T11:55:29 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=submitPrepare_documentsPwdToEditFile status=FAILURE method=Scenario_13.submitPrepare_documentsPwdToEditFile(java.lang.String)[pri:0, instance:net.assuresign.scenario_13.Scenario_13@f0da945] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="reportUp(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_13.Scenario_13@f0da945]" started-at="2021-04-14T11:55:29 IST" name="reportUp" finished-at="2021-04-14T11:55:29 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=Scenario_13.submitPrepare_documentsPwdToOpenFile(java.lang.String)[pri:0, instance:net.assuresign.scenario_13.Scenario_13@f0da945] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportUp -->
+        <test-method signature="submitPrepare_documentsPwdToOpenFile(java.lang.String)[pri:0, instance:net.assuresign.scenario_13.Scenario_13@f0da945]" started-at="2021-04-14T11:55:29 IST" name="submitPrepare_documentsPwdToOpenFile" data-provider="version-data-provider" finished-at="2021-04-14T11:55:39 IST" duration-ms="10068" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3.7]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[1 expectation failed.
+Expected status code <500> but was <400>.
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected status code <500> but was <400>.
+
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)
+at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)
+at jdk.internal.reflect.GeneratedMethodAccessor69.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:126)
+at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:84)
+at io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)
+at jdk.internal.reflect.GeneratedMethodAccessor163.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
+at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
+at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:136)
+at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)
+at net.assuresign.scenario_13.Scenario_13.submitPrepare_documentsPwdToOpenFile(Scenario_13.java:207)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitPrepare_documentsPwdToOpenFile -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_13.Scenario_13@f0da945]" started-at="2021-04-14T11:55:39 IST" name="tearDown" finished-at="2021-04-14T11:55:39 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=submitPrepare_documentsPwdToOpenFile status=FAILURE method=Scenario_13.submitPrepare_documentsPwdToOpenFile(java.lang.String)[pri:0, instance:net.assuresign.scenario_13.Scenario_13@f0da945] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="reportUp(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_13.Scenario_13@f0da945]" started-at="2021-04-14T11:55:39 IST" name="reportUp" finished-at="2021-04-14T11:55:39 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=Scenario_13.submitPrepare_putCall1(java.lang.String)[pri:0, instance:net.assuresign.scenario_13.Scenario_13@f0da945] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportUp -->
+        <test-method signature="submitPrepare_putCall1(java.lang.String)[pri:0, instance:net.assuresign.scenario_13.Scenario_13@f0da945]" started-at="2021-04-14T11:55:39 IST" name="submitPrepare_putCall1" data-provider="version-data-provider" finished-at="2021-04-14T11:55:53 IST" duration-ms="14220" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3.7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitPrepare_putCall1 -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_13.Scenario_13@f0da945]" started-at="2021-04-14T11:55:53 IST" name="tearDown" finished-at="2021-04-14T11:55:53 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=submitPrepare_putCall1 status=SUCCESS method=Scenario_13.submitPrepare_putCall1(java.lang.String)[pri:0, instance:net.assuresign.scenario_13.Scenario_13@f0da945] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="reportUp(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_13.Scenario_13@f0da945]" started-at="2021-04-14T11:55:53 IST" name="reportUp" finished-at="2021-04-14T11:55:53 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=Scenario_13.submitPrepare_withoutDocName(java.lang.String)[pri:0, instance:net.assuresign.scenario_13.Scenario_13@f0da945] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportUp -->
+        <test-method signature="submitPrepare_withoutDocName(java.lang.String)[pri:0, instance:net.assuresign.scenario_13.Scenario_13@f0da945]" started-at="2021-04-14T11:55:53 IST" name="submitPrepare_withoutDocName" data-provider="version-data-provider" finished-at="2021-04-14T11:56:07 IST" duration-ms="13793" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3.7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitPrepare_withoutDocName -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_13.Scenario_13@f0da945]" started-at="2021-04-14T11:56:07 IST" name="tearDown" finished-at="2021-04-14T11:56:07 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=submitPrepare_withoutDocName status=SUCCESS method=Scenario_13.submitPrepare_withoutDocName(java.lang.String)[pri:0, instance:net.assuresign.scenario_13.Scenario_13@f0da945] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="reportUp(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_13.Scenario_13@f0da945]" started-at="2021-04-14T11:56:07 IST" name="reportUp" finished-at="2021-04-14T11:56:07 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=Scenario_13.submitValidate_Adhoc(java.lang.String)[pri:0, instance:net.assuresign.scenario_13.Scenario_13@f0da945] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportUp -->
+        <test-method signature="submitValidate_Adhoc(java.lang.String)[pri:0, instance:net.assuresign.scenario_13.Scenario_13@f0da945]" started-at="2021-04-14T11:56:07 IST" name="submitValidate_Adhoc" data-provider="version-data-provider" finished-at="2021-04-14T11:58:01 IST" duration-ms="114073" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3.7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitValidate_Adhoc -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_13.Scenario_13@f0da945]" started-at="2021-04-14T11:58:01 IST" name="tearDown" finished-at="2021-04-14T11:58:01 IST" duration-ms="12" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=submitValidate_Adhoc status=SUCCESS method=Scenario_13.submitValidate_Adhoc(java.lang.String)[pri:0, instance:net.assuresign.scenario_13.Scenario_13@f0da945] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="reportUp(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_13.Scenario_13@f0da945]" started-at="2021-04-14T11:58:01 IST" name="reportUp" finished-at="2021-04-14T11:58:01 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=Scenario_13.submitValidate_adhoc400(java.lang.String)[pri:0, instance:net.assuresign.scenario_13.Scenario_13@f0da945] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportUp -->
+        <test-method signature="submitValidate_adhoc400(java.lang.String)[pri:0, instance:net.assuresign.scenario_13.Scenario_13@f0da945]" started-at="2021-04-14T11:58:01 IST" name="submitValidate_adhoc400" data-provider="version-data-provider" finished-at="2021-04-14T11:58:32 IST" duration-ms="31172" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3.7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitValidate_adhoc400 -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_13.Scenario_13@f0da945]" started-at="2021-04-14T11:58:32 IST" name="tearDown" finished-at="2021-04-14T11:58:32 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=submitValidate_adhoc400 status=SUCCESS method=Scenario_13.submitValidate_adhoc400(java.lang.String)[pri:0, instance:net.assuresign.scenario_13.Scenario_13@f0da945] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="reportUp(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_13.Scenario_13@f0da945]" started-at="2021-04-14T11:58:32 IST" name="reportUp" finished-at="2021-04-14T11:58:32 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=Scenario_13.submitValidate_hybridCall(java.lang.String)[pri:0, instance:net.assuresign.scenario_13.Scenario_13@f0da945] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportUp -->
+        <test-method signature="submitValidate_hybridCall(java.lang.String)[pri:0, instance:net.assuresign.scenario_13.Scenario_13@f0da945]" started-at="2021-04-14T11:58:32 IST" name="submitValidate_hybridCall" data-provider="version-data-provider" finished-at="2021-04-14T11:58:41 IST" duration-ms="8937" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3.7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitValidate_hybridCall -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_13.Scenario_13@f0da945]" started-at="2021-04-14T11:58:41 IST" name="tearDown" finished-at="2021-04-14T11:58:41 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=submitValidate_hybridCall status=SUCCESS method=Scenario_13.submitValidate_hybridCall(java.lang.String)[pri:0, instance:net.assuresign.scenario_13.Scenario_13@f0da945] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="reportUp(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_13.Scenario_13@f0da945]" started-at="2021-04-14T11:58:41 IST" name="reportUp" finished-at="2021-04-14T11:58:41 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=Scenario_13.submitValidate_ssTemplate(java.lang.String)[pri:0, instance:net.assuresign.scenario_13.Scenario_13@f0da945] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportUp -->
+        <test-method signature="submitValidate_ssTemplate(java.lang.String)[pri:0, instance:net.assuresign.scenario_13.Scenario_13@f0da945]" started-at="2021-04-14T11:58:41 IST" name="submitValidate_ssTemplate" data-provider="version-data-provider" finished-at="2021-04-14T11:58:48 IST" duration-ms="6993" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3.7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitValidate_ssTemplate -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_13.Scenario_13@f0da945]" started-at="2021-04-14T11:58:48 IST" name="tearDown" finished-at="2021-04-14T11:58:48 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=submitValidate_ssTemplate status=SUCCESS method=Scenario_13.submitValidate_ssTemplate(java.lang.String)[pri:0, instance:net.assuresign.scenario_13.Scenario_13@f0da945] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- net.assuresign.scenario_13.Scenario_13 -->
+      <class name="net.assuresign.scenario_11.Scenario_11">
+        <test-method is-config="true" signature="reportUp(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_11.Scenario_11@194bcebf]" started-at="2021-04-14T11:53:23 IST" name="reportUp" finished-at="2021-04-14T11:53:23 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=Scenario_11.environments_EmptyUsername(java.lang.String)[pri:0, instance:net.assuresign.scenario_11.Scenario_11@194bcebf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportUp -->
+        <test-method signature="environments_EmptyUsername(java.lang.String)[pri:0, instance:net.assuresign.scenario_11.Scenario_11@194bcebf]" started-at="2021-04-14T11:53:23 IST" name="environments_EmptyUsername" data-provider="version-data-provider" finished-at="2021-04-14T11:53:27 IST" duration-ms="4158" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3.7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- environments_EmptyUsername -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_11.Scenario_11@194bcebf]" started-at="2021-04-14T11:53:27 IST" name="tearDown" finished-at="2021-04-14T11:53:27 IST" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=environments_EmptyUsername status=SUCCESS method=Scenario_11.environments_EmptyUsername(java.lang.String)[pri:0, instance:net.assuresign.scenario_11.Scenario_11@194bcebf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="reportUp(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_11.Scenario_11@194bcebf]" started-at="2021-04-14T11:53:27 IST" name="reportUp" finished-at="2021-04-14T11:53:27 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=Scenario_11.environments_InvalidUsername(java.lang.String)[pri:0, instance:net.assuresign.scenario_11.Scenario_11@194bcebf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportUp -->
+        <test-method signature="environments_InvalidUsername(java.lang.String)[pri:0, instance:net.assuresign.scenario_11.Scenario_11@194bcebf]" started-at="2021-04-14T11:53:27 IST" name="environments_InvalidUsername" data-provider="version-data-provider" finished-at="2021-04-14T11:53:32 IST" duration-ms="4814" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3.7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- environments_InvalidUsername -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_11.Scenario_11@194bcebf]" started-at="2021-04-14T11:53:32 IST" name="tearDown" finished-at="2021-04-14T11:53:32 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=environments_InvalidUsername status=SUCCESS method=Scenario_11.environments_InvalidUsername(java.lang.String)[pri:0, instance:net.assuresign.scenario_11.Scenario_11@194bcebf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="reportUp(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_11.Scenario_11@194bcebf]" started-at="2021-04-14T11:53:32 IST" name="reportUp" finished-at="2021-04-14T11:53:32 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=Scenario_11.environments_validUsername(java.lang.String)[pri:0, instance:net.assuresign.scenario_11.Scenario_11@194bcebf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportUp -->
+        <test-method signature="environments_validUsername(java.lang.String)[pri:0, instance:net.assuresign.scenario_11.Scenario_11@194bcebf]" started-at="2021-04-14T11:53:32 IST" name="environments_validUsername" data-provider="version-data-provider" finished-at="2021-04-14T11:53:37 IST" duration-ms="5152" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3.7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- environments_validUsername -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_11.Scenario_11@194bcebf]" started-at="2021-04-14T11:53:37 IST" name="tearDown" finished-at="2021-04-14T11:53:37 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=environments_validUsername status=SUCCESS method=Scenario_11.environments_validUsername(java.lang.String)[pri:0, instance:net.assuresign.scenario_11.Scenario_11@194bcebf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- net.assuresign.scenario_11.Scenario_11 -->
+      <class name="net.assuresign.scenario_9.Scenario_9">
+        <test-method is-config="true" signature="reportUp(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_9.Scenario_9@4d465b11]" started-at="2021-04-14T11:51:57 IST" name="reportUp" finished-at="2021-04-14T11:51:57 IST" duration-ms="6" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=Scenario_9.getSSOToken(java.lang.String)[pri:0, instance:net.assuresign.scenario_9.Scenario_9@4d465b11] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportUp -->
+        <test-method signature="getSSOToken(java.lang.String)[pri:0, instance:net.assuresign.scenario_9.Scenario_9@4d465b11]" started-at="2021-04-14T11:51:57 IST" name="getSSOToken" data-provider="version-data-provider" finished-at="2021-04-14T11:52:07 IST" duration-ms="10442" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3.7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSSOToken -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_9.Scenario_9@4d465b11]" started-at="2021-04-14T11:52:07 IST" name="tearDown" finished-at="2021-04-14T11:52:07 IST" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=getSSOToken status=SUCCESS method=Scenario_9.getSSOToken(java.lang.String)[pri:0, instance:net.assuresign.scenario_9.Scenario_9@4d465b11] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="reportUp(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_9.Scenario_9@4d465b11]" started-at="2021-04-14T11:52:07 IST" name="reportUp" finished-at="2021-04-14T11:52:07 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=Scenario_9.getSSOToken_XASUserContext(java.lang.String)[pri:0, instance:net.assuresign.scenario_9.Scenario_9@4d465b11] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportUp -->
+        <test-method signature="getSSOToken_XASUserContext(java.lang.String)[pri:0, instance:net.assuresign.scenario_9.Scenario_9@4d465b11]" started-at="2021-04-14T11:52:07 IST" name="getSSOToken_XASUserContext" data-provider="version-data-provider" finished-at="2021-04-14T11:52:12 IST" duration-ms="4592" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3.7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSSOToken_XASUserContext -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_9.Scenario_9@4d465b11]" started-at="2021-04-14T11:52:12 IST" name="tearDown" finished-at="2021-04-14T11:52:12 IST" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=getSSOToken_XASUserContext status=SUCCESS method=Scenario_9.getSSOToken_XASUserContext(java.lang.String)[pri:0, instance:net.assuresign.scenario_9.Scenario_9@4d465b11] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- net.assuresign.scenario_9.Scenario_9 -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
