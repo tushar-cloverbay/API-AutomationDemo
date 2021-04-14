@@ -20,22 +20,23 @@ public class Scenario_3_8 extends Base{
 	
 	@Test(dataProvider = "version-data-provider",enabled = true)
 	public void sessionTokenDeprecated_44009(String version) throws IOException {
-		extentTest.log(LogStatus.PASS, "Test Description : " + "Scenario_3_8 : Test for session token 44009 deprecated.");
-		apiVersion = version;
-		String URI = " https://"+Constants.ENV+".assuresign.net/api/documentnow/v"+version+"/authentication/credentials";
-		extentTest.log(LogStatus.PASS, "API URI : " + URI);
-		String payload = JsonUtils.payloadGenerator("Inputs\\"+Constants.ENV+"\\Scenario_3\\sessionTokenDeprecated_44009.json");
-		RequestSpecification request = RestAssured.given().body(payload);
-		request.header("Content-Type", "application/json");
-		Response response = request.post(URI);
-		responseBody = response.asPrettyString();
-		extentTest.log(LogStatus.PASS, "Response Time : " + response.getTime() +" milliseconds");
-		System.out.println(response.getBody().asString());
-		response.then().assertThat()
-		.statusCode(equalTo(200))
-		.body("result.sessionToken", notNullValue());
+//		extentTest.log(LogStatus.PASS, "Test Description : " + "Scenario_3_8 : Test for session token 44009 deprecated.");
+//		apiVersion = version;
+//		String URI = " https://"+Constants.ENV+".assuresign.net/api/documentnow/v"+version+"/authentication/credentials";
+//		extentTest.log(LogStatus.PASS, "API URI : " + URI);
+//		String payload = JsonUtils.payloadGenerator("Inputs\\"+Constants.ENV+"\\Scenario_3\\sessionTokenDeprecated_44009.json");
+//		RequestSpecification request = RestAssured.given().body(payload);
+//		request.header("Content-Type", "application/json");
+//		Response response = request.post(URI);
+//		responseBody = response.asPrettyString();
+//		extentTest.log(LogStatus.PASS, "Response Time : " + response.getTime() +" milliseconds");
+//		System.out.println(response.getBody().asString());
+//		response.then().assertThat()
+//		.statusCode(equalTo(200))
+//		.body("result.sessionToken", notNullValue());
+		System.out.println(Constants.EMAIL_ACCOUNT_ID);
 	}
-	
+	/*
 	@Test(dataProvider = "version-data-provider",enabled = true)
 	public void submitHybridCallDeprecated(String version) throws IOException {
 		extentTest.log(LogStatus.PASS, "Test Description : " + "Scenario_3_8 : Test submit hybrid call for deprecated.");
@@ -65,7 +66,7 @@ public class Scenario_3_8 extends Base{
 		request.header("Content-Type", "application/json");
 		Response response = request.post(URI);
 		return JsonUtils.getKeyValue(response, "result.sessionToken");
-	}
+	}*/
 	
 	
 }

@@ -28,6 +28,7 @@ public class Base {
 	public static FileInputStream fis;
 
 	public Base() {
+		Constants.loadVariables();
 		if (log == null) {
 			log = Logger.getLogger("Assuresign");
 			log.info("log object created");
