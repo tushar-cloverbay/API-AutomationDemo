@@ -153,14 +153,14 @@ public class TestUtils extends Base{
             MimeMessage message = new MimeMessage(session);
             message.setFrom(new InternetAddress(from));
             message.addRecipient(Message.RecipientType.TO, new InternetAddress(to));
-            message.setSubject("This is the Subject Line!");
+            message.setSubject("API Automation report");
             Multipart multipart = new MimeMultipart();
             MimeBodyPart attachmentPart = new MimeBodyPart();
             MimeBodyPart textPart = new MimeBodyPart();
             try {
                 File f =new File(".\\test-output\\ExtentReport.html");
                 attachmentPart.attachFile(f);
-                textPart.setText("This is text");
+                textPart.setText("Please find the attachment for html report.");
                 multipart.addBodyPart(textPart);
                 multipart.addBodyPart(attachmentPart);
             } catch (IOException e) {
