@@ -158,7 +158,7 @@ public class TestUtils extends Base{
             MimeBodyPart attachmentPart = new MimeBodyPart();
             MimeBodyPart textPart = new MimeBodyPart();
             try {
-                File f =new File(".\\test-output\\ExtentReport.html");
+                File f =new File(".\\ExtentReport.html");
                 attachmentPart.attachFile(f);
                 textPart.setText("Please find the attachment for html report.");
                 multipart.addBodyPart(textPart);

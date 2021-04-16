@@ -6,8 +6,8 @@
 	</listeners>
 	<test thread-count="5" name="Test">
 		<classes>
-	 <!-- 	<class name="net.assuresign.scenario_1.TokenBearer_Incorrect" />
-			<class name="net.assuresign.scenario_2.TokenBearer_Correct" />		
+		<class name="net.assuresign.scenario_1.TokenBearer_Incorrect" />
+	 <!-- 		<class name="net.assuresign.scenario_2.TokenBearer_Correct" />		
  			<class name="net.assuresign.scenario_3.Scenario_3_1" />
 			<class name="net.assuresign.scenario_3.Scenario_3_2" />
 			<class name="net.assuresign.scenario_3.Scenario_3_3" />
