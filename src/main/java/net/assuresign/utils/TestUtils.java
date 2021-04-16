@@ -128,10 +128,10 @@ public class TestUtils extends Base{
 	}
 	
 	
-	public static void sendEmail()
+	public static void sendEmail(String email)
 	{
 
-        String to = "babesnap@gmail.com";
+        String to = email;
         String from = "tushar.behera@cloverbaytechnologies.com";
         
         String host = "smtp.gmail.com";
