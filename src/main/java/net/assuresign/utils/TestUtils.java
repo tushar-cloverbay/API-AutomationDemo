@@ -127,7 +127,17 @@ public class TestUtils extends Base{
 		return responseMessage;
 	}
 	
-	
+	public static String getVersion() {
+		String version;
+		if(Constants.START_VERSION == Constants.END_VERSION)
+		{
+			version = Double.toString(Constants.START_VERSION);
+		}else
+		{
+			version = Double.toString(Constants.START_VERSION)+" to "+Double.toString(Constants.END_VERSION);
+		}
+		return version;
+	}
 	public static void sendEmail(String email)
 	{
 
@@ -153,7 +163,7 @@ public class TestUtils extends Base{
             MimeMessage message = new MimeMessage(session);
             message.setFrom(new InternetAddress(from));
             message.addRecipient(Message.RecipientType.TO, new InternetAddress(to));
-            message.setSubject("API Automation report");
+            message.setSubject("API Automation report for "+Constants.ENV+" "+getVersion());
             Multipart multipart = new MimeMultipart();
             MimeBodyPart attachmentPart = new MimeBodyPart();
             MimeBodyPart textPart = new MimeBodyPart();

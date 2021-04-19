@@ -1,189 +1,255 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-04-16T15:40:56 IST" name="Suite" finished-at="2021-04-16T15:41:12 IST" duration-ms="15683">
+  <suite started-at="2021-04-19T09:08:22 IST" name="Suite" finished-at="2021-04-19T09:08:22 IST" duration-ms="352">
     <groups>
     </groups>
-    <test started-at="2021-04-16T15:40:56 IST" name="Test" finished-at="2021-04-16T15:41:12 IST" duration-ms="15683">
+    <test started-at="2021-04-19T09:08:22 IST" name="Test" finished-at="2021-04-19T09:08:22 IST" duration-ms="352">
       <class name="net.assuresign.scenario_1.TokenBearer_Incorrect">
-        <test-method is-config="true" signature="reportUp(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_1.TokenBearer_Incorrect@5403f35f]" started-at="2021-04-16T15:40:57 IST" name="reportUp" finished-at="2021-04-16T15:40:57 IST" duration-ms="7" status="PASS">
+        <test-method is-config="true" signature="reportUp(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_1.TokenBearer_Incorrect@4d5b6aac]" started-at="2021-04-19T09:08:22 IST" name="reportUp" finished-at="2021-04-19T09:08:22 IST" duration-ms="6" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=TokenBearer_Incorrect.tokenBearer_incorrectJson(java.lang.String)[pri:0, instance:net.assuresign.scenario_1.TokenBearer_Incorrect@5403f35f] output={null}]]]>
+                <![CDATA[[TestResult name={null} status=CREATED method=TokenBearer_Incorrect.tokenBearer_withoutSessionLength(java.lang.String)[pri:0, instance:net.assuresign.scenario_1.TokenBearer_Incorrect@4d5b6aac] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportUp -->
-        <test-method signature="tokenBearer_incorrectJson(java.lang.String)[pri:0, instance:net.assuresign.scenario_1.TokenBearer_Incorrect@5403f35f]" started-at="2021-04-16T15:40:57 IST" name="tokenBearer_incorrectJson" data-provider="version-data-provider" finished-at="2021-04-16T15:41:02 IST" duration-ms="5825" status="PASS">
+        <test-method signature="tokenBearer_withoutSessionLength(java.lang.String)[pri:0, instance:net.assuresign.scenario_1.TokenBearer_Incorrect@4d5b6aac]" started-at="2021-04-19T09:08:22 IST" name="tokenBearer_withoutSessionLength" data-provider="version-data-provider" finished-at="2021-04-19T09:08:22 IST" duration-ms="13" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[3.7]]>
+                <![CDATA[3.0]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tokenBearer_incorrectJson -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_1.TokenBearer_Incorrect@5403f35f]" started-at="2021-04-16T15:41:02 IST" name="tearDown" finished-at="2021-04-16T15:41:02 IST" duration-ms="4" status="PASS">
+        </test-method> <!-- tokenBearer_withoutSessionLength -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_1.TokenBearer_Incorrect@4d5b6aac]" started-at="2021-04-19T09:08:22 IST" name="tearDown" finished-at="2021-04-19T09:08:22 IST" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=tokenBearer_incorrectJson status=SUCCESS method=TokenBearer_Incorrect.tokenBearer_incorrectJson(java.lang.String)[pri:0, instance:net.assuresign.scenario_1.TokenBearer_Incorrect@5403f35f] output={null}]]]>
+                <![CDATA[[TestResult name=tokenBearer_withoutSessionLength status=SUCCESS method=TokenBearer_Incorrect.tokenBearer_withoutSessionLength(java.lang.String)[pri:0, instance:net.assuresign.scenario_1.TokenBearer_Incorrect@4d5b6aac] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="reportUp(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_1.TokenBearer_Incorrect@5403f35f]" started-at="2021-04-16T15:41:02 IST" name="reportUp" finished-at="2021-04-16T15:41:02 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="reportUp(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_1.TokenBearer_Incorrect@4d5b6aac]" started-at="2021-04-19T09:08:22 IST" name="reportUp" finished-at="2021-04-19T09:08:22 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=TokenBearer_Incorrect.tokenBearer_invalidApiKey(java.lang.String)[pri:0, instance:net.assuresign.scenario_1.TokenBearer_Incorrect@5403f35f] output={null}]]]>
+                <![CDATA[[TestResult name={null} status=CREATED method=TokenBearer_Incorrect.tokenBearer_withoutSessionLength(java.lang.String)[pri:0, instance:net.assuresign.scenario_1.TokenBearer_Incorrect@4d5b6aac] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportUp -->
-        <test-method signature="tokenBearer_invalidApiKey(java.lang.String)[pri:0, instance:net.assuresign.scenario_1.TokenBearer_Incorrect@5403f35f]" started-at="2021-04-16T15:41:02 IST" name="tokenBearer_invalidApiKey" data-provider="version-data-provider" finished-at="2021-04-16T15:41:05 IST" duration-ms="2153" status="PASS">
+        <test-method signature="tokenBearer_withoutSessionLength(java.lang.String)[pri:0, instance:net.assuresign.scenario_1.TokenBearer_Incorrect@4d5b6aac]" started-at="2021-04-19T09:08:22 IST" name="tokenBearer_withoutSessionLength" data-provider="version-data-provider" finished-at="2021-04-19T09:08:22 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[3.7]]>
+                <![CDATA[3.1]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tokenBearer_invalidApiKey -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_1.TokenBearer_Incorrect@5403f35f]" started-at="2021-04-16T15:41:05 IST" name="tearDown" finished-at="2021-04-16T15:41:05 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- tokenBearer_withoutSessionLength -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_1.TokenBearer_Incorrect@4d5b6aac]" started-at="2021-04-19T09:08:22 IST" name="tearDown" finished-at="2021-04-19T09:08:22 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=tokenBearer_invalidApiKey status=SUCCESS method=TokenBearer_Incorrect.tokenBearer_invalidApiKey(java.lang.String)[pri:0, instance:net.assuresign.scenario_1.TokenBearer_Incorrect@5403f35f] output={null}]]]>
+                <![CDATA[[TestResult name=tokenBearer_withoutSessionLength status=SUCCESS method=TokenBearer_Incorrect.tokenBearer_withoutSessionLength(java.lang.String)[pri:0, instance:net.assuresign.scenario_1.TokenBearer_Incorrect@4d5b6aac] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="reportUp(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_1.TokenBearer_Incorrect@5403f35f]" started-at="2021-04-16T15:41:05 IST" name="reportUp" finished-at="2021-04-16T15:41:05 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="reportUp(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_1.TokenBearer_Incorrect@4d5b6aac]" started-at="2021-04-19T09:08:22 IST" name="reportUp" finished-at="2021-04-19T09:08:22 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=TokenBearer_Incorrect.tokenBearer_withoutApiKey(java.lang.String)[pri:0, instance:net.assuresign.scenario_1.TokenBearer_Incorrect@5403f35f] output={null}]]]>
+                <![CDATA[[TestResult name={null} status=CREATED method=TokenBearer_Incorrect.tokenBearer_withoutSessionLength(java.lang.String)[pri:0, instance:net.assuresign.scenario_1.TokenBearer_Incorrect@4d5b6aac] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportUp -->
-        <test-method signature="tokenBearer_withoutApiKey(java.lang.String)[pri:0, instance:net.assuresign.scenario_1.TokenBearer_Incorrect@5403f35f]" started-at="2021-04-16T15:41:05 IST" name="tokenBearer_withoutApiKey" data-provider="version-data-provider" finished-at="2021-04-16T15:41:06 IST" duration-ms="1949" status="PASS">
+        <test-method signature="tokenBearer_withoutSessionLength(java.lang.String)[pri:0, instance:net.assuresign.scenario_1.TokenBearer_Incorrect@4d5b6aac]" started-at="2021-04-19T09:08:22 IST" name="tokenBearer_withoutSessionLength" data-provider="version-data-provider" finished-at="2021-04-19T09:08:22 IST" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[3.7]]>
+                <![CDATA[3.2]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tokenBearer_withoutApiKey -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_1.TokenBearer_Incorrect@5403f35f]" started-at="2021-04-16T15:41:06 IST" name="tearDown" finished-at="2021-04-16T15:41:06 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- tokenBearer_withoutSessionLength -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_1.TokenBearer_Incorrect@4d5b6aac]" started-at="2021-04-19T09:08:22 IST" name="tearDown" finished-at="2021-04-19T09:08:22 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=tokenBearer_withoutApiKey status=SUCCESS method=TokenBearer_Incorrect.tokenBearer_withoutApiKey(java.lang.String)[pri:0, instance:net.assuresign.scenario_1.TokenBearer_Incorrect@5403f35f] output={null}]]]>
+                <![CDATA[[TestResult name=tokenBearer_withoutSessionLength status=SUCCESS method=TokenBearer_Incorrect.tokenBearer_withoutSessionLength(java.lang.String)[pri:0, instance:net.assuresign.scenario_1.TokenBearer_Incorrect@4d5b6aac] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="reportUp(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_1.TokenBearer_Incorrect@5403f35f]" started-at="2021-04-16T15:41:06 IST" name="reportUp" finished-at="2021-04-16T15:41:06 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="reportUp(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_1.TokenBearer_Incorrect@4d5b6aac]" started-at="2021-04-19T09:08:22 IST" name="reportUp" finished-at="2021-04-19T09:08:22 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=TokenBearer_Incorrect.tokenBearer_withoutApiUsername(java.lang.String)[pri:0, instance:net.assuresign.scenario_1.TokenBearer_Incorrect@5403f35f] output={null}]]]>
+                <![CDATA[[TestResult name={null} status=CREATED method=TokenBearer_Incorrect.tokenBearer_withoutSessionLength(java.lang.String)[pri:0, instance:net.assuresign.scenario_1.TokenBearer_Incorrect@4d5b6aac] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportUp -->
-        <test-method signature="tokenBearer_withoutApiUsername(java.lang.String)[pri:0, instance:net.assuresign.scenario_1.TokenBearer_Incorrect@5403f35f]" started-at="2021-04-16T15:41:06 IST" name="tokenBearer_withoutApiUsername" data-provider="version-data-provider" finished-at="2021-04-16T15:41:08 IST" duration-ms="1794" status="PASS">
+        <test-method signature="tokenBearer_withoutSessionLength(java.lang.String)[pri:0, instance:net.assuresign.scenario_1.TokenBearer_Incorrect@4d5b6aac]" started-at="2021-04-19T09:08:22 IST" name="tokenBearer_withoutSessionLength" data-provider="version-data-provider" finished-at="2021-04-19T09:08:22 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[3.7]]>
+                <![CDATA[3.3]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tokenBearer_withoutApiUsername -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_1.TokenBearer_Incorrect@5403f35f]" started-at="2021-04-16T15:41:08 IST" name="tearDown" finished-at="2021-04-16T15:41:08 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- tokenBearer_withoutSessionLength -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_1.TokenBearer_Incorrect@4d5b6aac]" started-at="2021-04-19T09:08:22 IST" name="tearDown" finished-at="2021-04-19T09:08:22 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=tokenBearer_withoutApiUsername status=SUCCESS method=TokenBearer_Incorrect.tokenBearer_withoutApiUsername(java.lang.String)[pri:0, instance:net.assuresign.scenario_1.TokenBearer_Incorrect@5403f35f] output={null}]]]>
+                <![CDATA[[TestResult name=tokenBearer_withoutSessionLength status=SUCCESS method=TokenBearer_Incorrect.tokenBearer_withoutSessionLength(java.lang.String)[pri:0, instance:net.assuresign.scenario_1.TokenBearer_Incorrect@4d5b6aac] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="reportUp(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_1.TokenBearer_Incorrect@5403f35f]" started-at="2021-04-16T15:41:08 IST" name="reportUp" finished-at="2021-04-16T15:41:08 IST" duration-ms="1" status="PASS">
+        <test-method signature="tokenBearer_withoutSessionLength(java.lang.String)[pri:0, instance:net.assuresign.scenario_1.TokenBearer_Incorrect@4d5b6aac]" started-at="2021-04-19T09:08:22 IST" name="tokenBearer_withoutSessionLength" data-provider="version-data-provider" finished-at="2021-04-19T09:08:22 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=TokenBearer_Incorrect.tokenBearer_withoutContextUsername(java.lang.String)[pri:0, instance:net.assuresign.scenario_1.TokenBearer_Incorrect@5403f35f] output={null}]]]>
+                <![CDATA[3.4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tokenBearer_withoutSessionLength -->
+        <test-method is-config="true" signature="reportUp(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_1.TokenBearer_Incorrect@4d5b6aac]" started-at="2021-04-19T09:08:22 IST" name="reportUp" finished-at="2021-04-19T09:08:22 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=TokenBearer_Incorrect.tokenBearer_withoutSessionLength(java.lang.String)[pri:0, instance:net.assuresign.scenario_1.TokenBearer_Incorrect@4d5b6aac] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportUp -->
-        <test-method signature="tokenBearer_withoutContextUsername(java.lang.String)[pri:0, instance:net.assuresign.scenario_1.TokenBearer_Incorrect@5403f35f]" started-at="2021-04-16T15:41:08 IST" name="tokenBearer_withoutContextUsername" data-provider="version-data-provider" finished-at="2021-04-16T15:41:10 IST" duration-ms="1638" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_1.TokenBearer_Incorrect@4d5b6aac]" started-at="2021-04-19T09:08:22 IST" name="tearDown" finished-at="2021-04-19T09:08:22 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[3.7]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tokenBearer_withoutContextUsername -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_1.TokenBearer_Incorrect@5403f35f]" started-at="2021-04-16T15:41:10 IST" name="tearDown" finished-at="2021-04-16T15:41:10 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=tokenBearer_withoutContextUsername status=SUCCESS method=TokenBearer_Incorrect.tokenBearer_withoutContextUsername(java.lang.String)[pri:0, instance:net.assuresign.scenario_1.TokenBearer_Incorrect@5403f35f] output={null}]]]>
+                <![CDATA[[TestResult name=tokenBearer_withoutSessionLength status=SUCCESS method=TokenBearer_Incorrect.tokenBearer_withoutSessionLength(java.lang.String)[pri:0, instance:net.assuresign.scenario_1.TokenBearer_Incorrect@4d5b6aac] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="reportUp(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_1.TokenBearer_Incorrect@5403f35f]" started-at="2021-04-16T15:41:10 IST" name="reportUp" finished-at="2021-04-16T15:41:10 IST" duration-ms="2" status="PASS">
+        <test-method signature="tokenBearer_withoutSessionLength(java.lang.String)[pri:0, instance:net.assuresign.scenario_1.TokenBearer_Incorrect@4d5b6aac]" started-at="2021-04-19T09:08:22 IST" name="tokenBearer_withoutSessionLength" data-provider="version-data-provider" finished-at="2021-04-19T09:08:22 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=TokenBearer_Incorrect.tokenBearer_withoutSessionLength(java.lang.String)[pri:0, instance:net.assuresign.scenario_1.TokenBearer_Incorrect@5403f35f] output={null}]]]>
+                <![CDATA[3.5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tokenBearer_withoutSessionLength -->
+        <test-method is-config="true" signature="reportUp(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_1.TokenBearer_Incorrect@4d5b6aac]" started-at="2021-04-19T09:08:22 IST" name="reportUp" finished-at="2021-04-19T09:08:22 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=TokenBearer_Incorrect.tokenBearer_withoutSessionLength(java.lang.String)[pri:0, instance:net.assuresign.scenario_1.TokenBearer_Incorrect@4d5b6aac] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportUp -->
-        <test-method signature="tokenBearer_withoutSessionLength(java.lang.String)[pri:0, instance:net.assuresign.scenario_1.TokenBearer_Incorrect@5403f35f]" started-at="2021-04-16T15:41:10 IST" name="tokenBearer_withoutSessionLength" data-provider="version-data-provider" finished-at="2021-04-16T15:41:12 IST" duration-ms="2000" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_1.TokenBearer_Incorrect@4d5b6aac]" started-at="2021-04-19T09:08:22 IST" name="tearDown" finished-at="2021-04-19T09:08:22 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tokenBearer_withoutSessionLength status=SUCCESS method=TokenBearer_Incorrect.tokenBearer_withoutSessionLength(java.lang.String)[pri:0, instance:net.assuresign.scenario_1.TokenBearer_Incorrect@4d5b6aac] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="reportUp(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_1.TokenBearer_Incorrect@4d5b6aac]" started-at="2021-04-19T09:08:22 IST" name="reportUp" finished-at="2021-04-19T09:08:22 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=TokenBearer_Incorrect.tokenBearer_withoutSessionLength(java.lang.String)[pri:0, instance:net.assuresign.scenario_1.TokenBearer_Incorrect@4d5b6aac] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportUp -->
+        <test-method signature="tokenBearer_withoutSessionLength(java.lang.String)[pri:0, instance:net.assuresign.scenario_1.TokenBearer_Incorrect@4d5b6aac]" started-at="2021-04-19T09:08:22 IST" name="tokenBearer_withoutSessionLength" data-provider="version-data-provider" finished-at="2021-04-19T09:08:22 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3.6]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tokenBearer_withoutSessionLength -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_1.TokenBearer_Incorrect@4d5b6aac]" started-at="2021-04-19T09:08:22 IST" name="tearDown" finished-at="2021-04-19T09:08:22 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tokenBearer_withoutSessionLength status=SUCCESS method=TokenBearer_Incorrect.tokenBearer_withoutSessionLength(java.lang.String)[pri:0, instance:net.assuresign.scenario_1.TokenBearer_Incorrect@4d5b6aac] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="reportUp(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_1.TokenBearer_Incorrect@4d5b6aac]" started-at="2021-04-19T09:08:22 IST" name="reportUp" finished-at="2021-04-19T09:08:22 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=TokenBearer_Incorrect.tokenBearer_withoutSessionLength(java.lang.String)[pri:0, instance:net.assuresign.scenario_1.TokenBearer_Incorrect@4d5b6aac] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportUp -->
+        <test-method signature="tokenBearer_withoutSessionLength(java.lang.String)[pri:0, instance:net.assuresign.scenario_1.TokenBearer_Incorrect@4d5b6aac]" started-at="2021-04-19T09:08:22 IST" name="tokenBearer_withoutSessionLength" data-provider="version-data-provider" finished-at="2021-04-19T09:08:22 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -194,11 +260,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tokenBearer_withoutSessionLength -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_1.TokenBearer_Incorrect@5403f35f]" started-at="2021-04-16T15:41:12 IST" name="tearDown" finished-at="2021-04-16T15:41:12 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_1.TokenBearer_Incorrect@4d5b6aac]" started-at="2021-04-19T09:08:22 IST" name="tearDown" finished-at="2021-04-19T09:08:22 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=tokenBearer_withoutSessionLength status=SUCCESS method=TokenBearer_Incorrect.tokenBearer_withoutSessionLength(java.lang.String)[pri:0, instance:net.assuresign.scenario_1.TokenBearer_Incorrect@5403f35f] output={null}]]]>
+                <![CDATA[[TestResult name=tokenBearer_withoutSessionLength status=SUCCESS method=TokenBearer_Incorrect.tokenBearer_withoutSessionLength(java.lang.String)[pri:0, instance:net.assuresign.scenario_1.TokenBearer_Incorrect@4d5b6aac] output={null}]]]>
               </value>
             </param>
           </params>
