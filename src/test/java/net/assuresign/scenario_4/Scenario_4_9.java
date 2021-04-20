@@ -41,7 +41,7 @@ public class Scenario_4_9 extends Base{
 		.body("result.preparedEnvelopeID", notNullValue());
 	}
 	
-	@Test(dataProvider = "version-data-provider",enabled = false)
+	@Test(dataProvider = "version-data-provider",enabled = true)
 	public void submit_DynamicJotBlockParsing(String version) throws IOException {
 		extentTest.log(LogStatus.PASS, "Test Description : " + "Scenario_4_9 : Test for Submit Prepare with Dynamic Jot Block Parsing");
 		apiVersion = version;

@@ -35,9 +35,7 @@ public class Scenario_4_14 extends Base{
 		System.out.println(response.getBody().asString());
 		System.out.println(response.getStatusCode());
 		response.then().assertThat()
-		.statusCode(equalTo(200))
-		.body("result.preparedEnvelopeID", notNullValue())
-		.body("result.setupUrl", notNullValue());
+		.statusCode(equalTo(200));
 	}
 	@Test(dataProvider = "version-data-provider",enabled = true)
 	public void submit_WithTempleteSchema(String version) throws IOException {
@@ -76,8 +74,7 @@ public class Scenario_4_14 extends Base{
 		System.out.println(response.getBody().asString());
 		System.out.println(response.getStatusCode());
 		response.then().assertThat()
-		.statusCode(equalTo(200))
-		.body("result.preparedEnvelopeID", notNullValue())
-		.body("result.setupUrl", notNullValue());
+		.statusCode(equalTo(200));
+
 	}
 }

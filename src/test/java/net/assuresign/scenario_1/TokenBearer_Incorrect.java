@@ -14,9 +14,10 @@ import io.restassured.specification.RequestSpecification;
 import net.assuresign.base.Base;
 import net.assuresign.base.Constants;
 import net.assuresign.utils.JsonUtils;
+import net.assuresign.utils.TestUtils;
 
 public class TokenBearer_Incorrect extends Base {
-	
+
 	@Test(dataProvider = "version-data-provider",enabled = true)
 	public void tokenBearer_withoutSessionLength(String version) throws IOException {
 		extentTest.log(LogStatus.PASS, "Test Description : " + "Testing apiUser without sessionlength");
@@ -134,6 +135,5 @@ public class TokenBearer_Incorrect extends Base {
 		.body("details", notNullValue());
 
 	}
-	
 	
 }
