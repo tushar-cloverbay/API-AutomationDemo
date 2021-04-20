@@ -28,7 +28,7 @@ public class Scenario_4_12 extends Base{
 	
 	@Test(dataProvider = "version-data-provider",enabled = true)
 	public void submitPrepare_specifiedSchema(String version) throws IOException {
-		extentTest.log(LogStatus.PASS, "Test Description : " + "Test for getting Prepared Enveloped ID with session token.");
+		extentTest.log(LogStatus.PASS, "Test Description : " + "Scenario_4_12 : Test for getting Prepared Enveloped ID with session token.");
 		apiVersion = version;
 		String token =getSessionToken(version);
 		String URI = "https://"+Constants.ENV+".assuresign.net/api/documentnow/v"+ version +"/submit/prepare";

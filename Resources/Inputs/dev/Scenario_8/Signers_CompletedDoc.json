@@ -1,0 +1,9 @@
+{
+  "request": {
+    "updateEnvelopeSigner": {
+      "name": "test",
+      "emailAddress": "FirstName@mailinator.com",
+      "resendLastEmail": true
+    }
+  }
+}

@@ -21,10 +21,10 @@ import net.assuresign.utils.TestUtils;
 public class Scenario_4_7 extends Base{
 	@Test(dataProvider = "version-data-provider",enabled = true)
 	public void submitPrepare_enUSSMS2FactorAuth(String version) throws IOException {
-		extentTest.log(LogStatus.PASS, "Test Description : " + "Test submit Prepare en-US-SMS signing with two factor authentication");
+		extentTest.log(LogStatus.PASS, "Test Description : " + "Scenario_4_7 : Test submit Prepare en-US-SMS signing with two factor authentication");
 		apiVersion = version;
 		String token =TestUtils.getToken(version);
-		String URI = "https://qa-test.assuresign.net/api/documentnow/v"+ version +"/submit/prepare";
+		String URI = "https://"+Constants.ENV+".assuresign.net/api/documentnow/v"+ version +"/submit/prepare";
 		extentTest.log(LogStatus.PASS, "API URI : " + URI);
 		String payload = JsonUtils.payloadGenerator("Inputs\\"+Constants.ENV+"\\Scenario_4\\preparedEID-SMS2FactorAuth.json");
 		RequestSpecification request = RestAssured.given().header("Authorization", "Bearer "+token).body(payload);
