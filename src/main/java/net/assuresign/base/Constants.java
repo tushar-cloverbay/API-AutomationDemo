@@ -2,9 +2,9 @@ package net.assuresign.base;
 
 public class Constants {
 
-	public static final String ENV = "qa-test";
+	public static final String ENV = "qa2";
 
-	public static  double START_VERSION = 3.0;
+	public static  double START_VERSION = 3.7;
 	public static  double END_VERSION = 3.7;
 
 	public static  String EMAIL_ACCOUNT_ID;;
@@ -18,8 +18,7 @@ public class Constants {
 	public static  String envelopeSignerID = "mvadgave@mailinator.com";
 	
 	public static void loadVariables() {
-		if(ENV.equals("qa"))
-		{
+		if(ENV.equals("qa")){
 			EMAIL_ACCOUNT_ID = "95d08adc-df59-4e25-b609-ace600d287c9";
 		}
 		else if(ENV.equals("qa-test")) {
@@ -27,6 +26,9 @@ public class Constants {
 		}
 		else if(ENV.equals("dev")) {
 			EMAIL_ACCOUNT_ID = "33b4bcec-ef76-47a2-950a-ace501555e41";
+		}
+		else if(ENV.equals("qa2")) {
+			EMAIL_ACCOUNT_ID = "5ac9c4ad-09c3-43cd-be71-ace600d1f18f";
 		}
 	}
 }

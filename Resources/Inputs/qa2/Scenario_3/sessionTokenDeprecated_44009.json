@@ -1,0 +1,9 @@
+{
+  "request": {
+   "authRequest": {
+            "username": "tushar.behera(qaapi-1)@cloverbaytechnologies.com",
+            "password": "Test123!",
+            "sessionLength": 1440
+        }
+  }
+}
