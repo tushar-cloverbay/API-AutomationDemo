@@ -18,7 +18,10 @@ public class ListenersTestNG extends Base implements ITestListener {
 	 public void onFinish(ITestContext context) {
 	 extent.flush();
 	 extent.close();
-//	 TestUtils.sendEmail();
+	 TestUtils.sendEmail("babesnap@gmail.com");
+	 TestUtils.sendEmail("dmohan@assuresign.com");
+	 TestUtils.sendEmail("mvadgave@assuresign.com");
+	 TestUtils.sendEmail("mvadgave@assuresign.com");
 	 }
 	 
 	 /*
