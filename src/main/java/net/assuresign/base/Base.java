@@ -29,10 +29,7 @@ public class Base {
 
 	public Base() {
 		Constants.loadVariables();
-<<<<<<< HEAD
-=======
-		
->>>>>>> master
+
 		if (log == null) {
 			log = Logger.getLogger("Assuresign");
 			log.info("log object created");
