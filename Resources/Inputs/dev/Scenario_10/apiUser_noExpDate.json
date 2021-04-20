@@ -1,0 +1,8 @@
+{
+  "request": {
+    "baseUsername": "UserNameExample",
+    "specificUsername": "tushar.behera(qaapi-1)@cloverbaytechnologies.com",
+    
+    "scope": "specificUser"
+  }
+}

@@ -20,10 +20,10 @@ public class Scenario_4_1 extends Base {
 	
 	@Test(dataProvider = "version-data-provider",enabled = true)
 	public void submitPrepare_SpecifiedSchema(String version) throws IOException {
-		extentTest.log(LogStatus.PASS, "Test Description : " + "Test for getting Prepared Enveloped ID");
+		extentTest.log(LogStatus.PASS, "Test Description : " + "Scenario_4_1 : Test for getting Prepared Enveloped ID");
 		apiVersion = version;
 		String token =TestUtils.getToken(version);
-		String URI = "https://qa-test.assuresign.net/api/documentnow/v"+ version +"/submit/prepare";
+		String URI = "https://"+Constants.ENV+".assuresign.net/api/documentnow/v"+ version +"/submit/prepare";
 		extentTest.log(LogStatus.PASS, "API URI : " + URI);
 		String payload = JsonUtils.payloadGenerator("Inputs\\"+Constants.ENV+"\\Scenario_4\\preparedEID.json");
 		RequestSpecification request = RestAssured.given().header("Authorization", "Bearer "+token).body(payload);
@@ -42,12 +42,12 @@ public class Scenario_4_1 extends Base {
 	
 	@Test(dataProvider = "version-data-provider",enabled = false)
 	public void submit_withNoTempletPermission(String version) throws IOException {
-		extentTest.log(LogStatus.PASS, "Test Description : " + "Test for Submit Prepare with no Templet permission : "
+		extentTest.log(LogStatus.PASS, "Test Description : " + "Scenario_4_1 : Test for Submit Prepare with no Templet permission : "
 				+ "Validating ErrorCode and Summary");
 		apiVersion = version;
 		String token =TestUtils.getToken(version);
 		String preparedEID = TestUtils.getPreparedEnvelopeID(version, "Scenario_4\\preparedEID-NoTempletPermission.json",token);
-		String URI = "https://qa-test.assuresign.net/api/documentnow/v"+ version +"/submit/" + preparedEID;
+		String URI = "https://"+Constants.ENV+".assuresign.net/api/documentnow/v"+ version +"/submit/" + preparedEID;
 		String payload = JsonUtils.payloadGenerator("Inputs\\"+Constants.ENV+"\\Scenario_4\\getEnvelopID.json");
 		RequestSpecification request = RestAssured.given().header("Authorization", "Bearer "+token).body(payload);
 		request.header("Content-Type", "application/json");
@@ -65,11 +65,11 @@ public class Scenario_4_1 extends Base {
 
 	@Test(dataProvider = "version-data-provider",enabled = true)
 	public void submitPrepare(String version) throws IOException {
-		extentTest.log(LogStatus.PASS, "Test Description : " + "Test for Submit Prepare with Templete permission");
+		extentTest.log(LogStatus.PASS, "Test Description : " + "Scenario_4_1 : Test for Submit Prepare with Templete permission");
 		apiVersion = version;
 		String token =TestUtils.getToken(version);
 		String preparedEID = TestUtils.getPreparedEnvelopeID(version, "Scenario_4\\preparedEID.json",token);
-		String URI = "https://qa-test.assuresign.net/api/documentnow/v"+ version +"/submit/" + preparedEID;
+		String URI = "https://"+Constants.ENV+".assuresign.net/api/documentnow/v"+ version +"/submit/" + preparedEID;
 		String payload = JsonUtils.payloadGenerator("Inputs\\"+Constants.ENV+"\\Scenario_4\\getEnvelopID.json");
 		RequestSpecification request = RestAssured.given().header("Authorization", "Bearer "+token).body(payload);
 		request.header("Content-Type", "application/json");
