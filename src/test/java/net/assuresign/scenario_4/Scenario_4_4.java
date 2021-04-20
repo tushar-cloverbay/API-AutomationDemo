@@ -21,10 +21,10 @@ import net.assuresign.utils.TestUtils;
 public class Scenario_4_4 extends Base{
 	@Test(dataProvider = "version-data-provider",enabled = true)	
 	public void submitPrepare_WithSignerPassword(String version) throws IOException {
-		extentTest.log(LogStatus.PASS, "Test Description : " + "Test for getting Prepared Enveloped ID with Signer Password");
+		extentTest.log(LogStatus.PASS, "Test Description : " + "Scenario_4_4 : Test for getting Prepared Enveloped ID with Signer Password");
 		apiVersion = version;
 		String token =TestUtils.getToken(version);
-		String URI = "https://qa-test.assuresign.net/api/documentnow/v"+ version +"/submit/prepare";
+		String URI = "https://"+Constants.ENV+".assuresign.net/api/documentnow/v"+ version +"/submit/prepare";
 		extentTest.log(LogStatus.PASS, "API URI : " + URI);
 		String payload = JsonUtils.payloadGenerator("Inputs\\"+Constants.ENV+"\\Scenario_4\\preparedEID-SignerPassword.json");
 		RequestSpecification request = RestAssured.given().header("Authorization", "Bearer "+token).body(payload);
@@ -43,11 +43,11 @@ public class Scenario_4_4 extends Base{
 	
 	@Test(dataProvider = "version-data-provider",enabled = true)		//
 	public void submit_WithSignerPassword(String version) throws IOException {
-		extentTest.log(LogStatus.PASS, "Test Description : " + "Test for Submit Prepare with WithSigner Password");
+		extentTest.log(LogStatus.PASS, "Test Description : " + "Scenario_4_4 : Test for Submit Prepare with WithSigner Password");
 		apiVersion = version;
 		String token =TestUtils.getToken(version);
 		String preparedEID = TestUtils.getPreparedEnvelopeID(version, "Scenario_4\\preparedEID-SignerPassword.json",token);
-		String URI = "https://qa-test.assuresign.net/api/documentnow/v"+ version +"/submit/" + preparedEID;
+		String URI = "https://"+Constants.ENV+".assuresign.net/api/documentnow/v"+ version +"/submit/" + preparedEID;
 		String payload = JsonUtils.payloadGenerator("Inputs\\"+Constants.ENV+"\\Scenario_4\\getEnvelopID.json");
 		RequestSpecification request = RestAssured.given().header("Authorization", "Bearer "+token).body(payload);
 		request.header("Content-Type", "application/json");

@@ -1,0 +1,62 @@
+{
+  "request": {
+    
+    "placeholders": [],
+    "templates": [
+      {
+        "templateID": "fc4c69ac-2580-4b2c-b47b-ad1000599f9a",
+        "values": [
+          {
+            "name": "Envelope Name ",
+            "value": "Envelope1234"
+          },
+          {
+            "name": "Envelope Order number",
+            "value": "1244563"
+          },
+        
+          {
+            "name": "Expiration Date",
+            "value": "06/17/2021"
+          },
+          {
+            "name": "Language",
+            "value": "en-US"
+          },
+          {
+            "name": "Signer 1 Name",
+            "value": "Manali"
+          },
+          {
+            "name": "Signer 1 Email",
+            "value": "mvadgave@mailinator.com"
+          },
+          {
+            "name": "Signer 1 Mobile Phone",
+            "value": "3317254626"
+          },
+           {
+            "name": "Signer 2 Name",
+            "value": "Manali2"
+          },
+          {
+            "name": "Signer 2 Email",
+            "value": "mvadgave@mailinator.com"
+          },
+          {"name": "Employment application",
+            "files": [
+              {
+                 "fileToUpload": {
+                            "data" : "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",
+                            "fileName": "password protect pdf_1toopen_2to edit.pdf"
+                        },
+                "extension": "pdf"
+              }
+            ],
+            "overlayStartPage": 0
+          }
+        ]
+      }
+    ]
+  }
+}

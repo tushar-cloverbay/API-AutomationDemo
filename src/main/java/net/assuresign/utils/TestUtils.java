@@ -127,11 +127,21 @@ public class TestUtils extends Base{
 		return responseMessage;
 	}
 	
-	
-	public static void sendEmail()
+	public static String getVersion() {
+		String version;
+		if(Constants.START_VERSION == Constants.END_VERSION)
+		{
+			version = Double.toString(Constants.START_VERSION);
+		}else
+		{
+			version = Double.toString(Constants.START_VERSION)+" to "+Double.toString(Constants.END_VERSION);
+		}
+		return version;
+	}
+	public static void sendEmail(String email)
 	{
 
-        String to = "babesnap@gmail.com";
+        String to = email;
         String from = "tushar.behera@cloverbaytechnologies.com";
         
         String host = "smtp.gmail.com";
@@ -153,14 +163,14 @@ public class TestUtils extends Base{
             MimeMessage message = new MimeMessage(session);
             message.setFrom(new InternetAddress(from));
             message.addRecipient(Message.RecipientType.TO, new InternetAddress(to));
-            message.setSubject("This is the Subject Line!");
+            message.setSubject("API Automation report for "+Constants.ENV+" "+getVersion());
             Multipart multipart = new MimeMultipart();
             MimeBodyPart attachmentPart = new MimeBodyPart();
             MimeBodyPart textPart = new MimeBodyPart();
             try {
-                File f =new File(".\\test-output\\ExtentReport.html");
+                File f =new File(".\\ExtentReport.html");
                 attachmentPart.attachFile(f);
-                textPart.setText("This is text");
+                textPart.setText("Please find the attachment for html report.");
                 multipart.addBodyPart(textPart);
                 multipart.addBodyPart(attachmentPart);
             } catch (IOException e) {
