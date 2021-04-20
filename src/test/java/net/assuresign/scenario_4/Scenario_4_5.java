@@ -21,10 +21,10 @@ import net.assuresign.utils.TestUtils;
 public class Scenario_4_5 extends Base{
 	@Test(dataProvider = "version-data-provider",enabled = true)
 	public void submitPrepare_WithMissingDocumentName(String version) throws IOException {
-		extentTest.log(LogStatus.PASS, "Test Description : " + "Test for getting Prepared Enveloped ID with Missing Document Name");
+		extentTest.log(LogStatus.PASS, "Test Description : " + "Scenario_4_5 : Test for getting Prepared Enveloped ID with Missing Document Name");
 		apiVersion = version;
 		String token =TestUtils.getToken(version);
-		String URI = "https://qa-test.assuresign.net/api/documentnow/v"+ version +"/submit/prepare";
+		String URI = "https://"+Constants.ENV+".assuresign.net/api/documentnow/v"+ version +"/submit/prepare";
 		extentTest.log(LogStatus.PASS, "API URI : " + URI);
 		String payload = JsonUtils.payloadGenerator("Inputs\\"+Constants.ENV+"\\Scenario_4\\preparedEID-MissingDocName.json");
 		RequestSpecification request = RestAssured.given().header("Authorization", "Bearer "+token).body(payload);
@@ -43,11 +43,11 @@ public class Scenario_4_5 extends Base{
 	
 	@Test(dataProvider = "version-data-provider",enabled = true)
 	public void submit_WithMissingDocumentName(String version) throws IOException {
-		extentTest.log(LogStatus.PASS, "Test Description : " + "Test for Submit Prepare with Missing Document Name");
+		extentTest.log(LogStatus.PASS, "Test Description : " + "Scenario_4_5 : Test for Submit Prepare with Missing Document Name");
 		apiVersion = version;
 		String token =TestUtils.getToken(version);
 		String preparedEID = TestUtils.getPreparedEnvelopeID(version, "Scenario_4\\preparedEID-MissingDocName.json",token);
-		String URI = "https://qa-test.assuresign.net/api/documentnow/v"+ version +"/submit/" + preparedEID;
+		String URI = "https://"+Constants.ENV+".assuresign.net/api/documentnow/v"+ version +"/submit/" + preparedEID;
 		String payload = JsonUtils.payloadGenerator("Inputs\\"+Constants.ENV+"\\Scenario_4\\getEnvelopID.json");
 		RequestSpecification request = RestAssured.given().header("Authorization", "Bearer "+token).body(payload);
 		request.header("Content-Type", "application/json");

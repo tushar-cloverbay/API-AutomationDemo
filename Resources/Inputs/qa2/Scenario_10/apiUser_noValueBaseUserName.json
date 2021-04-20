@@ -1,0 +1,8 @@
+{
+  "request": {
+    "baseUsername": "",
+    "specificUsername": "mvadgave(Admin)@assuresign.com",
+    "expirationDate": "2021-06-23T20:23:23.9524455+00:00",
+    "scope": "specificUser"
+  }
+}
