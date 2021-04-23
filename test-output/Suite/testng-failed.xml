@@ -6,46 +6,13 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="net.assuresign.scenario_5.Scenario_5">
+      <class name="net.assuresign.scenario_4.Scenario_4_11">
         <methods>
           <include name="reportUp"/>
-          <include name="getTemplateByEmptyID" invocation-numbers="0"/>
+          <include name="submit_deprecated" invocation-numbers="0 1 2 3 4"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- net.assuresign.scenario_5.Scenario_5 -->
-      <class name="net.assuresign.scenario_6.Scenario_6">
-        <methods>
-          <include name="retriveNotification_InvalidCulture" invocation-numbers="0"/>
-          <include name="retriveNotification_EmptyDesignsetID" invocation-numbers="0"/>
-          <include name="reportUp"/>
-          <include name="tearDown"/>
-          <include name="getAllEmailDesign_EmptyEmail" invocation-numbers="0"/>
-        </methods>
-      </class> <!-- net.assuresign.scenario_6.Scenario_6 -->
-      <class name="net.assuresign.scenario_8.Scenario_8_1">
-        <methods>
-          <include name="getEnvelope_ForSignedEnvelopes" invocation-numbers="0"/>
-          <include name="reportUp"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- net.assuresign.scenario_8.Scenario_8_1 -->
-      <class name="net.assuresign.scenario_8.Scenario_8">
-        <methods>
-          <include name="reportUp"/>
-          <include name="getEnvelope_InvalidDocType" invocation-numbers="0"/>
-          <include name="getEnvelope_WrongDocType" invocation-numbers="0"/>
-          <include name="tearDown"/>
-          <include name="getEnvelope_ForEmptyEnvelopes" invocation-numbers="0"/>
-          <include name="getEnvelopes_EmptyEnvelopID" invocation-numbers="0"/>
-        </methods>
-      </class> <!-- net.assuresign.scenario_8.Scenario_8 -->
-      <class name="net.assuresign.scenario_7.Scenario_7">
-        <methods>
-          <include name="reportUp"/>
-          <include name="listsAccounts_EmptyUsername" invocation-numbers="0"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- net.assuresign.scenario_7.Scenario_7 -->
+      </class> <!-- net.assuresign.scenario_4.Scenario_4_11 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -913,7 +913,7 @@
                 "RedirectUrl": null,
                 "TermsAndConditions": null,
                 "IncrementalSigning": false,
-                "TemplatesApplied": ["06f34768-c931-4b94-acf5-ad0500bd9afd"],
+                "TemplatesApplied": [],
                 "SenderInputs": [],
                 "EmailDesignSetID": "48096697-21ac-e111-9ee4-00221959013a",
                 "NotificationSettings": {
@@ -923,7 +923,7 @@
             },
             "notificationRecipients": [
                 {
-                    "email": "manali@mailinator.com",
+                    "email": "mvadgave@mailinator.com",
                     "label": "additional Signer",
                     "name": "Signer additional",
                     "signatureStyle": "drawn"
@@ -931,7 +931,7 @@
             ],
             "signers": [
                 {
-                    "email": "manali@mailinator.com",
+                    "email": "mvadgave1@mailinator.com",
                     "label": "Signer 1",
                     "name": "Signer one",
                     "signatureStyle": "Typed",
@@ -939,7 +939,7 @@
                     "passwordPrompt": "password is T-e-s-t"
                 },
                 {
-                    "email": "manali@mailinator.com",
+                    "email": "mvadgave2@mailinator.com",
                     "mobilePhone": "3317254626",
                     "smsAuthPhone": "3317254626",                    
                     "label": "Signer 2",
@@ -1039,10 +1039,7 @@
                 }
             ],
             "DocumentTransmissions": [
-                {
-                    "TransmissionType": 1,
-                    "DesignName": "__SFTP_Regression_DocumentTransmissionOnPrem"
-                }
+               
             ]
         }
     }
