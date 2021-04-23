@@ -7,6 +7,7 @@
   <test thread-count="5" name="Test(failed)">
     <classes>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <class name="net.assuresign.scenario_13.Scenario_13">
         <methods>
           <include name="reportUp"/>
@@ -17,11 +18,15 @@
       </class> <!-- net.assuresign.scenario_13.Scenario_13 -->
 =======
       <class name="net.assuresign.scenario_5.Scenario_5">
+=======
+      <class name="net.assuresign.scenario_4.Scenario_4_11">
+>>>>>>> master
         <methods>
           <include name="reportUp"/>
-          <include name="getTemplateByEmptyID" invocation-numbers="0"/>
+          <include name="submit_deprecated" invocation-numbers="0 1 2 3 4"/>
           <include name="tearDown"/>
         </methods>
+<<<<<<< HEAD
       </class> <!-- net.assuresign.scenario_5.Scenario_5 -->
       <class name="net.assuresign.scenario_6.Scenario_6">
         <methods>
@@ -56,6 +61,9 @@
           <include name="tearDown"/>
         </methods>
       </class> <!-- net.assuresign.scenario_7.Scenario_7 -->
+>>>>>>> master
+=======
+      </class> <!-- net.assuresign.scenario_4.Scenario_4_11 -->
 >>>>>>> master
     </classes>
   </test> <!-- Test(failed) -->
