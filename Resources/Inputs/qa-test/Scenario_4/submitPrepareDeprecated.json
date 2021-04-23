@@ -913,7 +913,7 @@
                 "RedirectUrl": null,
                 "TermsAndConditions": null,
                 "IncrementalSigning": false,
-                "TemplatesApplied": ["42a23d0d-cb4e-40a2-ba7b-ace70142d170"],
+                "TemplatesApplied": [],
                 "SenderInputs": [],
                 "EmailDesignSetID": "48096697-21ac-e111-9ee4-00221959013a",
                 "NotificationSettings": {
@@ -1039,10 +1039,7 @@
                 }
             ],
             "DocumentTransmissions": [
-                {
-                    "TransmissionType": 1,
-                    "DesignName": "__SFTP_Regression_DocumentTransmissionOnPrem"
-                }
+               
             ]
         }
     }
