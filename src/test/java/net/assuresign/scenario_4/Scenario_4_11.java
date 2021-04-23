@@ -63,13 +63,11 @@ public class Scenario_4_11 extends Base{
 		String preparedEID = JsonUtils.getKeyValue(response1, "result.preparedEnvelopeID");
 		System.out.println(preparedEID);
 		
-		String token =TestUtils.getToken(version);
-		System.out.println(token);
 		String URI = "https://"+Constants.ENV+".assuresign.net/api/documentnow/v"+ version +"/submit/" + preparedEID;
 		System.out.println(URI);
 		extentTest.log(LogStatus.PASS, "API URI : " + URI);
-		RequestSpecification request = RestAssured.given().header("Authorization", "Bearer "+token);
-		request.header("Content-Type", "application/json");
+		RequestSpecification request = RestAssured.given();
+		request.header("Authorization", "X-AS-UserSessionToken "+sessionToken).header("Content-Type", "application/json");
 		Response response = request.post(URI);
 		responseBody = response.asPrettyString();
 		extentTest.log(LogStatus.PASS, "Response Time : " + response.getTime() +" milliseconds");
