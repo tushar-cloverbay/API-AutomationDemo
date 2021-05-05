@@ -177,8 +177,8 @@ public class Scenario_4_15 extends Base{
 		String token =TestUtils.getToken(version);
 		String preparedEID = TestUtils.getPreparedEnvelopeID(version, "Scenario_4\\preparedEID-FileEmptyString.json",token);
 		String URI = "https://"+Constants.ENV+".assuresign.net/api/documentnow/v"+ version +"/submit/" + preparedEID;
-		String payload = JsonUtils.payloadGenerator("Inputs\\"+Constants.ENV+"\\Scenario_4\\getEnvelopID.json");
-		RequestSpecification request = RestAssured.given().header("Authorization", "Bearer "+token).body(payload);
+//		String payload = JsonUtils.payloadGenerator("Inputs\\"+Constants.ENV+"\\Scenario_4\\getEnvelopID.json");
+		RequestSpecification request = RestAssured.given().header("Authorization", "Bearer "+token);
 		request.header("Content-Type", "application/json");
 		Response response = request.post(URI);
 		responseBody = response.asPrettyString();

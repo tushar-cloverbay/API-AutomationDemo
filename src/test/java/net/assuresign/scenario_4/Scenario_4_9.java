@@ -2,6 +2,7 @@ package net.assuresign.scenario_4;
 
 import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.Matchers.hasKey;
+import static org.hamcrest.Matchers.is;
 import static org.hamcrest.Matchers.notNullValue;
 
 import java.io.IOException;
@@ -20,13 +21,13 @@ import net.assuresign.utils.TestUtils;
 
 public class Scenario_4_9 extends Base{
 	@Test(dataProvider = "version-data-provider",enabled = true)
-	public void submitPrepare_DynamicJotBlockParsing(String version) throws IOException {
+	public void submitPrepare_DynamicJotBlockParsing_SpecifiedSchema(String version) throws IOException {
 		extentTest.log(LogStatus.PASS, "Test Description : " + "Scenario_4_9 : Test for getting Prepared Enveloped ID with Dynamic Jot Block Parsing");
 		apiVersion = version;
 		String token =TestUtils.getToken(version);
 		String URI = "https://"+Constants.ENV+".assuresign.net/api/documentnow/v"+ version +"/submit/prepare";
 		extentTest.log(LogStatus.PASS, "API URI : " + URI);
-		String payload = JsonUtils.payloadGenerator("Inputs\\"+Constants.ENV+"\\Scenario_4\\preparedEID-DynamicParsing.json");
+		String payload = JsonUtils.payloadGenerator("Inputs\\"+Constants.ENV+"\\Scenario_4\\preparedEID-DynamicJotParsing.json");
 		RequestSpecification request = RestAssured.given().header("Authorization", "Bearer "+token).body(payload);
 		request.header("Content-Type", "application/json");
 		Response response = request.post(URI);
@@ -42,11 +43,11 @@ public class Scenario_4_9 extends Base{
 	}
 	
 	@Test(dataProvider = "version-data-provider",enabled = true)
-	public void submit_DynamicJotBlockParsing(String version) throws IOException {
+	public void submit_DynamicJotBlockParsing_SpecifiedSchema(String version) throws IOException {
 		extentTest.log(LogStatus.PASS, "Test Description : " + "Scenario_4_9 : Test for Submit Prepare with Dynamic Jot Block Parsing");
 		apiVersion = version;
 		String token =TestUtils.getToken(version);
-		String preparedEID = TestUtils.getPreparedEnvelopeID(version, "Scenario_4\\preparedEID-DynamicParsing.json",token);
+		String preparedEID = TestUtils.getPreparedEnvelopeID(version, "Scenario_4\\preparedEID-DynamicJotParsing.json",token);
 		String URI = "https://"+Constants.ENV+".assuresign.net/api/documentnow/v"+ version +"/submit/" + preparedEID;
 		String payload = JsonUtils.payloadGenerator("Inputs\\"+Constants.ENV+"\\Scenario_4\\getEnvelopID.json");
 		RequestSpecification request = RestAssured.given().header("Authorization", "Bearer "+token).body(payload);
@@ -59,5 +60,164 @@ public class Scenario_4_9 extends Base{
 		.statusCode(equalTo(200))
 		.body("result.envelopeID", notNullValue())
 		.body("result.authToken", notNullValue());
+	}
+	
+	@Test(dataProvider = "version-data-provider",enabled = true)
+	public void submitPrepare_DynamicJotBlockParsing_parseDocumentTrueJotblockOnMultipleDoc(String version) throws IOException {
+		extentTest.log(LogStatus.PASS, "Test Description : " + "Scenario_4_9 : Test for getting Prepared Enveloped ID with Dynamic Jot Block Parsing");
+		apiVersion = version;
+		String token =TestUtils.getToken(version);
+		String URI = "https://"+Constants.ENV+".assuresign.net/api/documentnow/v"+ version +"/submit/prepare";
+		extentTest.log(LogStatus.PASS, "API URI : " + URI);
+		String payload = JsonUtils.payloadGenerator("Inputs\\"+Constants.ENV+"\\Scenario_4\\preparedEID-DynamicJotParsingJotMultipleDoc.json");
+		RequestSpecification request = RestAssured.given().header("Authorization", "Bearer "+token).body(payload);
+		request.header("Content-Type", "application/json");
+		Response response = request.post(URI);
+		responseBody = response.asPrettyString();
+		extentTest.log(LogStatus.PASS, "Response Time : " + response.getTime() +" milliseconds");
+		System.out.println(response.getBody().asString());
+		response.then().assertThat()
+		.statusCode(equalTo(200))
+		.body("$", hasKey("messages"))
+		.body("result", hasKey("preparedEnvelopeID"))
+		.body("result", hasKey("setupUrl"))
+		.body("result.preparedEnvelopeID", notNullValue());
+	}
+	
+	@Test(dataProvider = "version-data-provider",enabled = true)
+	public void submitPrepare_DynamicJotBlockParsing_getTemplteSchema_parseDocFalse(String version) throws IOException {
+		extentTest.log(LogStatus.PASS, "Test Description : " + "Scenario_4_9 : Test for getting Prepared Enveloped ID with Dynamic Jot Block Parsing");
+		apiVersion = version;
+		String token =TestUtils.getToken(version);
+		String URI = "https://"+Constants.ENV+".assuresign.net/api/documentnow/v"+ version +"/submit/prepare";
+		extentTest.log(LogStatus.PASS, "API URI : " + URI);
+		String payload = JsonUtils.payloadGenerator("Inputs\\"+Constants.ENV+"\\Scenario_4\\preparedEID-DynamicJotParsingTemplateSchemaParseDocFalse.json");
+		RequestSpecification request = RestAssured.given().header("Authorization", "Bearer "+token).body(payload);
+		request.header("Content-Type", "application/json");
+		Response response = request.post(URI);
+		responseBody = response.asPrettyString();
+		extentTest.log(LogStatus.PASS, "Response Time : " + response.getTime() +" milliseconds");
+		System.out.println(response.getBody().asString());
+		response.then().assertThat()
+		.statusCode(equalTo(400))
+		.body("errorCode", is("BAD_REQUEST"));
+	}
+	
+	@Test(dataProvider = "version-data-provider",enabled = true)
+	public void submitPrepare_DynamicJotBlockParsing_parseDocTrue(String version) throws IOException {
+		extentTest.log(LogStatus.PASS, "Test Description : " + "Scenario_4_9 : Test for getting Prepared Enveloped ID with Dynamic Jot Block Parsing");
+		apiVersion = version;
+		String token =TestUtils.getToken(version);
+		String URI = "https://"+Constants.ENV+".assuresign.net/api/documentnow/v"+ version +"/submit/prepare";
+		extentTest.log(LogStatus.PASS, "API URI : " + URI);
+		String payload = JsonUtils.payloadGenerator("Inputs\\"+Constants.ENV+"\\Scenario_4\\preparedEID-DynamicJotParsingParseDocTrue.json");
+		RequestSpecification request = RestAssured.given().header("Authorization", "Bearer "+token).body(payload);
+		request.header("Content-Type", "application/json");
+		Response response = request.post(URI);
+		responseBody = response.asPrettyString();
+		extentTest.log(LogStatus.PASS, "Response Time : " + response.getTime() +" milliseconds");
+		System.out.println(response.getBody().asString());
+		response.then().assertThat()
+		.statusCode(equalTo(200))
+		.body("$", hasKey("messages"))
+		.body("result", hasKey("preparedEnvelopeID"))
+		.body("result", hasKey("setupUrl"))
+		.body("result.preparedEnvelopeID", notNullValue());
+	}
+	@Test(dataProvider = "version-data-provider",enabled = true)
+	public void submitPrepare_DynamicJotBlockParsing_SpecifiedSchema_parseDocFalse(String version) throws IOException {
+		extentTest.log(LogStatus.PASS, "Test Description : " + "Scenario_4_9 : Test for getting Prepared Enveloped ID with Dynamic Jot Block Parsing");
+		apiVersion = version;
+		String token =TestUtils.getToken(version);
+		String URI = "https://"+Constants.ENV+".assuresign.net/api/documentnow/v"+ version +"/submit/prepare";
+		extentTest.log(LogStatus.PASS, "API URI : " + URI);
+		String payload = JsonUtils.payloadGenerator("Inputs\\"+Constants.ENV+"\\Scenario_4\\preparedEID-DynamicJotParsingSpecifiedSchemaParseDocFalse.json");
+		RequestSpecification request = RestAssured.given().header("Authorization", "Bearer "+token).body(payload);
+		request.header("Content-Type", "application/json");
+		Response response = request.post(URI);
+		responseBody = response.asPrettyString();
+		extentTest.log(LogStatus.PASS, "Response Time : " + response.getTime() +" milliseconds");
+		System.out.println(response.getBody().asString());
+		response.then().assertThat()
+		.statusCode(equalTo(400))
+		.body("errorCode", is("BAD_REQUEST"));
+	}
+	@Test(dataProvider = "version-data-provider",enabled = true)
+	public void submitPrepare_DynamicJotBlockParsing_SpecifiedSchema_negativePage(String version) throws IOException {
+		extentTest.log(LogStatus.PASS, "Test Description : " + "Scenario_4_9 : Test for getting Prepared Enveloped ID with Dynamic Jot Block Parsing");
+		apiVersion = version;
+		String token =TestUtils.getToken(version);
+		String URI = "https://"+Constants.ENV+".assuresign.net/api/documentnow/v"+ version +"/submit/prepare";
+		extentTest.log(LogStatus.PASS, "API URI : " + URI);
+		String payload = JsonUtils.payloadGenerator("Inputs\\"+Constants.ENV+"\\Scenario_4\\preparedEID-DynamicJotParsingSpecifiedSchemaNegativePage.json");
+		RequestSpecification request = RestAssured.given().header("Authorization", "Bearer "+token).body(payload);
+		request.header("Content-Type", "application/json");
+		Response response = request.post(URI);
+		responseBody = response.asPrettyString();
+		extentTest.log(LogStatus.PASS, "Response Time : " + response.getTime() +" milliseconds");
+		System.out.println(response.getBody().asString());
+		response.then().assertThat()
+		.statusCode(equalTo(400))
+		.body("errorCode", is("BAD_REQUEST"));
+	}
+	
+	@Test(dataProvider = "version-data-provider",enabled = true)
+	public void submitPrepare_getTemplateSchema_DynamicJotBlockParsing_(String version) throws IOException {
+		extentTest.log(LogStatus.PASS, "Test Description : " + "Scenario_4_9 : Test for getting Prepared Enveloped ID with Dynamic Jot Block Parsing");
+		apiVersion = version;
+		String token =TestUtils.getToken(version);
+		String URI = "https://"+Constants.ENV+".assuresign.net/api/documentnow/v"+ version +"/submit/prepare";
+		extentTest.log(LogStatus.PASS, "API URI : " + URI);
+		String payload = JsonUtils.payloadGenerator("Inputs\\"+Constants.ENV+"\\Scenario_4\\preparedEID-getTemplateSchemaDynamicJotParsing.json");
+		RequestSpecification request = RestAssured.given().header("Authorization", "Bearer "+token).body(payload);
+		request.header("Content-Type", "application/json");
+		Response response = request.post(URI);
+		responseBody = response.asPrettyString();
+		extentTest.log(LogStatus.PASS, "Response Time : " + response.getTime() +" milliseconds");
+		System.out.println(response.getBody().asString());
+		response.then().assertThat()
+		.statusCode(equalTo(200))
+		.body("$", hasKey("messages"))
+		.body("result", hasKey("preparedEnvelopeID"))
+		.body("result", hasKey("setupUrl"))
+		.body("result.preparedEnvelopeID", notNullValue());
+	}
+	
+	@Test(dataProvider = "version-data-provider",enabled = true)
+	public void submitPrepare_DynamicJotBlockParsing_SpecifiedSchema_noValueForPages(String version) throws IOException {
+		extentTest.log(LogStatus.PASS, "Test Description : " + "Scenario_4_9 : Test for getting Prepared Enveloped ID with Dynamic Jot Block Parsing");
+		apiVersion = version;
+		String token =TestUtils.getToken(version);
+		String URI = "https://"+Constants.ENV+".assuresign.net/api/documentnow/v"+ version +"/submit/prepare";
+		extentTest.log(LogStatus.PASS, "API URI : " + URI);
+		String payload = JsonUtils.payloadGenerator("Inputs\\"+Constants.ENV+"\\Scenario_4\\preparedEID-DynamicJotParsingSpecifiedSchemaNoPage.json");
+		RequestSpecification request = RestAssured.given().header("Authorization", "Bearer "+token).body(payload);
+		request.header("Content-Type", "application/json");
+		Response response = request.post(URI);
+		responseBody = response.asPrettyString();
+		extentTest.log(LogStatus.PASS, "Response Time : " + response.getTime() +" milliseconds");
+		System.out.println(response.getBody().asString());
+		response.then().assertThat()
+		.statusCode(equalTo(400))
+		.body("errorCode", is("BAD_REQUEST"));
+	}
+	
+	@Test(dataProvider = "version-data-provider",enabled = true)
+	public void submitPrepare_DynamicJotBlockParsing_SpecifiedSchema_withoutParseDoc(String version) throws IOException {
+		extentTest.log(LogStatus.PASS, "Test Description : " + "Scenario_4_9 : Test for getting Prepared Enveloped ID with Dynamic Jot Block Parsing");
+		apiVersion = version;
+		String token =TestUtils.getToken(version);
+		String URI = "https://"+Constants.ENV+".assuresign.net/api/documentnow/v"+ version +"/submit/prepare";
+		extentTest.log(LogStatus.PASS, "API URI : " + URI);
+		String payload = JsonUtils.payloadGenerator("Inputs\\"+Constants.ENV+"\\Scenario_4\\preparedEID-DynamicJotParsingSpecifiedSchemaWithoutParseDoc.json");
+		RequestSpecification request = RestAssured.given().header("Authorization", "Bearer "+token).body(payload);
+		request.header("Content-Type", "application/json");
+		Response response = request.post(URI);
+		responseBody = response.asPrettyString();
+		extentTest.log(LogStatus.PASS, "Response Time : " + response.getTime() +" milliseconds");
+		System.out.println(response.getBody().asString());
+		response.then().assertThat()
+		.statusCode(equalTo(400))
+		.body("errorCode", is("BAD_REQUEST"));
 	}
 }

@@ -4,7 +4,7 @@ public class Constants {
 
 	public static final String ENV = "qa-test";
 
-	public static  double START_VERSION = 3.3;
+	public static  double START_VERSION = 3.7;
 	public static  double END_VERSION = 3.7;
 
 	public static  String EMAIL_ACCOUNT_ID;;
