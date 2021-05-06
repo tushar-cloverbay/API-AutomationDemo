@@ -185,7 +185,7 @@ public class Scenario_4_9 extends Base{
 	
 	@Test(dataProvider = "version-data-provider",enabled = true)
 	public void submitPrepare_DynamicJotBlockParsing_SpecifiedSchema_noValueForPages(String version) throws IOException {
-		extentTest.log(LogStatus.PASS, "Test Description : " + "Scenario_4_9 : Test for getting Prepared Enveloped ID with Dynamic Jot Block Parsing");
+		extentTest.log(LogStatus.PASS, "Test Description : " + "Scenario_4_9 :[Reported Bug ID:47448] Test for getting Prepared Enveloped ID with Dynamic Jot Block Parsing");
 		apiVersion = version;
 		String token =TestUtils.getToken(version);
 		String URI = "https://"+Constants.ENV+".assuresign.net/api/documentnow/v"+ version +"/submit/prepare";

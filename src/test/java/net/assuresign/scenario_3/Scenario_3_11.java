@@ -48,7 +48,7 @@ public class Scenario_3_11 extends Base{
 	
 	@Test(dataProvider = "version-data-provider",enabled = true)
 	public void submit_withPwdToEditFile(String version) throws IOException {
-		extentTest.log(LogStatus.PASS, "Test Description : " + "Scenario_3_11 : Test for submit with Password to edit file.");
+		extentTest.log(LogStatus.PASS, "Test Description : " + "Scenario_3_11 :[Repoted Bug id :46508] Test for submit with Password to edit file.");
 		apiVersion = version;
 		String token =TestUtils.getToken(version);
 		String URI = "https://"+Constants.ENV+".assuresign.net/api/documentnow/v"+ version +"/submit";
