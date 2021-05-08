@@ -25,7 +25,14 @@ public class Scenario_3_11 extends Base{
 		String token =TestUtils.getToken(version);
 		String URI = "https://"+Constants.ENV+".assuresign.net/api/documentnow/v"+ version +"/submit";
 		extentTest.log(LogStatus.PASS, "API URI : " + URI);
-		String payload = JsonUtils.payloadGenerator("Inputs\\"+Constants.ENV+"\\Scenario_3\\submit_withPwdToOpenFile.json");
+		String payload;
+		if(version.equals("3.0")||version.equals("3.1")||version.equals("3.2"))
+		{
+			payload = JsonUtils.payloadGenerator("Inputs\\"+Constants.ENV+"\\Scenario_3\\submit_withPwdToOpenFile-"+version+".json");
+		}else
+		{
+			payload = JsonUtils.payloadGenerator("Inputs\\"+Constants.ENV+"\\Scenario_3\\submit_withPwdToOpenFile.json");
+		}
 		RequestSpecification request = RestAssured.given().header("Authorization", "Bearer "+token).body(payload);
 		request.header("Content-Type", "application/json");
 		Response response = request.post(URI);
@@ -41,12 +48,19 @@ public class Scenario_3_11 extends Base{
 	
 	@Test(dataProvider = "version-data-provider",enabled = true)
 	public void submit_withPwdToEditFile(String version) throws IOException {
-		extentTest.log(LogStatus.PASS, "Test Description : " + "Scenario_3_11 : Test for submit with Password to edit file.");
+		extentTest.log(LogStatus.PASS, "Test Description : " + "Scenario_3_11 :[Repoted Bug id :46508] Test for submit with Password to edit file.");
 		apiVersion = version;
 		String token =TestUtils.getToken(version);
 		String URI = "https://"+Constants.ENV+".assuresign.net/api/documentnow/v"+ version +"/submit";
 		extentTest.log(LogStatus.PASS, "API URI : " + URI);
-		String payload = JsonUtils.payloadGenerator("Inputs\\"+Constants.ENV+"\\Scenario_3\\submit_withPwdToEditFile.json");
+		String payload;
+		if(version.equals("3.0")||version.equals("3.1")||version.equals("3.2"))
+		{
+			payload = JsonUtils.payloadGenerator("Inputs\\"+Constants.ENV+"\\Scenario_3\\submit_withPwdToEditFile-"+version+".json");
+		}else
+		{
+			payload = JsonUtils.payloadGenerator("Inputs\\"+Constants.ENV+"\\Scenario_3\\submit_withPwdToEditFile.json");
+		}
 		RequestSpecification request = RestAssured.given().header("Authorization", "Bearer "+token).body(payload);
 		request.header("Content-Type", "application/json");
 		Response response = request.post(URI);
