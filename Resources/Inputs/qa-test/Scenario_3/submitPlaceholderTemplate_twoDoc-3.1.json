@@ -1,0 +1,40 @@
+{
+  "request": {
+    "templates": [
+      {
+        "templateID": "8ce5062e-b7fb-4eac-bbf7-acfb015304b9",
+        "values": [
+             {
+            "name": "Signer 1 Name",
+            "value": "My Name"
+          },
+          {
+            "name": "Signer 1 Email",
+            "value": "dmohan@assuresign.com"
+          },
+          {
+            "name": "Document 1",
+            "files": [
+              {
+                "fileToUpload": {
+                  "fileName": "1 page Doc file.doc",
+                  "data": "{{base64Doc1data}}"
+                },
+                "extension": "DOC"
+              },
+              {
+                "fileToUpload": {
+                  "fileName": "2 PAGE word DOCx file- different content- with Dynamic JB.docx",
+                  "data": "{{base64Doc2data_having_dynamicJB}}",
+                  "parseDocument": true,
+                  "dynamicDocumentVersion": "V2"
+                },
+                "extension": "DOCX"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

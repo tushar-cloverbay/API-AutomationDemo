@@ -53,7 +53,14 @@ public class Scenario_3_1 extends Base{
 		String token =TestUtils.getToken(version);
 		String URI = "https://"+Constants.ENV+".assuresign.net/api/documentnow/v"+ version +"/submit";
 		extentTest.log(LogStatus.PASS, "API URI : " + URI);
-		String payload = JsonUtils.payloadGenerator("Inputs\\"+Constants.ENV+"\\Scenario_3\\submitHybridCall-invalidDocName.json");
+		String payload;
+		if(version.equals("3.0")||version.equals("3.1")||version.equals("3.2"))
+		{
+			payload = JsonUtils.payloadGenerator("Inputs\\"+Constants.ENV+"\\Scenario_3\\submitHybridCall-invalidDocName-"+version+".json");
+		}else
+		{
+			payload = JsonUtils.payloadGenerator("Inputs\\"+Constants.ENV+"\\Scenario_3\\submitHybridCall-invalidDocName.json");
+		}
 		RequestSpecification request = RestAssured.given().header("Authorization", "Bearer "+token).body(payload);
 		request.header("Content-Type", "application/json");
 		Response response = request.post(URI);
