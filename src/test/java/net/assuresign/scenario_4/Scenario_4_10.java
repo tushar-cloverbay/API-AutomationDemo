@@ -19,7 +19,7 @@ import net.assuresign.utils.JsonUtils;
 import net.assuresign.utils.TestUtils;
 
 public class Scenario_4_10 extends Base{
-	@Test(dataProvider = "version-data-provider",enabled = true)
+	@Test(dataProvider = "version-data-provider",groups = { "ExcludeForOld" },enabled = true)
 	public void submitPrepare_WrongConditionalLogic(String version) throws IOException {
 		extentTest.log(LogStatus.PASS, "Test Description : " + "Scenario_4_10 : Test for submit prepare with wrong conditional logic.");
 		apiVersion = version;

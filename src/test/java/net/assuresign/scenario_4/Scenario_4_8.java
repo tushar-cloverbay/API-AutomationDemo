@@ -49,7 +49,7 @@ public class Scenario_4_8 extends Base{
 		}
 	}
 	
-	@Test(dataProvider = "version-data-provider",enabled = true)
+	@Test(dataProvider = "version-data-provider",groups = { "ExcludeFor3.0" },enabled = true)
 	public void submit_WithLargeFile(String version) throws IOException {
 		extentTest.log(LogStatus.PASS, "Test Description : " + "Scenario_4_8 : Test for Submit Prepare with large file");
 		apiVersion = version;
