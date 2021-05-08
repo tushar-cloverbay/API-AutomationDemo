@@ -40,7 +40,7 @@ public class Scenario_8_1 extends Base{
 		.body("result.envelope", notNullValue());
 	}
 	
-	@Test(dataProvider = "version-data-provider",enabled = true)	//12
+	@Test(dataProvider = "version-data-provider",enabled = true)	
 	public void getEnvelope_ForValidEnvelopes(String version) throws IOException {
 		extentTest.log(LogStatus.PASS, "Test Description : " + "Scenario_8_1 : Test for get envelop for valid envelope id.");
 		apiVersion = version;
@@ -65,7 +65,7 @@ public class Scenario_8_1 extends Base{
 		extentTest.log(LogStatus.PASS, "Test Description : " + "Scenario_8_1 : Test for get envelops for signed envelope id.");
 		apiVersion = version;
 		String token =TestUtils.getToken(version);
-		String SubmittedEnvelopeID = TestUtils.getSubmittedEnvelopeID(version,token);
+		String SubmittedEnvelopeID = "d9e4841d-6d09-4cc5-987a-ad1f016e8c55";
 		String URI = "https://"+Constants.ENV+".assuresign.net/api/documentnow/v"+ version 
 				+"/envelope/"+SubmittedEnvelopeID+"/signingLinks";
 		extentTest.log(LogStatus.PASS, "API URI : " + URI);
