@@ -64,8 +64,14 @@ public class Scenario_3_5 extends Base {
 		String token = TestUtils.getToken(version);
 		String URI = "https://" + Constants.ENV + ".assuresign.net/api/documentnow/v" + version + "/submit/validate";
 		extentTest.log(LogStatus.PASS, "API URI : " + URI);
-		String payload = JsonUtils.payloadGenerator(
-				"Inputs\\" + Constants.ENV + "\\Scenario_3\\submit_jotBlockParsingWithPageCount.json");
+		String payload;
+		if(version.equals("3.0")||version.equals("3.1")||version.equals("3.2"))
+		{
+			payload = JsonUtils.payloadGenerator("Inputs\\"+Constants.ENV+"\\Scenario_3\\submit_jotBlockParsingWithPageCount-"+version+".json");
+		}else
+		{
+			payload = JsonUtils.payloadGenerator("Inputs\\"+Constants.ENV+"\\Scenario_3\\submit_jotBlockParsingWithPageCount.json");
+		}
 		RequestSpecification request = RestAssured.given().header("Authorization", "Bearer " + token).body(payload);
 		request.header("Content-Type", "application/json");
 		Response response = request.post(URI);
@@ -77,6 +83,7 @@ public class Scenario_3_5 extends Base {
 		.body("$", hasKey("messages"))
 		.body("result", notNullValue());
 	}
+	
 	@Test(dataProvider = "version-data-provider", enabled = true)
 	public void submit_jotBlockParsingParseDocTrue(String version) throws IOException {
 		extentTest.log(LogStatus.PASS,
@@ -85,8 +92,14 @@ public class Scenario_3_5 extends Base {
 		String token = TestUtils.getToken(version);
 		String URI = "https://" + Constants.ENV + ".assuresign.net/api/documentnow/v" + version + "/submit";
 		extentTest.log(LogStatus.PASS, "API URI : " + URI);
-		String payload = JsonUtils.payloadGenerator(
-				"Inputs\\" + Constants.ENV + "\\Scenario_3\\submit_jotBlockParsingParseDocTrue.json");
+		String payload;
+		if(version.equals("3.0")||version.equals("3.1")||version.equals("3.2"))
+		{
+			payload = JsonUtils.payloadGenerator("Inputs\\"+Constants.ENV+"\\Scenario_3\\submit_jotBlockParsingParseDocTrue-"+version+".json");
+		}else
+		{
+			payload = JsonUtils.payloadGenerator("Inputs\\"+Constants.ENV+"\\Scenario_3\\submit_jotBlockParsingParseDocTrue.json");
+		}
 		RequestSpecification request = RestAssured.given().header("Authorization", "Bearer " + token).body(payload);
 		request.header("Content-Type", "application/json");
 		Response response = request.post(URI);
@@ -94,10 +107,21 @@ public class Scenario_3_5 extends Base {
 		extentTest.log(LogStatus.PASS, "Response Time : " + response.getTime() + " milliseconds");
 		System.out.println(response.getBody().asString());
 		System.out.println(response.getStatusCode());
-		response.then().assertThat().statusCode(equalTo(200))
-		.body("$", hasKey("messages"))
-		.body("result.envelopeID", notNullValue())
-		.body("result.authToken", notNullValue());
+		if(version.equals("3.0")||version.equals("3.1"))
+		{
+			response.then().assertThat()
+			.statusCode(equalTo(200))
+			.body("$", hasKey("messages"))
+			.body("result.id", notNullValue())
+			.body("result.authToken", notNullValue());
+		}else
+		{
+			response.then().assertThat()
+			.statusCode(equalTo(200))
+			.body("$", hasKey("messages"))
+			.body("result.envelopeID", notNullValue())
+			.body("result.authToken", notNullValue());
+		}
 	}
 
 	@Test(dataProvider = "version-data-provider", enabled = true)
@@ -108,8 +132,14 @@ public class Scenario_3_5 extends Base {
 		String token = TestUtils.getToken(version);
 		String URI = "https://" + Constants.ENV + ".assuresign.net/api/documentnow/v" + version + "/submit/validate";
 		extentTest.log(LogStatus.PASS, "API URI : " + URI);
-		String payload = JsonUtils.payloadGenerator(
-				"Inputs\\" + Constants.ENV + "\\Scenario_3\\submit_jotBlockParsingParseDocTrue.json");
+		String payload;
+		if(version.equals("3.0")||version.equals("3.1")||version.equals("3.2"))
+		{
+			payload = JsonUtils.payloadGenerator("Inputs\\"+Constants.ENV+"\\Scenario_3\\submit_jotBlockParsingParseDocTrue-"+version+".json");
+		}else
+		{
+			payload = JsonUtils.payloadGenerator("Inputs\\"+Constants.ENV+"\\Scenario_3\\submit_jotBlockParsingParseDocTrue.json");
+		}
 		RequestSpecification request = RestAssured.given().header("Authorization", "Bearer " + token).body(payload);
 		request.header("Content-Type", "application/json");
 		Response response = request.post(URI);
@@ -121,6 +151,7 @@ public class Scenario_3_5 extends Base {
 		.body("$", hasKey("messages"))
 		.body("result", notNullValue());
 	}
+	
 	@Test(dataProvider = "version-data-provider", enabled = true)
 	public void submit_jotBlockParsingDocTrueDuplicateJotBlock(String version) throws IOException {
 		extentTest.log(LogStatus.PASS,
@@ -129,19 +160,35 @@ public class Scenario_3_5 extends Base {
 		String token = TestUtils.getToken(version);
 		String URI = "https://" + Constants.ENV + ".assuresign.net/api/documentnow/v" + version + "/submit";
 		extentTest.log(LogStatus.PASS, "API URI : " + URI);
-		String payload = JsonUtils.payloadGenerator(
-				"Inputs\\" + Constants.ENV + "\\Scenario_3\\submit_jotBlockParsingDocTrueDuplicateJotBlock.json");
+		String payload;
+		if(version.equals("3.0")||version.equals("3.1")||version.equals("3.2"))
+		{
+			payload = JsonUtils.payloadGenerator("Inputs\\"+Constants.ENV+"\\Scenario_3\\submit_jotBlockParsingDocTrueDuplicateJotBlock-"+version+".json");
+		}else
+		{
+			payload = JsonUtils.payloadGenerator("Inputs\\"+Constants.ENV+"\\Scenario_3\\submit_jotBlockParsingDocTrueDuplicateJotBlock.json");
+		}
 		RequestSpecification request = RestAssured.given().header("Authorization", "Bearer " + token).body(payload);
 		request.header("Content-Type", "application/json");
 		Response response = request.post(URI);
 		responseBody = response.asPrettyString();
 		extentTest.log(LogStatus.PASS, "Response Time : " + response.getTime() + " milliseconds");
 		System.out.println(response.getBody().asString());
-		System.out.println(response.getStatusCode());
-		response.then().assertThat().statusCode(equalTo(200))
-		.body("$", hasKey("messages"))
-		.body("result.envelopeID", notNullValue())
-		.body("result.authToken", notNullValue());
+		if(version.equals("3.0")||version.equals("3.1"))
+		{
+			response.then().assertThat()
+			.statusCode(equalTo(200))
+			.body("$", hasKey("messages"))
+			.body("result.id", notNullValue())
+			.body("result.authToken", notNullValue());
+		}else
+		{
+			response.then().assertThat()
+			.statusCode(equalTo(200))
+			.body("$", hasKey("messages"))
+			.body("result.envelopeID", notNullValue())
+			.body("result.authToken", notNullValue());
+		}
 	}
 
 	@Test(dataProvider = "version-data-provider", enabled = true)
@@ -152,8 +199,14 @@ public class Scenario_3_5 extends Base {
 		String token = TestUtils.getToken(version);
 		String URI = "https://" + Constants.ENV + ".assuresign.net/api/documentnow/v" + version + "/submit/validate";
 		extentTest.log(LogStatus.PASS, "API URI : " + URI);
-		String payload = JsonUtils.payloadGenerator(
-				"Inputs\\" + Constants.ENV + "\\Scenario_3\\submit_jotBlockParsingDocTrueDuplicateJotBlock.json");
+		String payload;
+		if(version.equals("3.0")||version.equals("3.1")||version.equals("3.2"))
+		{
+			payload = JsonUtils.payloadGenerator("Inputs\\"+Constants.ENV+"\\Scenario_3\\submit_jotBlockParsingDocTrueDuplicateJotBlock-"+version+".json");
+		}else
+		{
+			payload = JsonUtils.payloadGenerator("Inputs\\"+Constants.ENV+"\\Scenario_3\\submit_jotBlockParsingDocTrueDuplicateJotBlock.json");
+		}
 		RequestSpecification request = RestAssured.given().header("Authorization", "Bearer " + token).body(payload);
 		request.header("Content-Type", "application/json");
 		Response response = request.post(URI);
@@ -165,6 +218,7 @@ public class Scenario_3_5 extends Base {
 		.body("$", hasKey("messages"))
 		.body("result", notNullValue());
 	}
+	
 	@Test(dataProvider = "version-data-provider", enabled = true)
 	public void submit_jotBlockParsingNegativePageCount(String version) throws IOException {
 		extentTest.log(LogStatus.PASS,
@@ -173,8 +227,14 @@ public class Scenario_3_5 extends Base {
 		String token = TestUtils.getToken(version);
 		String URI = "https://" + Constants.ENV + ".assuresign.net/api/documentnow/v" + version + "/submit";
 		extentTest.log(LogStatus.PASS, "API URI : " + URI);
-		String payload = JsonUtils.payloadGenerator(
-				"Inputs\\" + Constants.ENV + "\\Scenario_3\\submitValidate_jotBlockParsingNegativePageCount.json");
+		String payload;
+		if(version.equals("3.0")||version.equals("3.1")||version.equals("3.2"))
+		{
+			payload = JsonUtils.payloadGenerator("Inputs\\"+Constants.ENV+"\\Scenario_3\\submitValidate_jotBlockParsingNegativePageCount-"+version+".json");
+		}else
+		{
+			payload = JsonUtils.payloadGenerator("Inputs\\"+Constants.ENV+"\\Scenario_3\\submitValidate_jotBlockParsingNegativePageCount.json");
+		}
 		RequestSpecification request = RestAssured.given().header("Authorization", "Bearer " + token).body(payload);
 		request.header("Content-Type", "application/json");
 		Response response = request.post(URI);
@@ -194,8 +254,14 @@ public class Scenario_3_5 extends Base {
 		String token = TestUtils.getToken(version);
 		String URI = "https://" + Constants.ENV + ".assuresign.net/api/documentnow/v" + version + "/submit/validate";
 		extentTest.log(LogStatus.PASS, "API URI : " + URI);
-		String payload = JsonUtils.payloadGenerator(
-				"Inputs\\" + Constants.ENV + "\\Scenario_3\\submitValidate_jotBlockParsingNegativePageCount.json");
+		String payload;
+		if(version.equals("3.0")||version.equals("3.1")||version.equals("3.2"))
+		{
+			payload = JsonUtils.payloadGenerator("Inputs\\"+Constants.ENV+"\\Scenario_3\\submitValidate_jotBlockParsingNegativePageCount-"+version+".json");
+		}else
+		{
+			payload = JsonUtils.payloadGenerator("Inputs\\"+Constants.ENV+"\\Scenario_3\\submitValidate_jotBlockParsingNegativePageCount.json");
+		}
 		RequestSpecification request = RestAssured.given().header("Authorization", "Bearer " + token).body(payload);
 		request.header("Content-Type", "application/json");
 		Response response = request.post(URI);
@@ -206,6 +272,7 @@ public class Scenario_3_5 extends Base {
 		response.then().assertThat().statusCode(equalTo(400))
 		.body("errorCode", is("BAD_REQUEST"));
 	}
+	
 	@Test(dataProvider = "version-data-provider", enabled = true)
 	public void submit_jotBlockParsingParseDocFalse(String version) throws IOException {
 		extentTest.log(LogStatus.PASS,
@@ -214,8 +281,14 @@ public class Scenario_3_5 extends Base {
 		String token = TestUtils.getToken(version);
 		String URI = "https://" + Constants.ENV + ".assuresign.net/api/documentnow/v" + version + "/submit";
 		extentTest.log(LogStatus.PASS, "API URI : " + URI);
-		String payload = JsonUtils.payloadGenerator(
-				"Inputs\\" + Constants.ENV + "\\Scenario_3\\submit_jotBlockParsingParseDocFalse.json");
+		String payload;
+		if(version.equals("3.0")||version.equals("3.1")||version.equals("3.2"))
+		{
+			payload = JsonUtils.payloadGenerator("Inputs\\"+Constants.ENV+"\\Scenario_3\\submit_jotBlockParsingParseDocFalse-"+version+".json");
+		}else
+		{
+			payload = JsonUtils.payloadGenerator("Inputs\\"+Constants.ENV+"\\Scenario_3\\submit_jotBlockParsingParseDocFalse.json");
+		}
 		RequestSpecification request = RestAssured.given().header("Authorization", "Bearer " + token).body(payload);
 		request.header("Content-Type", "application/json");
 		Response response = request.post(URI);
@@ -235,8 +308,14 @@ public class Scenario_3_5 extends Base {
 		String token = TestUtils.getToken(version);
 		String URI = "https://" + Constants.ENV + ".assuresign.net/api/documentnow/v" + version + "/submit/validate";
 		extentTest.log(LogStatus.PASS, "API URI : " + URI);
-		String payload = JsonUtils.payloadGenerator(
-				"Inputs\\" + Constants.ENV + "\\Scenario_3\\submit_jotBlockParsingParseDocFalse.json");
+		String payload;
+		if(version.equals("3.0")||version.equals("3.1")||version.equals("3.2"))
+		{
+			payload = JsonUtils.payloadGenerator("Inputs\\"+Constants.ENV+"\\Scenario_3\\submit_jotBlockParsingParseDocFalse-"+version+".json");
+		}else
+		{
+			payload = JsonUtils.payloadGenerator("Inputs\\"+Constants.ENV+"\\Scenario_3\\submit_jotBlockParsingParseDocFalse.json");
+		}
 		RequestSpecification request = RestAssured.given().header("Authorization", "Bearer " + token).body(payload);
 		request.header("Content-Type", "application/json");
 		Response response = request.post(URI);
