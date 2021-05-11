@@ -8,6 +8,7 @@
 	<groups>
       <run>
         <exclude name="ExcludeForOld" />
+        <exclude name="ExcludeFor3.0" />
       </run>
     </groups>
 		<classes>
