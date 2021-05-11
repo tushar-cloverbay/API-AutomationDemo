@@ -2,7 +2,6 @@ package net.assuresign.scenario_8;
 
 import static org.hamcrest.Matchers.anyOf;
 import static org.hamcrest.Matchers.equalTo;
-import static org.hamcrest.Matchers.hasKey;
 import static org.hamcrest.Matchers.is;
 import static org.hamcrest.Matchers.notNullValue;
 
@@ -79,7 +78,7 @@ public class Scenario_8_1 extends Base{
 		.statusCode(anyOf(equalTo(400),equalTo(404)));
 	}
 
-	@Test(dataProvider = "version-data-provider",enabled = true)	//13
+	@Test(dataProvider = "version-data-provider",enabled = true)	
 	public void getEnvelope_ValidDoctypeEnvelopID(String version) throws IOException {
 		extentTest.log(LogStatus.PASS, "Test Description : " + "Scenario_8_1 : Test for get envelops with valid envelope id and document type.");
 		apiVersion = version;
@@ -99,7 +98,7 @@ public class Scenario_8_1 extends Base{
 		.body("result.accessLink", notNullValue());
 	}
 	
-	@Test(dataProvider = "version-data-provider",enabled = true)	//13
+	@Test(dataProvider = "version-data-provider",enabled = true)	
 	public void getHistory_ValidEnvelopID(String version) throws IOException {
 		extentTest.log(LogStatus.PASS, "Test Description : " + "Scenario_8_1 : Test for get history with valid envelope id and document type.");
 		apiVersion = version;

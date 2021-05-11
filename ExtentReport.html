@@ -53,7 +53,7 @@
 					<i class='mdi-hardware-desktop-windows'></i>
 				</li>
 				<li>
-					<span class='suite-started-time'>2021-05-10 14:17:05</span>
+					<span class='suite-started-time'>2021-05-11 10:08:07</span>
 				</li>
 				<li>
 					<span>v2.41.1</span>
@@ -83,25 +83,25 @@
 					<div class='col l2 m4 s12'>
 						<div class='card suite-total-time-current'> 
 							<span class='panel-name'>Total Time Taken (Current Run)</span> 
-							<span class='suite-total-time-current-value panel-lead'>0h 1m 45s+558ms</span> 
+							<span class='suite-total-time-current-value panel-lead'>0h 4m 27s+789ms</span> 
 						</div> 
 					</div>
 					<div class='col l2 m4 s12'>
 						<div class='card suite-total-time-overall'> 
 							<span class='panel-name'>Total Time Taken (Overall)</span> 
-							<span class='suite-total-time-overall-value panel-lead'>0h 1m 45s+558ms</span> 
+							<span class='suite-total-time-overall-value panel-lead'>0h 4m 27s+789ms</span> 
 						</div> 
 					</div>
 					<div class='col l2 m4 s6 suite-start-time'>
 						<div class='card accent green-accent'> 
 							<span class='panel-name'>Start</span> 
-							<span class='panel-lead suite-started-time'>2021-05-10 14:15:20</span> 
+							<span class='panel-lead suite-started-time'>2021-05-11 10:03:39</span> 
 						</div> 
 					</div>
 					<div class='col l2 m4 s6 suite-end-time'>
 						<div class='card accent pink-accent'> 
 							<span class='panel-name'>End</span> 
-							<span class='panel-lead suite-ended-time'>2021-05-10 14:17:05</span> 
+							<span class='panel-lead suite-ended-time'>2021-05-11 10:08:07</span> 
 						</div> 
 					</div>
 				</div>
@@ -241,17 +241,17 @@
 						<div class='card-panel no-padding-h no-padding-v no-margin-v'>
 							<div class='wrapper'>
 								<ul id='test-collection' class='test-collection'>
-										<li class='collection-item test displayed active pass ' extentid='cd953587-8335-46b1-ab5e-549b8c5bee30'>
+										<li class='collection-item test displayed active fail ' extentid='6988ff57-a1de-46bf-b85d-98cc69b5b48e'>
 											<div class='test-head'>
-												<span class='test-name'>submit_missingDocName </span>
-												<span class='test-status label right outline capitalize pass'>pass</span>
+												<span class='test-name'>submitValidate_jotBlockParsingDocTrueDuplicateJotBlock </span>
+												<span class='test-status label right outline capitalize fail'>fail</span>
 												<span class='category-assigned hide '></span>
 											</div>
 											<div class='test-body'>
 												<div class='test-info'>
-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2021-05-10 14:15:20</span>
-													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2021-05-10 14:16:13</span>
-													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 52s+492ms</span>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2021-05-11 10:03:40</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2021-05-11 10:04:39</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 59s+615ms</span>
 												</div>
 												<div class='test-desc'></div>
 												<div class='test-attributes'>
@@ -268,36 +268,28 @@
 														<tbody>
 																<tr>
 																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>14:15:20</td>
-																	<td class='step-details'>Test Description : Scenario_3_10 : Test for submit with missing Document Name.</td>
+																	<td class='timestamp'>10:03:40</td>
+																	<td class='step-details'>Test Description : Scenario_3_5 :[Bug ID : 46662] Test for submit/validate dynamic jot block with parse document true and duplicate jot block.</td>
 																</tr>
 																<tr>
 																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>14:15:27</td>
-																	<td class='step-details'>API URI : https://qa-test.assuresign.net/api/documentnow/v3.1/submit</td>
+																	<td class='timestamp'>10:03:47</td>
+																	<td class='step-details'>API URI : https://qa-test.assuresign.net/api/documentnow/v3.2/submit/validate</td>
 																</tr>
 																<tr>
 																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>14:16:12</td>
-																	<td class='step-details'>Response Time : 45407 milliseconds</td>
+																	<td class='timestamp'>10:04:39</td>
+																	<td class='step-details'>Response Time : 52005 milliseconds</td>
 																</tr>
 																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>14:16:13</td>
-																	<td class='step-details'>Test Case PASSED IS : submit_missingDocName</td>
+																	<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+																	<td class='timestamp'>10:04:39</td>
+																	<td class='step-details'>TEST CASE FAILED IS submitValidate_jotBlockParsingDocTrueDuplicateJotBlock</td>
 																</tr>
 																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>14:16:13</td>
-																	<td class='step-details'>API Version : 3.1</td>
-																</tr>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>14:16:13</td>
-																	<td class='step-details'>Response : {
-    "errorCode": "BAD_REQUEST",
-    "summary": "Document[0] 'Name' is missing"
-}</td>
+																	<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+																	<td class='timestamp'>10:04:39</td>
+																	<td class='step-details'>TEST CASE FAILED IS java.lang.NoSuchMethodError: org.hamcrest.Matcher.describeMismatch(Ljava/lang/Object;Lorg/hamcrest/Description;)V</td>
 																</tr>
 														</tbody>
 													</table>
@@ -306,17 +298,17 @@
 												</div>
 											</div>
 										</li>
-										<li class='collection-item test displayed active pass ' extentid='0a95f15f-51e1-4e58-9237-f5796704a859'>
+										<li class='collection-item test displayed active pass ' extentid='5026851a-ae34-4dbe-b83f-fc5512ee69b3'>
 											<div class='test-head'>
-												<span class='test-name'>submit_missingDocName </span>
+												<span class='test-name'>submitValidate_jotBlockParsingNegativePageCount </span>
 												<span class='test-status label right outline capitalize pass'>pass</span>
 												<span class='category-assigned hide '></span>
 											</div>
 											<div class='test-body'>
 												<div class='test-info'>
-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2021-05-10 14:16:13</span>
-													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2021-05-10 14:16:56</span>
-													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 43s+234ms</span>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2021-05-11 10:04:39</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2021-05-11 10:05:27</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 47s+905ms</span>
 												</div>
 												<div class='test-desc'></div>
 												<div class='test-attributes'>
@@ -333,35 +325,39 @@
 														<tbody>
 																<tr>
 																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>14:16:13</td>
-																	<td class='step-details'>Test Description : Scenario_3_10 : Test for submit with missing Document Name.</td>
+																	<td class='timestamp'>10:04:39</td>
+																	<td class='step-details'>Test Description : Scenario_3_5 : Test for submit/validate dynamic jot block with negative page count.</td>
 																</tr>
 																<tr>
 																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>14:16:15</td>
-																	<td class='step-details'>API URI : https://qa-test.assuresign.net/api/documentnow/v3.2/submit</td>
+																	<td class='timestamp'>10:04:42</td>
+																	<td class='step-details'>API URI : https://qa-test.assuresign.net/api/documentnow/v3.2/submit/validate</td>
 																</tr>
 																<tr>
 																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>14:16:56</td>
-																	<td class='step-details'>Response Time : 40502 milliseconds</td>
+																	<td class='timestamp'>10:05:27</td>
+																	<td class='step-details'>Response Time : 44749 milliseconds</td>
 																</tr>
 																<tr>
 																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>14:16:56</td>
-																	<td class='step-details'>Test Case PASSED IS : submit_missingDocName</td>
+																	<td class='timestamp'>10:05:27</td>
+																	<td class='step-details'>Test Case PASSED IS : submitValidate_jotBlockParsingNegativePageCount</td>
 																</tr>
 																<tr>
 																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>14:16:56</td>
+																	<td class='timestamp'>10:05:27</td>
 																	<td class='step-details'>API Version : 3.2</td>
 																</tr>
 																<tr>
 																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>14:16:56</td>
+																	<td class='timestamp'>10:05:27</td>
 																	<td class='step-details'>Response : {
     "errorCode": "BAD_REQUEST",
-    "summary": "Document[0] 'Name' is missing"
+    "summary": "Unable to parse dynamic document(s)",
+    "details": [
+        "FileToUpload.InitialPagesToParse: InitialPagesToParse should not be a negative value on '01-doc_file-sample_1MB-dyanmic jotblock.doc'",
+        "FileToUpload.FinalPagesToParse: FinalPagesToParse should not be a negative value on '01-doc_file-sample_1MB-dyanmic jotblock.doc'"
+    ]
 }</td>
 																</tr>
 														</tbody>
@@ -371,17 +367,17 @@
 												</div>
 											</div>
 										</li>
-										<li class='collection-item test displayed active pass ' extentid='43071168-0d3d-46a5-9cc2-5ef12810b43b'>
+										<li class='collection-item test displayed active pass ' extentid='758569f9-7da3-4dda-8951-aed686c67559'>
 											<div class='test-head'>
-												<span class='test-name'>submit_missingDocName </span>
+												<span class='test-name'>submitValidate_jotBlockParsingParseDocFalse </span>
 												<span class='test-status label right outline capitalize pass'>pass</span>
 												<span class='category-assigned hide '></span>
 											</div>
 											<div class='test-body'>
 												<div class='test-info'>
-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2021-05-10 14:16:56</span>
-													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2021-05-10 14:17:05</span>
-													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 9s+248ms</span>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2021-05-11 10:05:27</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2021-05-11 10:06:05</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 37s+646ms</span>
 												</div>
 												<div class='test-desc'></div>
 												<div class='test-attributes'>
@@ -398,35 +394,499 @@
 														<tbody>
 																<tr>
 																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>14:16:56</td>
-																	<td class='step-details'>Test Description : Scenario_3_10 : Test for submit with missing Document Name.</td>
+																	<td class='timestamp'>10:05:27</td>
+																	<td class='step-details'>Test Description : Scenario_3_5 : Test for submit/validate dynamic jot block with parse document false.</td>
 																</tr>
 																<tr>
 																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>14:16:59</td>
-																	<td class='step-details'>API URI : https://qa-test.assuresign.net/api/documentnow/v3.3/submit</td>
+																	<td class='timestamp'>10:05:30</td>
+																	<td class='step-details'>API URI : https://qa-test.assuresign.net/api/documentnow/v3.2/submit/validate</td>
 																</tr>
 																<tr>
 																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>14:17:05</td>
-																	<td class='step-details'>Response Time : 6303 milliseconds</td>
+																	<td class='timestamp'>10:06:05</td>
+																	<td class='step-details'>Response Time : 35150 milliseconds</td>
 																</tr>
 																<tr>
 																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>14:17:05</td>
-																	<td class='step-details'>Test Case PASSED IS : submit_missingDocName</td>
+																	<td class='timestamp'>10:06:05</td>
+																	<td class='step-details'>Test Case PASSED IS : submitValidate_jotBlockParsingParseDocFalse</td>
 																</tr>
 																<tr>
 																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>14:17:05</td>
-																	<td class='step-details'>API Version : 3.3</td>
+																	<td class='timestamp'>10:06:05</td>
+																	<td class='step-details'>API Version : 3.2</td>
 																</tr>
 																<tr>
 																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>14:17:05</td>
+																	<td class='timestamp'>10:06:05</td>
 																	<td class='step-details'>Response : {
     "errorCode": "BAD_REQUEST",
-    "summary": "Document[0] 'Name' is missing"
+    "summary": "Unable to parse dynamic document(s)",
+    "details": [
+        "FileToUpload.ParseDocument: 'ParseDocument' needs to be set to true when passing 'InitialPagesToParse', 'FinalPagesToParse' and/or 'DynamicDocumentVersion' on '01-doc_file-sample_1MB-dyanmic jotblock.doc'."
+    ]
+}</td>
+																</tr>
+														</tbody>
+													</table>
+													<ul class='collapsible node-list' data-collapsible='accordion'>
+													</ul>
+												</div>
+											</div>
+										</li>
+										<li class='collection-item test displayed active fail ' extentid='61e1b19a-64bf-45fc-9cab-86e6bb2fec37'>
+											<div class='test-head'>
+												<span class='test-name'>submitValidate_jotBlockParsingParseDocTrue </span>
+												<span class='test-status label right outline capitalize fail'>fail</span>
+												<span class='category-assigned hide '></span>
+											</div>
+											<div class='test-body'>
+												<div class='test-info'>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2021-05-11 10:06:05</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2021-05-11 10:06:14</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 9s+635ms</span>
+												</div>
+												<div class='test-desc'></div>
+												<div class='test-attributes'>
+												</div>
+												<div class='test-steps'>
+													<table class='bordered table-results'>
+														<thead>
+															<tr>
+																<th>Status</th>
+																<th>Timestamp</th>
+																<th>Details</th>
+															</tr>
+														</thead>
+														<tbody>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>10:06:05</td>
+																	<td class='step-details'>Test Description : Scenario_3_5 : Test for submit/validate dynamic jot block with parse document true.</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>10:06:07</td>
+																	<td class='step-details'>API URI : https://qa-test.assuresign.net/api/documentnow/v3.2/submit/validate</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>10:06:14</td>
+																	<td class='step-details'>Response Time : 6689 milliseconds</td>
+																</tr>
+																<tr>
+																	<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+																	<td class='timestamp'>10:06:14</td>
+																	<td class='step-details'>TEST CASE FAILED IS submitValidate_jotBlockParsingParseDocTrue</td>
+																</tr>
+																<tr>
+																	<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+																	<td class='timestamp'>10:06:14</td>
+																	<td class='step-details'>TEST CASE FAILED IS java.lang.NoSuchMethodError: org.hamcrest.Matcher.describeMismatch(Ljava/lang/Object;Lorg/hamcrest/Description;)V</td>
+																</tr>
+														</tbody>
+													</table>
+													<ul class='collapsible node-list' data-collapsible='accordion'>
+													</ul>
+												</div>
+											</div>
+										</li>
+										<li class='collection-item test displayed active fail ' extentid='f11dd653-ced4-42f5-ba47-102060e7bdd8'>
+											<div class='test-head'>
+												<span class='test-name'>submitValidate_jotBlockParsingWithPageCount </span>
+												<span class='test-status label right outline capitalize fail'>fail</span>
+												<span class='category-assigned hide '></span>
+											</div>
+											<div class='test-body'>
+												<div class='test-info'>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2021-05-11 10:06:14</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2021-05-11 10:06:23</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 8s+644ms</span>
+												</div>
+												<div class='test-desc'></div>
+												<div class='test-attributes'>
+												</div>
+												<div class='test-steps'>
+													<table class='bordered table-results'>
+														<thead>
+															<tr>
+																<th>Status</th>
+																<th>Timestamp</th>
+																<th>Details</th>
+															</tr>
+														</thead>
+														<tbody>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>10:06:14</td>
+																	<td class='step-details'>Test Description : Scenario_3_5 : Test for submit/validate dynamic jot block parsing with page count.</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>10:06:16</td>
+																	<td class='step-details'>API URI : https://qa-test.assuresign.net/api/documentnow/v3.2/submit/validate</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>10:06:23</td>
+																	<td class='step-details'>Response Time : 6516 milliseconds</td>
+																</tr>
+																<tr>
+																	<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+																	<td class='timestamp'>10:06:23</td>
+																	<td class='step-details'>TEST CASE FAILED IS submitValidate_jotBlockParsingWithPageCount</td>
+																</tr>
+																<tr>
+																	<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+																	<td class='timestamp'>10:06:23</td>
+																	<td class='step-details'>TEST CASE FAILED IS java.lang.NoSuchMethodError: org.hamcrest.Matcher.describeMismatch(Ljava/lang/Object;Lorg/hamcrest/Description;)V</td>
+																</tr>
+														</tbody>
+													</table>
+													<ul class='collapsible node-list' data-collapsible='accordion'>
+													</ul>
+												</div>
+											</div>
+										</li>
+										<li class='collection-item test displayed active pass ' extentid='3fdcfc10-2929-4428-a7f4-5449a459c453'>
+											<div class='test-head'>
+												<span class='test-name'>submit_jotBlockParsingDocTrueDuplicateJotBlock </span>
+												<span class='test-status label right outline capitalize pass'>pass</span>
+												<span class='category-assigned hide '></span>
+											</div>
+											<div class='test-body'>
+												<div class='test-info'>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2021-05-11 10:06:23</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2021-05-11 10:06:39</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 15s+993ms</span>
+												</div>
+												<div class='test-desc'></div>
+												<div class='test-attributes'>
+												</div>
+												<div class='test-steps'>
+													<table class='bordered table-results'>
+														<thead>
+															<tr>
+																<th>Status</th>
+																<th>Timestamp</th>
+																<th>Details</th>
+															</tr>
+														</thead>
+														<tbody>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>10:06:23</td>
+																	<td class='step-details'>Test Description : Scenario_3_5 : Test for submit dynamic jot block with parse document true and duplicate jot block.</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>10:06:25</td>
+																	<td class='step-details'>API URI : https://qa-test.assuresign.net/api/documentnow/v3.2/submit</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>10:06:39</td>
+																	<td class='step-details'>Response Time : 14013 milliseconds</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>10:06:39</td>
+																	<td class='step-details'>Test Case PASSED IS : submit_jotBlockParsingDocTrueDuplicateJotBlock</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>10:06:39</td>
+																	<td class='step-details'>API Version : 3.2</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>10:06:39</td>
+																	<td class='step-details'>Response : {
+    "messages": [
+        
+    ],
+    "result": {
+        "envelopeID": "8c061e5b-f057-4fe6-a631-ad25004bf457",
+        "authToken": "6b55a035-5a6f-47be-bc9e-a81436948748"
+    }
+}</td>
+																</tr>
+														</tbody>
+													</table>
+													<ul class='collapsible node-list' data-collapsible='accordion'>
+													</ul>
+												</div>
+											</div>
+										</li>
+										<li class='collection-item test displayed active pass ' extentid='6e575b59-f926-4569-881e-0068a409c330'>
+											<div class='test-head'>
+												<span class='test-name'>submit_jotBlockParsingNegativePageCount </span>
+												<span class='test-status label right outline capitalize pass'>pass</span>
+												<span class='category-assigned hide '></span>
+											</div>
+											<div class='test-body'>
+												<div class='test-info'>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2021-05-11 10:06:39</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2021-05-11 10:06:49</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 9s+786ms</span>
+												</div>
+												<div class='test-desc'></div>
+												<div class='test-attributes'>
+												</div>
+												<div class='test-steps'>
+													<table class='bordered table-results'>
+														<thead>
+															<tr>
+																<th>Status</th>
+																<th>Timestamp</th>
+																<th>Details</th>
+															</tr>
+														</thead>
+														<tbody>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>10:06:39</td>
+																	<td class='step-details'>Test Description : Scenario_3_5 : Test for submit dynamic jot block with negative page count.</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>10:06:42</td>
+																	<td class='step-details'>API URI : https://qa-test.assuresign.net/api/documentnow/v3.2/submit</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>10:06:49</td>
+																	<td class='step-details'>Response Time : 7212 milliseconds</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>10:06:49</td>
+																	<td class='step-details'>Test Case PASSED IS : submit_jotBlockParsingNegativePageCount</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>10:06:49</td>
+																	<td class='step-details'>API Version : 3.2</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>10:06:49</td>
+																	<td class='step-details'>Response : {
+    "errorCode": "BAD_REQUEST",
+    "summary": "Unable to parse dynamic document(s)",
+    "details": [
+        "FileToUpload.InitialPagesToParse: InitialPagesToParse should not be a negative value on '01-doc_file-sample_1MB-dyanmic jotblock.doc'",
+        "FileToUpload.FinalPagesToParse: FinalPagesToParse should not be a negative value on '01-doc_file-sample_1MB-dyanmic jotblock.doc'"
+    ]
+}</td>
+																</tr>
+														</tbody>
+													</table>
+													<ul class='collapsible node-list' data-collapsible='accordion'>
+													</ul>
+												</div>
+											</div>
+										</li>
+										<li class='collection-item test displayed active pass ' extentid='5ab581c7-ac5c-46c5-aa3a-088c41fc2058'>
+											<div class='test-head'>
+												<span class='test-name'>submit_jotBlockParsingParseDocFalse </span>
+												<span class='test-status label right outline capitalize pass'>pass</span>
+												<span class='category-assigned hide '></span>
+											</div>
+											<div class='test-body'>
+												<div class='test-info'>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2021-05-11 10:06:49</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2021-05-11 10:07:38</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 49s+247ms</span>
+												</div>
+												<div class='test-desc'></div>
+												<div class='test-attributes'>
+												</div>
+												<div class='test-steps'>
+													<table class='bordered table-results'>
+														<thead>
+															<tr>
+																<th>Status</th>
+																<th>Timestamp</th>
+																<th>Details</th>
+															</tr>
+														</thead>
+														<tbody>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>10:06:49</td>
+																	<td class='step-details'>Test Description : Scenario_3_5 : Test for submit dynamic jot block with parse document false.</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>10:06:51</td>
+																	<td class='step-details'>API URI : https://qa-test.assuresign.net/api/documentnow/v3.2/submit</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>10:07:38</td>
+																	<td class='step-details'>Response Time : 47186 milliseconds</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>10:07:38</td>
+																	<td class='step-details'>Test Case PASSED IS : submit_jotBlockParsingParseDocFalse</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>10:07:38</td>
+																	<td class='step-details'>API Version : 3.2</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>10:07:38</td>
+																	<td class='step-details'>Response : {
+    "errorCode": "BAD_REQUEST",
+    "summary": "Unable to parse dynamic document(s)",
+    "details": [
+        "FileToUpload.ParseDocument: 'ParseDocument' needs to be set to true when passing 'InitialPagesToParse', 'FinalPagesToParse' and/or 'DynamicDocumentVersion' on '01-doc_file-sample_1MB-dyanmic jotblock.doc'."
+    ]
+}</td>
+																</tr>
+														</tbody>
+													</table>
+													<ul class='collapsible node-list' data-collapsible='accordion'>
+													</ul>
+												</div>
+											</div>
+										</li>
+										<li class='collection-item test displayed active pass ' extentid='76cca4bc-bead-4a7b-8890-90de3889cc9f'>
+											<div class='test-head'>
+												<span class='test-name'>submit_jotBlockParsingParseDocTrue </span>
+												<span class='test-status label right outline capitalize pass'>pass</span>
+												<span class='category-assigned hide '></span>
+											</div>
+											<div class='test-body'>
+												<div class='test-info'>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2021-05-11 10:07:38</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2021-05-11 10:07:55</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 16s+874ms</span>
+												</div>
+												<div class='test-desc'></div>
+												<div class='test-attributes'>
+												</div>
+												<div class='test-steps'>
+													<table class='bordered table-results'>
+														<thead>
+															<tr>
+																<th>Status</th>
+																<th>Timestamp</th>
+																<th>Details</th>
+															</tr>
+														</thead>
+														<tbody>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>10:07:38</td>
+																	<td class='step-details'>Test Description : Scenario_3_5 : Test for submit dynamic jot block with parse document true.</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>10:07:41</td>
+																	<td class='step-details'>API URI : https://qa-test.assuresign.net/api/documentnow/v3.2/submit</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>10:07:55</td>
+																	<td class='step-details'>Response Time : 14031 milliseconds</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>10:07:55</td>
+																	<td class='step-details'>Test Case PASSED IS : submit_jotBlockParsingParseDocTrue</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>10:07:55</td>
+																	<td class='step-details'>API Version : 3.2</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>10:07:55</td>
+																	<td class='step-details'>Response : {
+    "messages": [
+        
+    ],
+    "result": {
+        "envelopeID": "2950b42a-3f70-45d4-92eb-ad25004c4a76",
+        "authToken": "6c2609a1-0847-4f17-b9a4-5edda35b5b76"
+    }
+}</td>
+																</tr>
+														</tbody>
+													</table>
+													<ul class='collapsible node-list' data-collapsible='accordion'>
+													</ul>
+												</div>
+											</div>
+										</li>
+										<li class='collection-item test displayed active pass ' extentid='13ec0ef9-ef3a-4e0c-93d1-3e5456817705'>
+											<div class='test-head'>
+												<span class='test-name'>submit_jotBlockParsingWithPageCount </span>
+												<span class='test-status label right outline capitalize pass'>pass</span>
+												<span class='category-assigned hide '></span>
+											</div>
+											<div class='test-body'>
+												<div class='test-info'>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2021-05-11 10:07:55</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2021-05-11 10:08:07</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 11s+648ms</span>
+												</div>
+												<div class='test-desc'></div>
+												<div class='test-attributes'>
+												</div>
+												<div class='test-steps'>
+													<table class='bordered table-results'>
+														<thead>
+															<tr>
+																<th>Status</th>
+																<th>Timestamp</th>
+																<th>Details</th>
+															</tr>
+														</thead>
+														<tbody>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>10:07:55</td>
+																	<td class='step-details'>Test Description : Scenario_3_5 : Test for submit dynamic jot block parsing with page count.</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>10:07:57</td>
+																	<td class='step-details'>API URI : https://qa-test.assuresign.net/api/documentnow/v3.2/submit</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>10:08:07</td>
+																	<td class='step-details'>Response Time : 9553 milliseconds</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>10:08:07</td>
+																	<td class='step-details'>Test Case PASSED IS : submit_jotBlockParsingWithPageCount</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>10:08:07</td>
+																	<td class='step-details'>API Version : 3.2</td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>10:08:07</td>
+																	<td class='step-details'>Response : {
+    "messages": [
+        
+    ],
+    "result": {
+        "envelopeID": "b8546e19-ed1e-4c46-9127-ad25004c5c3b",
+        "authToken": "f4ed09e8-9364-4950-b6e9-1df2dd03e9a3"
+    }
 }</td>
 																</tr>
 														</tbody>

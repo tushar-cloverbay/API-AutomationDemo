@@ -91,9 +91,12 @@ public class Scenario_4_11 extends Base{
 		responseBody = response.asPrettyString();
 		extentTest.log(LogStatus.PASS, "Response Time : " + response.getTime() +" milliseconds");
 		System.out.println(response.getBody().asString());
-		response.then().assertThat()
-		.statusCode(equalTo(200))
-		.body("result.envelopeID", notNullValue())
-		.body("result.authToken", notNullValue());
+		if (version.equals("3.0") || version.equals("3.1")){
+			response.then().assertThat().statusCode(equalTo(200)).body("result.id", notNullValue())
+			.body("result.authToken", notNullValue());
+		}else {
+			response.then().assertThat().statusCode(equalTo(200)).body("result.envelopeID", notNullValue())
+					.body("result.authToken", notNullValue());
+		}
 	}
 }

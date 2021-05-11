@@ -11,13 +11,15 @@
       </run>
     </groups>
     <classes>
-      <class name="net.assuresign.scenario_3.Scenario_3_9">
+      <class name="net.assuresign.scenario_3.Scenario_3_5">
         <methods>
           <include name="reportUp"/>
-          <include name="submit_DocMoreThen128Char" invocation-numbers="0 1 2"/>
+          <include name="submitValidate_jotBlockParsingDocTrueDuplicateJotBlock" invocation-numbers="0"/>
           <include name="tearDown"/>
+          <include name="submitValidate_jotBlockParsingParseDocTrue" invocation-numbers="0"/>
+          <include name="submitValidate_jotBlockParsingWithPageCount" invocation-numbers="0"/>
         </methods>
-      </class> <!-- net.assuresign.scenario_3.Scenario_3_9 -->
+      </class> <!-- net.assuresign.scenario_3.Scenario_3_5 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

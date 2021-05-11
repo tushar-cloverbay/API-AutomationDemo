@@ -59,7 +59,7 @@ public class Scenario_3_5 extends Base {
 	@Test(dataProvider = "version-data-provider", enabled = true)
 	public void submitValidate_jotBlockParsingWithPageCount(String version) throws IOException {
 		extentTest.log(LogStatus.PASS,
-				"Test Description : " + "Scenario_3_5 : Test for submit/validate dynamic jot block parsing with page count.");
+				"Test Description : " + "Scenario_3_5 :[Bug ID : 46662] Test for submit/validate dynamic jot block parsing with page count.");
 		apiVersion = version;
 		String token = TestUtils.getToken(version);
 		String URI = "https://" + Constants.ENV + ".assuresign.net/api/documentnow/v" + version + "/submit/validate";
@@ -127,7 +127,7 @@ public class Scenario_3_5 extends Base {
 	@Test(dataProvider = "version-data-provider", enabled = true)
 	public void submitValidate_jotBlockParsingParseDocTrue(String version) throws IOException {
 		extentTest.log(LogStatus.PASS,
-				"Test Description : " + "Scenario_3_5 : Test for submit/validate dynamic jot block with parse document true.");
+				"Test Description : " + "Scenario_3_5 :[Bug ID : 46662] Test for submit/validate dynamic jot block with parse document true.");
 		apiVersion = version;
 		String token = TestUtils.getToken(version);
 		String URI = "https://" + Constants.ENV + ".assuresign.net/api/documentnow/v" + version + "/submit/validate";
@@ -194,7 +194,7 @@ public class Scenario_3_5 extends Base {
 	@Test(dataProvider = "version-data-provider", enabled = true)
 	public void submitValidate_jotBlockParsingDocTrueDuplicateJotBlock(String version) throws IOException {
 		extentTest.log(LogStatus.PASS,
-				"Test Description : " + "Scenario_3_5 : Test for submit/validate dynamic jot block with parse document true and duplicate jot block.");
+				"Test Description : " + "Scenario_3_5 :[Bug ID : 46662] Test for submit/validate dynamic jot block with parse document true and duplicate jot block.");
 		apiVersion = version;
 		String token = TestUtils.getToken(version);
 		String URI = "https://" + Constants.ENV + ".assuresign.net/api/documentnow/v" + version + "/submit/validate";
