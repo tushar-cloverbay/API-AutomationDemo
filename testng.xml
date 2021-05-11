@@ -5,6 +5,11 @@
 		<listener class-name="net.assuresign.utils.ListenersTestNG"></listener>
 	</listeners>
 	<test thread-count="5" name="Test">
+	<groups>
+      <run>
+        <exclude name="ExcludeForOld" />
+      </run>
+    </groups>
 		<classes>
 			<class name="net.assuresign.scenario_1.TokenBearer_Incorrect" />
 			<class name="net.assuresign.scenario_2.TokenBearer_Correct" />
