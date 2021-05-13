@@ -170,7 +170,7 @@
                 "templatesApplied": [],
                 "senderInputs": [],
                 "notificationSettings": {
-                    "enableNotifications": true,
+                    "enableNotifications": false,
                     "addCustomRecipientsToEnvelopeComplete": true
                 }
             },
