@@ -917,7 +917,7 @@
                 "SenderInputs": [],
                 "EmailDesignSetID": "48096697-21ac-e111-9ee4-00221959013a",
                 "NotificationSettings": {
-                    "EnableNotifications": true,
+                    "EnableNotifications": false,
                     "AddCustomRecipientsToEnvelopeComplete": true
                 }
             },
