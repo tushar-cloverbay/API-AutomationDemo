@@ -171,7 +171,7 @@
                 "templatesApplied": ["f81236ac-b29d-4ccb-92b8-acf700e9a42a"],
                 "senderInputs": [],
                 "notificationSettings": {
-                    "enableNotifications": true,
+                    "enableNotifications": false,
                     "addCustomRecipientsToEnvelopeComplete": true
                 }
             },
