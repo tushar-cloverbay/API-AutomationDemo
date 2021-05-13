@@ -862,7 +862,7 @@
                 "TemplatesApplied": [],
                 "SenderInputs": [],
                 "NotificationSettings": {
-                    "EnableNotifications": true,
+                    "EnableNotifications": false,
                     "AddCustomRecipientsToEnvelopeComplete": true
                 }
             },
