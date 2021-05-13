@@ -1,7 +1,7 @@
 package net.assuresign.scenario_4;
 
 import static org.hamcrest.Matchers.equalTo;
-import static org.hamcrest.Matchers.is;
+import static org.hamcrest.Matchers.hasKey;
 import static org.hamcrest.Matchers.notNullValue;
 
 import java.io.IOException;
@@ -19,31 +19,49 @@ import net.assuresign.utils.JsonUtils;
 import net.assuresign.utils.TestUtils;
 
 public class Scenario_4_14 extends Base{
-	@Test(dataProvider = "version-data-provider",enabled = true)
+	@Test(dataProvider = "version-data-provider",groups = { "ExcludeFor3.0" },enabled = true)
 	public void submitPrepare_WithTempleteSchema(String version) throws IOException {
 		extentTest.log(LogStatus.PASS, "Test Description : " + "Scenario_4_14 : Test for getting Prepared Enveloped ID with Templete Schema.");
 		apiVersion = version;
 		String token =TestUtils.getToken(version);
 		String URI = "https://"+Constants.ENV+".assuresign.net/api/documentnow/v"+ version +"/submit/prepare";
 		extentTest.log(LogStatus.PASS, "API URI : " + URI);
-		String payload = JsonUtils.payloadGenerator("Inputs\\"+Constants.ENV+"\\Scenario_4\\preparedEID-TempleteSchema.json");
+		String payload;
+		if(version.equals("3.1")||version.equals("3.2"))
+		{
+			payload = JsonUtils.payloadGenerator("Inputs\\"+Constants.ENV+"\\Scenario_4\\preparedEID-TempleteSchema-"+version+".json");
+		}else
+		{
+			payload = JsonUtils.payloadGenerator("Inputs\\"+Constants.ENV+"\\Scenario_4\\preparedEID-TempleteSchema.json");
+		}
 		RequestSpecification request = RestAssured.given().header("Authorization", "Bearer "+token).body(payload);
 		request.header("Content-Type", "application/json");
 		Response response = request.post(URI);
 		responseBody = response.asPrettyString();
 		extentTest.log(LogStatus.PASS, "Response Time : " + response.getTime() +" milliseconds");
 		System.out.println(response.getBody().asString());
-		System.out.println(response.getStatusCode());
-		response.then().assertThat()
-		.statusCode(equalTo(200));
+		if (version.equals("3.1")) {
+			response.then().assertThat().statusCode(equalTo(200)).body("$", hasKey("messages"))
+					.body("result.preparedEnvelopeId", notNullValue());
+		} else {
+			response.then().assertThat().statusCode(equalTo(200)).body("$", hasKey("messages"))
+					.body("result.preparedEnvelopeID", notNullValue());
+		}
 	}
-	@Test(dataProvider = "version-data-provider",enabled = true)
+	@Test(dataProvider = "version-data-provider",groups = { "ExcludeFor3.0" },enabled = true)
 	public void submit_WithTempleteSchema(String version) throws IOException {
 		extentTest.log(LogStatus.PASS, "Test Description : " + "Scenario_4_14 : Test for Submit Prepare with no Templet permission : "
 				+ "Validating ErrorCode and Summary");
 		apiVersion = version;
 		String token =TestUtils.getToken(version);
-		String preparedEID = TestUtils.getPreparedEnvelopeID(version, "Scenario_4\\preparedEID-TempleteSchema.json",token);
+		String preparedEID;
+		if(version.equals("3.1")||version.equals("3.2"))
+		{
+			preparedEID = TestUtils.getPreparedEnvelopeID(version, "Scenario_4\\preparedEID-TempleteSchema-"+version+".json",token);
+		}else
+		{
+			preparedEID = TestUtils.getPreparedEnvelopeID(version, "Scenario_4\\preparedEID-TempleteSchema.json",token);
+		}
 		String URI = "https://"+Constants.ENV+".assuresign.net/api/documentnow/v"+ version +"/submit/" + preparedEID;
 		String payload = JsonUtils.payloadGenerator("Inputs\\"+Constants.ENV+"\\Scenario_4\\getEnvelopID.json");
 		RequestSpecification request = RestAssured.given().header("Authorization", "Bearer "+token).body(payload);
@@ -52,28 +70,42 @@ public class Scenario_4_14 extends Base{
 		responseBody = response.asPrettyString();
 		extentTest.log(LogStatus.PASS, "Response Time : " + response.getTime() +" milliseconds");
 		System.out.println(response.getBody().asString());
-		response.then().assertThat()
-		.statusCode(equalTo(200))
-		.body("result.envelopeID", notNullValue())
-		.body("result.authToken", notNullValue());
+		if (version.equals("3.1")){
+			response.then().assertThat().statusCode(equalTo(200)).body("result.id", notNullValue())
+			.body("result.authToken", notNullValue());
+		}else {
+			response.then().assertThat().statusCode(equalTo(200)).body("result.envelopeID", notNullValue())
+					.body("result.authToken", notNullValue());
+		}
 	}
 	
-	@Test(dataProvider = "version-data-provider",enabled = true)
+	@Test(dataProvider = "version-data-provider",groups = { "ExcludeFor3.0" },enabled = true)
 	public void submitPrepare_WithInvalidTemplate(String version) throws IOException {
 		extentTest.log(LogStatus.PASS, "Test Description : " + "Scenario_4_14 : Test for getting Prepared Enveloped ID with Templete Schema.");
 		apiVersion = version;
 		String token =TestUtils.getToken(version);
 		String URI = "https://"+Constants.ENV+".assuresign.net/api/documentnow/v"+ version +"/submit/prepare";
 		extentTest.log(LogStatus.PASS, "API URI : " + URI);
-		String payload = JsonUtils.payloadGenerator("Inputs\\"+Constants.ENV+"\\Scenario_4\\preparedEID-InvalidTemplate.json");
+		String payload;
+		if(version.equals("3.1")||version.equals("3.2"))
+		{
+			payload = JsonUtils.payloadGenerator("Inputs\\"+Constants.ENV+"\\Scenario_4\\preparedEID-InvalidTemplate-"+version+".json");
+		}else
+		{
+			payload = JsonUtils.payloadGenerator("Inputs\\"+Constants.ENV+"\\Scenario_4\\preparedEID-InvalidTemplate.json");
+		}
 		RequestSpecification request = RestAssured.given().header("Authorization", "Bearer "+token).body(payload);
 		request.header("Content-Type", "application/json");
 		Response response = request.post(URI);
 		responseBody = response.asPrettyString();
 		extentTest.log(LogStatus.PASS, "Response Time : " + response.getTime() +" milliseconds");
 		System.out.println(response.getBody().asString());
-		System.out.println(response.getStatusCode());
-		response.then().assertThat()
-		.statusCode(equalTo(200));
+		if (version.equals("3.1")) {
+			response.then().assertThat().statusCode(equalTo(200)).body("$", hasKey("messages"))
+					.body("result.preparedEnvelopeId", notNullValue());
+		} else {
+			response.then().assertThat().statusCode(equalTo(200)).body("$", hasKey("messages"))
+					.body("result.preparedEnvelopeID", notNullValue());
+		}
 	}
 }

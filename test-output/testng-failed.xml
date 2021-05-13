@@ -5,14 +5,19 @@
     <listener class-name="net.assuresign.utils.ListenersTestNG"/>
   </listeners>
   <test thread-count="5" name="Test(failed)">
+    <groups>
+      <run>
+        <exclude name="ExcludeForOld"/>
+      </run>
+    </groups>
     <classes>
-      <class name="net.assuresign.scenario_8.Scenario_8_1">
+      <class name="net.assuresign.scenario_3.Scenario_3_9">
         <methods>
-          <include name="getEnvelope_ForSignedEnvelopes" invocation-numbers="0"/>
           <include name="reportUp"/>
+          <include name="submit_DocMoreThen128Char" invocation-numbers="0 1 2"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- net.assuresign.scenario_8.Scenario_8_1 -->
+      </class> <!-- net.assuresign.scenario_3.Scenario_3_9 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
