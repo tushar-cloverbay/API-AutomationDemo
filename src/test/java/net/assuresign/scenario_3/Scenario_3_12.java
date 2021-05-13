@@ -23,7 +23,14 @@ public class Scenario_3_12 extends Base{
 		String token =TestUtils.getToken(version);
 		String URI = "https://"+Constants.ENV+".assuresign.net/api/documentnow/v"+ version +"/submit";
 		extentTest.log(LogStatus.PASS, "API URI : " + URI);
-		String payload = JsonUtils.payloadGenerator("Inputs\\"+Constants.ENV+"\\Scenario_3\\submitSSTemplate_signerPassword.json");
+		String payload;
+		if(version.equals("3.0")||version.equals("3.1")||version.equals("3.2"))
+		{
+			payload = JsonUtils.payloadGenerator("Inputs\\"+Constants.ENV+"\\Scenario_3\\submitSSTemplate_signerPassword-"+version+".json");
+		}else
+		{
+			payload = JsonUtils.payloadGenerator("Inputs\\"+Constants.ENV+"\\Scenario_3\\submitSSTemplate_signerPassword.json");
+		}
 		RequestSpecification request = RestAssured.given().header("Authorization", "Bearer "+token).body(payload);
 		request.header("Content-Type", "application/json");
 		Response response = request.post(URI);
@@ -35,7 +42,7 @@ public class Scenario_3_12 extends Base{
 		.statusCode(equalTo(400));
 	}
 	
-	@Test(dataProvider = "version-data-provider",enabled = true)
+	@Test(dataProvider = "version-data-provider",groups = { "ExcludeForOld" },enabled = true)
 	public void submitSSTemplate_delayedStep(String version) throws IOException {
 		extentTest.log(LogStatus.PASS, "Test Description : " + "Scenario_3_12 : Test for submit SS Template with delayed step.");
 		apiVersion = version;
@@ -61,7 +68,14 @@ public class Scenario_3_12 extends Base{
 		String token =TestUtils.getToken(version);
 		String URI = "https://"+Constants.ENV+".assuresign.net/api/documentnow/v"+ version +"/submit";
 		extentTest.log(LogStatus.PASS, "API URI : " + URI);
-		String payload = JsonUtils.payloadGenerator("Inputs\\"+Constants.ENV+"\\Scenario_3\\submitSSTemplate_pwdOpenFile.json");
+		String payload;
+		if(version.equals("3.0")||version.equals("3.1")||version.equals("3.2"))
+		{
+			payload = JsonUtils.payloadGenerator("Inputs\\"+Constants.ENV+"\\Scenario_3\\submitSSTemplate_pwdOpenFile-"+version+".json");
+		}else
+		{
+			payload = JsonUtils.payloadGenerator("Inputs\\"+Constants.ENV+"\\Scenario_3\\submitSSTemplate_pwdOpenFile.json");
+		}
 		RequestSpecification request = RestAssured.given().header("Authorization", "Bearer "+token).body(payload);
 		request.header("Content-Type", "application/json");
 		Response response = request.post(URI);
@@ -75,7 +89,7 @@ public class Scenario_3_12 extends Base{
 		.body("summary", notNullValue());
 	}
 	
-	@Test(dataProvider = "version-data-provider",enabled = true)
+	@Test(dataProvider = "version-data-provider",groups = { "ExcludeForOld" },enabled = true)
 	public void submitSSTemplate_invalidID(String version) throws IOException {
 		extentTest.log(LogStatus.PASS, "Test Description : " + "Scenario_3_12 : Test for submit SS Template with password to open file.");
 		apiVersion = version;
