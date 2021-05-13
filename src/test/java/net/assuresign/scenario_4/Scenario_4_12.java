@@ -26,7 +26,7 @@ public class Scenario_4_12 extends Base{
 		return JsonUtils.getKeyValue(response, "result.sessionToken");
 	}
 	
-	@Test(dataProvider = "version-data-provider",enabled = true)
+	@Test(dataProvider = "version-data-provider",groups = { "ExcludeForOld" },enabled = true)
 	public void submitPrepare_specifiedSchema(String version) throws IOException {
 		extentTest.log(LogStatus.PASS, "Test Description : " + "Scenario_4_12 : Test for getting Prepared Enveloped ID with session token.");
 		apiVersion = version;
