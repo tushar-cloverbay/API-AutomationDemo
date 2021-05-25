@@ -36,6 +36,7 @@ public class Scenario_4_15 extends Base{
 		request.header("Content-Type", "application/json");
 		Response response = request.post(URI);
 		responseBody = response.asPrettyString();
+		statusCode = Integer.toString(response.getStatusCode());
 		extentTest.log(LogStatus.PASS, "Response Time : " + response.getTime() +" milliseconds");
 		System.out.println(response.getBody().asString());
 		System.out.println(response.getStatusCode());
@@ -58,6 +59,7 @@ public class Scenario_4_15 extends Base{
 		request.header("Content-Type", "application/json");
 		Response response = request.post(URI);
 		responseBody = response.asPrettyString();
+		statusCode = Integer.toString(response.getStatusCode());
 		extentTest.log(LogStatus.PASS, "Response Time : " + response.getTime() +" milliseconds");
 		System.out.println(response.getBody().asString());
 		System.out.println(response.getStatusCode());
@@ -79,6 +81,7 @@ public class Scenario_4_15 extends Base{
 		request.header("Content-Type", "application/json");
 		Response response = request.post(URI);
 		responseBody = response.asPrettyString();
+		statusCode = Integer.toString(response.getStatusCode());
 		extentTest.log(LogStatus.PASS, "Response Time : " + response.getTime() +" milliseconds");
 		System.out.println(response.getBody().asString());
 		System.out.println(response.getStatusCode());
@@ -99,6 +102,7 @@ public class Scenario_4_15 extends Base{
 		request.header("Content-Type", "application/json");
 		Response response = request.post(URI);
 		responseBody = response.asPrettyString();
+		statusCode = Integer.toString(response.getStatusCode());
 		extentTest.log(LogStatus.PASS, "Response Time : " + response.getTime() +" milliseconds");
 		System.out.println(response.getBody().asString());
 		System.out.println(response.getStatusCode());
@@ -119,6 +123,7 @@ public class Scenario_4_15 extends Base{
 		request.header("Content-Type", "application/json");
 		Response response = request.post(URI);
 		responseBody = response.asPrettyString();
+		statusCode = Integer.toString(response.getStatusCode());
 		extentTest.log(LogStatus.PASS, "Response Time : " + response.getTime() +" milliseconds");
 		System.out.println(response.getBody().asString());
 		System.out.println(response.getStatusCode());
@@ -148,6 +153,7 @@ public class Scenario_4_15 extends Base{
 		request.header("Content-Type", "application/json");
 		Response response = request.post(URI);
 		responseBody = response.asPrettyString();
+		statusCode = Integer.toString(response.getStatusCode());
 		extentTest.log(LogStatus.PASS, "Response Time : " + response.getTime() +" milliseconds");
 		System.out.println(response.getBody().asString());
 		System.out.println(response.getStatusCode());
@@ -166,18 +172,17 @@ public class Scenario_4_15 extends Base{
 		String token =TestUtils.getToken(version);
 		String preparedEID = TestUtils.getPreparedEnvelopeID(version, "Scenario_4\\preparedEID-Doc128Char.json",token);
 		String URI = "https://"+Constants.ENV+".assuresign.net/api/documentnow/v"+ version +"/submit/" + preparedEID;
-		String payload = JsonUtils.payloadGenerator("Inputs\\"+Constants.ENV+"\\Scenario_4\\getEnvelopID.json");
-		RequestSpecification request = RestAssured.given().header("Authorization", "Bearer "+token).body(payload);
+//		String payload = JsonUtils.payloadGenerator("Inputs\\"+Constants.ENV+"\\Scenario_4\\getEnvelopID.json");
+		RequestSpecification request = RestAssured.given().header("Authorization", "Bearer "+token);
 		request.header("Content-Type", "application/json");
 		Response response = request.post(URI);
 		responseBody = response.asPrettyString();
+		statusCode = Integer.toString(response.getStatusCode());
 		extentTest.log(LogStatus.PASS, "Response Time : " + response.getTime() +" milliseconds");
 		System.out.println(response.getBody().asString());
 		System.out.println(response.getStatusCode());
-		response.then().assertThat()
-		.statusCode(equalTo(500))
-		.body("errorCode", is("INTERNAL_SERVER_ERROR"))
-		.body("summary", is("Errors Occurred"))
+		response.then().assertThat().statusCode(equalTo(400))
+		.body("errorCode", is("VALIDATION_FAILED"))
 		.body("details", notNullValue());
 	}
 }

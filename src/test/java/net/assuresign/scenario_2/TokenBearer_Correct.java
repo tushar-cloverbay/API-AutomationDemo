@@ -31,6 +31,7 @@ public class TokenBearer_Correct extends Base{
 		Response response = request.post(URI);
 		log.info("Requeste Submited");
 		responseBody = response.asPrettyString();
+		statusCode = Integer.toString(response.getStatusCode());
 		System.out.println(responseBody);
 		BaseAssertion.verifyStatusCode(response, 200);
 	}
@@ -49,6 +50,7 @@ public class TokenBearer_Correct extends Base{
 		Response response = request.post(URI);
 		log.info("Requeste Submited");
 		responseBody = response.asPrettyString();
+		statusCode = Integer.toString(response.getStatusCode());
 		System.out.println(responseBody);
 		extentTest.log(LogStatus.PASS, "Response Time : " + response.getTime() +" milliseconds");
 		BaseAssertion.verifyResponseTime(response,10000);
@@ -68,6 +70,7 @@ public class TokenBearer_Correct extends Base{
 		Response response = request.post(URI);
 		log.info("Requeste Submited");
 		responseBody = response.asPrettyString();
+		statusCode = Integer.toString(response.getStatusCode());
 		System.out.println(responseBody);
 		extentTest.log(LogStatus.PASS, "Response Time : " + response.getTime() +" milliseconds");
 		response.then().assertThat()
@@ -94,6 +97,7 @@ public class TokenBearer_Correct extends Base{
 		Response response = request.post(URI);
 		log.info("Requeste Submited");
 		responseBody = response.asPrettyString();
+		statusCode = Integer.toString(response.getStatusCode());
 		System.out.println(responseBody);
 		extentTest.log(LogStatus.PASS, "Response Time : " + response.getTime() +" milliseconds");
 		response.then().assertThat()
@@ -114,6 +118,7 @@ public class TokenBearer_Correct extends Base{
 		Response response = request.post(URI);
 		log.info("Requeste Submited");
 		responseBody = response.asPrettyString();
+		statusCode = Integer.toString(response.getStatusCode());
 		System.out.println(responseBody);
 		extentTest.log(LogStatus.PASS, "Response Time : " + response.getTime() +" milliseconds");
 		response.then().assertThat()

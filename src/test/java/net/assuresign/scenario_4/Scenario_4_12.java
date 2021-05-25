@@ -38,6 +38,7 @@ public class Scenario_4_12 extends Base{
 		request.header("Content-Type", "application/json").header("Authorization", "X-AS-UserSessionToken "+token);
 		Response response = request.post(URI);
 		responseBody = response.asPrettyString();
+		statusCode = Integer.toString(response.getStatusCode());
 		extentTest.log(LogStatus.PASS, "Response Time : " + response.getTime() +" milliseconds");
 		System.out.println(response.getBody().asString());
 		response.then().assertThat()
