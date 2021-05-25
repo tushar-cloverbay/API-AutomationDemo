@@ -170,7 +170,7 @@
                 "templatesApplied": [],
                 "senderInputs": [],
                 "notificationSettings": {
-                    "enableNotifications": false,
+                    "enableNotifications": true,
                     "addCustomRecipientsToEnvelopeComplete": true
                 }
             },
@@ -195,7 +195,7 @@
     "placeholders": [],
     "templates": [
       {
-        "templateID": "f81236ac-b29d-4ccb-92b8-acf700e9a42a",
+        "templateID": "1cae76fe-e9cf-4c9e-904e-ad320157c162",
         "values": [
           {
             "name": "Envelope Name ",
@@ -234,7 +234,7 @@
             "name": "Signer 2 Email",
             "value": "mvadgave@mailinator.com"
           },
-          {"name": "Employment application",
+          {"name": "2 signers all jotblocks",
             "files": [
               {
                  "fileToUpload": {

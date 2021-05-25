@@ -173,21 +173,21 @@
                 "templatesApplied": [],
                 "senderInputs": [],
                 "notificationSettings": {
-                    "enableNotifications": false,
+                    "enableNotifications": true,
                     "addCustomRecipientsToEnvelopeComplete": true
                 }
             },
             "notificationRecipients": [],
             "signers": [
                 {
-                    "email": "manali@mailinator.com",
+                    "email": "mvadgave@assuresign.com",
                     "label": "First Signer",
                     "name": "Signer one",
                     "signatureStyle": "drawn"
                  
                 },
                 {
-                    "email": "manali@mailinator.com",
+                    "email": "mvadgave@assuresign.com",
                     "label": "Second Signer",
                     "name": "Signer Two",
                     "signatureStyle": "drawn"
@@ -198,7 +198,7 @@
     "placeholders": [],
     "templates": [
       {
-        "templateID": "f81236ac-b29d-4ccb-92b8-acf700e9a42a",
+        "templateID": "4544b986-edcb-49f6-96fe-ace5017a002b",
         "values": [
           {
             "name": "Envelope Name ",
@@ -223,13 +223,13 @@
           },
           {
             "name": "Signer 1 Email",
-            "value": "manali@mailinator.com"
+            "value": "mvadgave@assuresign.com"
           },
           {
             "name": "Signer 1 Mobile Phone",
             "value": "3317254626"
           },
-          {"name": "dummyPDF",
+          {"name": "Employment application1",
             "files": [
               {
                  "fileToUpload": {

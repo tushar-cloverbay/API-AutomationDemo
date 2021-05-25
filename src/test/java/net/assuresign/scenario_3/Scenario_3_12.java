@@ -35,6 +35,7 @@ public class Scenario_3_12 extends Base{
 		request.header("Content-Type", "application/json");
 		Response response = request.post(URI);
 		responseBody = response.asPrettyString();
+		statusCode = Integer.toString(response.getStatusCode());
 		extentTest.log(LogStatus.PASS, "Response Time : " + response.getTime() +" milliseconds");
 		System.out.println(response.getBody().asString());
 		System.out.println(response.getStatusCode());
@@ -54,6 +55,7 @@ public class Scenario_3_12 extends Base{
 		request.header("Content-Type", "application/json");
 		Response response = request.post(URI);
 		responseBody = response.asPrettyString();
+		statusCode = Integer.toString(response.getStatusCode());
 		extentTest.log(LogStatus.PASS, "Response Time : " + response.getTime() +" milliseconds");
 		System.out.println(response.getBody().asString());
 		System.out.println(response.getStatusCode());
@@ -80,6 +82,7 @@ public class Scenario_3_12 extends Base{
 		request.header("Content-Type", "application/json");
 		Response response = request.post(URI);
 		responseBody = response.asPrettyString();
+		statusCode = Integer.toString(response.getStatusCode());
 		extentTest.log(LogStatus.PASS, "Response Time : " + response.getTime() +" milliseconds");
 		System.out.println(response.getBody().asString());
 		System.out.println(response.getStatusCode());
@@ -101,12 +104,13 @@ public class Scenario_3_12 extends Base{
 		request.header("Content-Type", "application/json");
 		Response response = request.post(URI);
 		responseBody = response.asPrettyString();
+		statusCode = Integer.toString(response.getStatusCode());
 		extentTest.log(LogStatus.PASS, "Response Time : " + response.getTime() +" milliseconds");
 		System.out.println(response.getBody().asString());
 		System.out.println(response.getStatusCode());
 		response.then().assertThat()
 		.statusCode(equalTo(404))
-		.body("errorCode", anyOf(is("BAD_REQUEST"),is("NOT_FOUND")))
+		.body("errorCode", is("NOT_FOUND"))
 		.body("summary", notNullValue());
 	}
 }
