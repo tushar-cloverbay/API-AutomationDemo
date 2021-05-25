@@ -48,8 +48,10 @@
 			<class name="net.assuresign.scenario_11.Scenario_11" />	
 			<class name="net.assuresign.scenario_12.Scenario_12" />
 			<class name="net.assuresign.scenario_13.Scenario_13" />		-->
-			<class name="net.assuresign.scenario_8.Scenario_8" />
-
+			<class name="net.assuresign.scenario_5.Scenario_5" />
+			<class name="net.assuresign.scenario_6.Scenario_6" />
+			<class name="net.assuresign.scenario_7.Scenario_7" />
+			<class name="net.assuresign.scenario_13.Scenario_13" />
 			
 		</classes>
 	</test> 
