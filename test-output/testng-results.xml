@@ -2,6 +2,7 @@
 <testng-results ignored="0" total="13" passed="10" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite started-at="2021-05-26T04:34:16 IST" name="Suite" finished-at="2021-05-26T04:35:37 IST" duration-ms="81395">
     <groups>
     </groups>
@@ -12,13 +13,29 @@
             <param index="0">
               <value>
                 <![CDATA[[TestResult name={null} status=CREATED method=Scenario_8.getEnvelope_EmptyEnvelopID(java.lang.String)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@7e5afaa6] output={null}]]]>
+=======
+  <suite started-at="2021-05-26T04:56:06 IST" name="Suite" finished-at="2021-05-26T04:57:30 IST" duration-ms="84244">
+    <groups>
+    </groups>
+    <test started-at="2021-05-26T04:56:06 IST" name="Test" finished-at="2021-05-26T04:57:30 IST" duration-ms="84244">
+      <class name="net.assuresign.scenario_8.Scenario_8">
+        <test-method is-config="true" signature="reportUp(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@483f6d77]" started-at="2021-05-26T04:56:06 IST" name="reportUp" finished-at="2021-05-26T04:56:06 IST" duration-ms="6" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=Scenario_8.getEnvelope_EmptyEnvelopID(java.lang.String)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@483f6d77] output={null}]]]>
+>>>>>>> master
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportUp -->
+<<<<<<< HEAD
         <test-method signature="getEnvelope_EmptyEnvelopID(java.lang.String)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@7e5afaa6]" started-at="2021-05-26T04:34:16 IST" name="getEnvelope_EmptyEnvelopID" data-provider="version-data-provider" finished-at="2021-05-26T04:34:26 IST" duration-ms="9919" status="PASS">
+=======
+        <test-method signature="getEnvelope_EmptyEnvelopID(java.lang.String)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@483f6d77]" started-at="2021-05-26T04:56:06 IST" name="getEnvelope_EmptyEnvelopID" data-provider="version-data-provider" finished-at="2021-05-26T04:56:14 IST" duration-ms="8312" status="PASS">
+>>>>>>> master
           <params>
             <param index="0">
               <value>
@@ -29,29 +46,49 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getEnvelope_EmptyEnvelopID -->
+<<<<<<< HEAD
         <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@7e5afaa6]" started-at="2021-05-26T04:34:26 IST" name="tearDown" finished-at="2021-05-26T04:34:26 IST" duration-ms="4" status="PASS">
           <params>
             <param index="0">
               <value>
                 <![CDATA[[TestResult name=getEnvelope_EmptyEnvelopID status=SUCCESS method=Scenario_8.getEnvelope_EmptyEnvelopID(java.lang.String)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@7e5afaa6] output={null}]]]>
+=======
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@483f6d77]" started-at="2021-05-26T04:56:14 IST" name="tearDown" finished-at="2021-05-26T04:56:14 IST" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=getEnvelope_EmptyEnvelopID status=SUCCESS method=Scenario_8.getEnvelope_EmptyEnvelopID(java.lang.String)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@483f6d77] output={null}]]]>
+>>>>>>> master
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
+<<<<<<< HEAD
         <test-method is-config="true" signature="reportUp(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@7e5afaa6]" started-at="2021-05-26T04:34:26 IST" name="reportUp" finished-at="2021-05-26T04:34:26 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
                 <![CDATA[[TestResult name={null} status=CREATED method=Scenario_8.getEnvelope_ForEmptyEnvelopes(java.lang.String)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@7e5afaa6] output={null}]]]>
+=======
+        <test-method is-config="true" signature="reportUp(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@483f6d77]" started-at="2021-05-26T04:56:14 IST" name="reportUp" finished-at="2021-05-26T04:56:14 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=Scenario_8.getEnvelope_ForEmptyEnvelopes(java.lang.String)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@483f6d77] output={null}]]]>
+>>>>>>> master
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportUp -->
+<<<<<<< HEAD
         <test-method signature="getEnvelope_ForEmptyEnvelopes(java.lang.String)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@7e5afaa6]" started-at="2021-05-26T04:34:26 IST" name="getEnvelope_ForEmptyEnvelopes" data-provider="version-data-provider" finished-at="2021-05-26T04:34:31 IST" duration-ms="4801" status="FAIL">
+=======
+        <test-method signature="getEnvelope_ForEmptyEnvelopes(java.lang.String)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@483f6d77]" started-at="2021-05-26T04:56:14 IST" name="getEnvelope_ForEmptyEnvelopes" data-provider="version-data-provider" finished-at="2021-05-26T04:56:19 IST" duration-ms="4517" status="FAIL">
+>>>>>>> master
           <params>
             <param index="0">
               <value>
@@ -101,29 +138,49 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getEnvelope_ForEmptyEnvelopes -->
+<<<<<<< HEAD
         <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@7e5afaa6]" started-at="2021-05-26T04:34:31 IST" name="tearDown" finished-at="2021-05-26T04:34:31 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
                 <![CDATA[[TestResult name=getEnvelope_ForEmptyEnvelopes status=FAILURE method=Scenario_8.getEnvelope_ForEmptyEnvelopes(java.lang.String)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@7e5afaa6] output={null}]]]>
+=======
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@483f6d77]" started-at="2021-05-26T04:56:19 IST" name="tearDown" finished-at="2021-05-26T04:56:19 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=getEnvelope_ForEmptyEnvelopes status=FAILURE method=Scenario_8.getEnvelope_ForEmptyEnvelopes(java.lang.String)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@483f6d77] output={null}]]]>
+>>>>>>> master
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
+<<<<<<< HEAD
         <test-method is-config="true" signature="reportUp(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@7e5afaa6]" started-at="2021-05-26T04:34:31 IST" name="reportUp" finished-at="2021-05-26T04:34:31 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
                 <![CDATA[[TestResult name={null} status=CREATED method=Scenario_8.getEnvelope_ForInvalidEnvelopes(java.lang.String)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@7e5afaa6] output={null}]]]>
+=======
+        <test-method is-config="true" signature="reportUp(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@483f6d77]" started-at="2021-05-26T04:56:19 IST" name="reportUp" finished-at="2021-05-26T04:56:19 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=Scenario_8.getEnvelope_ForInvalidEnvelopes(java.lang.String)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@483f6d77] output={null}]]]>
+>>>>>>> master
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportUp -->
+<<<<<<< HEAD
         <test-method signature="getEnvelope_ForInvalidEnvelopes(java.lang.String)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@7e5afaa6]" started-at="2021-05-26T04:34:31 IST" name="getEnvelope_ForInvalidEnvelopes" data-provider="version-data-provider" finished-at="2021-05-26T04:34:36 IST" duration-ms="4797" status="FAIL">
+=======
+        <test-method signature="getEnvelope_ForInvalidEnvelopes(java.lang.String)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@483f6d77]" started-at="2021-05-26T04:56:19 IST" name="getEnvelope_ForInvalidEnvelopes" data-provider="version-data-provider" finished-at="2021-05-26T04:56:24 IST" duration-ms="4834" status="FAIL">
+>>>>>>> master
           <params>
             <param index="0">
               <value>
@@ -173,29 +230,49 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getEnvelope_ForInvalidEnvelopes -->
+<<<<<<< HEAD
         <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@7e5afaa6]" started-at="2021-05-26T04:34:36 IST" name="tearDown" finished-at="2021-05-26T04:34:36 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
                 <![CDATA[[TestResult name=getEnvelope_ForInvalidEnvelopes status=FAILURE method=Scenario_8.getEnvelope_ForInvalidEnvelopes(java.lang.String)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@7e5afaa6] output={null}]]]>
+=======
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@483f6d77]" started-at="2021-05-26T04:56:24 IST" name="tearDown" finished-at="2021-05-26T04:56:24 IST" duration-ms="6" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=getEnvelope_ForInvalidEnvelopes status=FAILURE method=Scenario_8.getEnvelope_ForInvalidEnvelopes(java.lang.String)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@483f6d77] output={null}]]]>
+>>>>>>> master
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
+<<<<<<< HEAD
         <test-method is-config="true" signature="reportUp(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@7e5afaa6]" started-at="2021-05-26T04:34:36 IST" name="reportUp" finished-at="2021-05-26T04:34:36 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
                 <![CDATA[[TestResult name={null} status=CREATED method=Scenario_8.getEnvelope_InvalidDocType(java.lang.String)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@7e5afaa6] output={null}]]]>
+=======
+        <test-method is-config="true" signature="reportUp(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@483f6d77]" started-at="2021-05-26T04:56:24 IST" name="reportUp" finished-at="2021-05-26T04:56:24 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=Scenario_8.getEnvelope_InvalidDocType(java.lang.String)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@483f6d77] output={null}]]]>
+>>>>>>> master
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportUp -->
+<<<<<<< HEAD
         <test-method signature="getEnvelope_InvalidDocType(java.lang.String)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@7e5afaa6]" started-at="2021-05-26T04:34:36 IST" name="getEnvelope_InvalidDocType" data-provider="version-data-provider" finished-at="2021-05-26T04:34:43 IST" duration-ms="7403" status="PASS">
+=======
+        <test-method signature="getEnvelope_InvalidDocType(java.lang.String)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@483f6d77]" started-at="2021-05-26T04:56:24 IST" name="getEnvelope_InvalidDocType" data-provider="version-data-provider" finished-at="2021-05-26T04:56:29 IST" duration-ms="5161" status="PASS">
+>>>>>>> master
           <params>
             <param index="0">
               <value>
@@ -206,29 +283,49 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getEnvelope_InvalidDocType -->
+<<<<<<< HEAD
         <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@7e5afaa6]" started-at="2021-05-26T04:34:43 IST" name="tearDown" finished-at="2021-05-26T04:34:43 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
                 <![CDATA[[TestResult name=getEnvelope_InvalidDocType status=SUCCESS method=Scenario_8.getEnvelope_InvalidDocType(java.lang.String)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@7e5afaa6] output={null}]]]>
+=======
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@483f6d77]" started-at="2021-05-26T04:56:29 IST" name="tearDown" finished-at="2021-05-26T04:56:29 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=getEnvelope_InvalidDocType status=SUCCESS method=Scenario_8.getEnvelope_InvalidDocType(java.lang.String)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@483f6d77] output={null}]]]>
+>>>>>>> master
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
+<<<<<<< HEAD
         <test-method is-config="true" signature="reportUp(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@7e5afaa6]" started-at="2021-05-26T04:34:43 IST" name="reportUp" finished-at="2021-05-26T04:34:43 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
                 <![CDATA[[TestResult name={null} status=CREATED method=Scenario_8.getEnvelope_InvalidEnvelopID(java.lang.String)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@7e5afaa6] output={null}]]]>
+=======
+        <test-method is-config="true" signature="reportUp(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@483f6d77]" started-at="2021-05-26T04:56:29 IST" name="reportUp" finished-at="2021-05-26T04:56:29 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=Scenario_8.getEnvelope_InvalidEnvelopID(java.lang.String)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@483f6d77] output={null}]]]>
+>>>>>>> master
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportUp -->
+<<<<<<< HEAD
         <test-method signature="getEnvelope_InvalidEnvelopID(java.lang.String)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@7e5afaa6]" started-at="2021-05-26T04:34:43 IST" name="getEnvelope_InvalidEnvelopID" data-provider="version-data-provider" finished-at="2021-05-26T04:34:48 IST" duration-ms="4533" status="PASS">
+=======
+        <test-method signature="getEnvelope_InvalidEnvelopID(java.lang.String)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@483f6d77]" started-at="2021-05-26T04:56:29 IST" name="getEnvelope_InvalidEnvelopID" data-provider="version-data-provider" finished-at="2021-05-26T04:56:34 IST" duration-ms="4775" status="PASS">
+>>>>>>> master
           <params>
             <param index="0">
               <value>
@@ -239,29 +336,49 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getEnvelope_InvalidEnvelopID -->
+<<<<<<< HEAD
         <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@7e5afaa6]" started-at="2021-05-26T04:34:48 IST" name="tearDown" finished-at="2021-05-26T04:34:48 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
                 <![CDATA[[TestResult name=getEnvelope_InvalidEnvelopID status=SUCCESS method=Scenario_8.getEnvelope_InvalidEnvelopID(java.lang.String)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@7e5afaa6] output={null}]]]>
+=======
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@483f6d77]" started-at="2021-05-26T04:56:34 IST" name="tearDown" finished-at="2021-05-26T04:56:34 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=getEnvelope_InvalidEnvelopID status=SUCCESS method=Scenario_8.getEnvelope_InvalidEnvelopID(java.lang.String)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@483f6d77] output={null}]]]>
+>>>>>>> master
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
+<<<<<<< HEAD
         <test-method is-config="true" signature="reportUp(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@7e5afaa6]" started-at="2021-05-26T04:34:48 IST" name="reportUp" finished-at="2021-05-26T04:34:48 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
                 <![CDATA[[TestResult name={null} status=CREATED method=Scenario_8.getEnvelope_WithoutDocType(java.lang.String)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@7e5afaa6] output={null}]]]>
+=======
+        <test-method is-config="true" signature="reportUp(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@483f6d77]" started-at="2021-05-26T04:56:34 IST" name="reportUp" finished-at="2021-05-26T04:56:34 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=Scenario_8.getEnvelope_WithoutDocType(java.lang.String)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@483f6d77] output={null}]]]>
+>>>>>>> master
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportUp -->
+<<<<<<< HEAD
         <test-method signature="getEnvelope_WithoutDocType(java.lang.String)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@7e5afaa6]" started-at="2021-05-26T04:34:48 IST" name="getEnvelope_WithoutDocType" data-provider="version-data-provider" finished-at="2021-05-26T04:34:52 IST" duration-ms="4541" status="PASS">
+=======
+        <test-method signature="getEnvelope_WithoutDocType(java.lang.String)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@483f6d77]" started-at="2021-05-26T04:56:34 IST" name="getEnvelope_WithoutDocType" data-provider="version-data-provider" finished-at="2021-05-26T04:56:38 IST" duration-ms="4536" status="PASS">
+>>>>>>> master
           <params>
             <param index="0">
               <value>
@@ -272,95 +389,167 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getEnvelope_WithoutDocType -->
+<<<<<<< HEAD
         <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@7e5afaa6]" started-at="2021-05-26T04:34:52 IST" name="tearDown" finished-at="2021-05-26T04:34:52 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
                 <![CDATA[[TestResult name=getEnvelope_WithoutDocType status=SUCCESS method=Scenario_8.getEnvelope_WithoutDocType(java.lang.String)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@7e5afaa6] output={null}]]]>
+=======
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@483f6d77]" started-at="2021-05-26T04:56:38 IST" name="tearDown" finished-at="2021-05-26T04:56:38 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=getEnvelope_WithoutDocType status=SUCCESS method=Scenario_8.getEnvelope_WithoutDocType(java.lang.String)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@483f6d77] output={null}]]]>
+>>>>>>> master
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
+<<<<<<< HEAD
         <test-method is-config="true" signature="reportUp(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@7e5afaa6]" started-at="2021-05-26T04:34:52 IST" name="reportUp" finished-at="2021-05-26T04:34:52 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
                 <![CDATA[[TestResult name={null} status=CREATED method=Scenario_8.getEnvelope_WrongDocType(java.lang.String)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@7e5afaa6] output={null}]]]>
+=======
+        <test-method signature="getEnvelope_WrongDocType(java.lang.String)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@483f6d77]" started-at="2021-05-26T04:56:38 IST" name="getEnvelope_WrongDocType" data-provider="version-data-provider" finished-at="2021-05-26T04:56:44 IST" duration-ms="6285" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3.7]]>
+>>>>>>> master
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- reportUp -->
         <test-method signature="getEnvelope_WrongDocType(java.lang.String)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@7e5afaa6]" started-at="2021-05-26T04:34:52 IST" name="getEnvelope_WrongDocType" data-provider="version-data-provider" finished-at="2021-05-26T04:34:57 IST" duration-ms="4789" status="PASS">
           <params>
             <param index="0">
               <value>
                 <![CDATA[3.7]]>
+=======
+        </test-method> <!-- getEnvelope_WrongDocType -->
+        <test-method is-config="true" signature="reportUp(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@483f6d77]" started-at="2021-05-26T04:56:38 IST" name="reportUp" finished-at="2021-05-26T04:56:38 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=Scenario_8.getEnvelope_WrongDocType(java.lang.String)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@483f6d77] output={null}]]]>
+>>>>>>> master
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- getEnvelope_WrongDocType -->
         <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@7e5afaa6]" started-at="2021-05-26T04:34:57 IST" name="tearDown" finished-at="2021-05-26T04:34:57 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
                 <![CDATA[[TestResult name=getEnvelope_WrongDocType status=SUCCESS method=Scenario_8.getEnvelope_WrongDocType(java.lang.String)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@7e5afaa6] output={null}]]]>
+=======
+        </test-method> <!-- reportUp -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@483f6d77]" started-at="2021-05-26T04:56:44 IST" name="tearDown" finished-at="2021-05-26T04:56:44 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=getEnvelope_WrongDocType status=SUCCESS method=Scenario_8.getEnvelope_WrongDocType(java.lang.String)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@483f6d77] output={null}]]]>
+>>>>>>> master
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
+<<<<<<< HEAD
         <test-method is-config="true" signature="reportUp(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@7e5afaa6]" started-at="2021-05-26T04:34:57 IST" name="reportUp" finished-at="2021-05-26T04:34:57 IST" duration-ms="5" status="PASS">
           <params>
             <param index="0">
               <value>
                 <![CDATA[[TestResult name={null} status=CREATED method=Scenario_8.getEnvelopesAnyFilter(java.lang.String)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@7e5afaa6] output={null}]]]>
+=======
+        <test-method signature="getEnvelopesAnyFilter(java.lang.String)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@483f6d77]" started-at="2021-05-26T04:56:44 IST" name="getEnvelopesAnyFilter" data-provider="version-data-provider" finished-at="2021-05-26T04:56:58 IST" duration-ms="13787" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3.7]]>
+>>>>>>> master
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- reportUp -->
         <test-method signature="getEnvelopesAnyFilter(java.lang.String)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@7e5afaa6]" started-at="2021-05-26T04:34:57 IST" name="getEnvelopesAnyFilter" data-provider="version-data-provider" finished-at="2021-05-26T04:35:08 IST" duration-ms="10615" status="PASS">
           <params>
             <param index="0">
               <value>
                 <![CDATA[3.7]]>
+=======
+        </test-method> <!-- getEnvelopesAnyFilter -->
+        <test-method is-config="true" signature="reportUp(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@483f6d77]" started-at="2021-05-26T04:56:44 IST" name="reportUp" finished-at="2021-05-26T04:56:44 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=Scenario_8.getEnvelopesAnyFilter(java.lang.String)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@483f6d77] output={null}]]]>
+>>>>>>> master
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- getEnvelopesAnyFilter -->
         <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@7e5afaa6]" started-at="2021-05-26T04:35:08 IST" name="tearDown" finished-at="2021-05-26T04:35:08 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
                 <![CDATA[[TestResult name=getEnvelopesAnyFilter status=SUCCESS method=Scenario_8.getEnvelopesAnyFilter(java.lang.String)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@7e5afaa6] output={null}]]]>
+=======
+        </test-method> <!-- reportUp -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@483f6d77]" started-at="2021-05-26T04:56:58 IST" name="tearDown" finished-at="2021-05-26T04:56:58 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=getEnvelopesAnyFilter status=SUCCESS method=Scenario_8.getEnvelopesAnyFilter(java.lang.String)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@483f6d77] output={null}]]]>
+>>>>>>> master
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
+<<<<<<< HEAD
         <test-method is-config="true" signature="reportUp(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@7e5afaa6]" started-at="2021-05-26T04:35:08 IST" name="reportUp" finished-at="2021-05-26T04:35:08 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
                 <![CDATA[[TestResult name={null} status=CREATED method=Scenario_8.getEnvelopes_ClosedWithFromDateLaterTodate(java.lang.String)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@7e5afaa6] output={null}]]]>
+=======
+        <test-method is-config="true" signature="reportUp(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@483f6d77]" started-at="2021-05-26T04:56:58 IST" name="reportUp" finished-at="2021-05-26T04:56:58 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=Scenario_8.getEnvelopes_ClosedWithFromDateLaterTodate(java.lang.String)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@483f6d77] output={null}]]]>
+>>>>>>> master
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportUp -->
+<<<<<<< HEAD
         <test-method signature="getEnvelopes_ClosedWithFromDateLaterTodate(java.lang.String)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@7e5afaa6]" started-at="2021-05-26T04:35:08 IST" name="getEnvelopes_ClosedWithFromDateLaterTodate" data-provider="version-data-provider" finished-at="2021-05-26T04:35:13 IST" duration-ms="5024" status="PASS">
+=======
+        <test-method signature="getEnvelopes_ClosedWithFromDateLaterTodate(java.lang.String)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@483f6d77]" started-at="2021-05-26T04:56:58 IST" name="getEnvelopes_ClosedWithFromDateLaterTodate" data-provider="version-data-provider" finished-at="2021-05-26T04:57:03 IST" duration-ms="4876" status="PASS">
+>>>>>>> master
           <params>
             <param index="0">
               <value>
@@ -371,29 +560,49 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getEnvelopes_ClosedWithFromDateLaterTodate -->
+<<<<<<< HEAD
         <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@7e5afaa6]" started-at="2021-05-26T04:35:13 IST" name="tearDown" finished-at="2021-05-26T04:35:13 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
                 <![CDATA[[TestResult name=getEnvelopes_ClosedWithFromDateLaterTodate status=SUCCESS method=Scenario_8.getEnvelopes_ClosedWithFromDateLaterTodate(java.lang.String)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@7e5afaa6] output={null}]]]>
+=======
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@483f6d77]" started-at="2021-05-26T04:57:03 IST" name="tearDown" finished-at="2021-05-26T04:57:03 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=getEnvelopes_ClosedWithFromDateLaterTodate status=SUCCESS method=Scenario_8.getEnvelopes_ClosedWithFromDateLaterTodate(java.lang.String)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@483f6d77] output={null}]]]>
+>>>>>>> master
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
+<<<<<<< HEAD
         <test-method is-config="true" signature="reportUp(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@7e5afaa6]" started-at="2021-05-26T04:35:13 IST" name="reportUp" finished-at="2021-05-26T04:35:13 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
                 <![CDATA[[TestResult name={null} status=CREATED method=Scenario_8.getEnvelopes_ClosedWithInvalidFormData(java.lang.String)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@7e5afaa6] output={null}]]]>
+=======
+        <test-method is-config="true" signature="reportUp(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@483f6d77]" started-at="2021-05-26T04:57:03 IST" name="reportUp" finished-at="2021-05-26T04:57:03 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=Scenario_8.getEnvelopes_ClosedWithInvalidFormData(java.lang.String)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@483f6d77] output={null}]]]>
+>>>>>>> master
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportUp -->
+<<<<<<< HEAD
         <test-method signature="getEnvelopes_ClosedWithInvalidFormData(java.lang.String)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@7e5afaa6]" started-at="2021-05-26T04:35:13 IST" name="getEnvelopes_ClosedWithInvalidFormData" data-provider="version-data-provider" finished-at="2021-05-26T04:35:18 IST" duration-ms="5066" status="PASS">
+=======
+        <test-method signature="getEnvelopes_ClosedWithInvalidFormData(java.lang.String)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@483f6d77]" started-at="2021-05-26T04:57:03 IST" name="getEnvelopes_ClosedWithInvalidFormData" data-provider="version-data-provider" finished-at="2021-05-26T04:57:08 IST" duration-ms="4646" status="PASS">
+>>>>>>> master
           <params>
             <param index="0">
               <value>
@@ -404,29 +613,49 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getEnvelopes_ClosedWithInvalidFormData -->
+<<<<<<< HEAD
         <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@7e5afaa6]" started-at="2021-05-26T04:35:18 IST" name="tearDown" finished-at="2021-05-26T04:35:18 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
                 <![CDATA[[TestResult name=getEnvelopes_ClosedWithInvalidFormData status=SUCCESS method=Scenario_8.getEnvelopes_ClosedWithInvalidFormData(java.lang.String)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@7e5afaa6] output={null}]]]>
+=======
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@483f6d77]" started-at="2021-05-26T04:57:08 IST" name="tearDown" finished-at="2021-05-26T04:57:08 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=getEnvelopes_ClosedWithInvalidFormData status=SUCCESS method=Scenario_8.getEnvelopes_ClosedWithInvalidFormData(java.lang.String)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@483f6d77] output={null}]]]>
+>>>>>>> master
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
+<<<<<<< HEAD
         <test-method is-config="true" signature="reportUp(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@7e5afaa6]" started-at="2021-05-26T04:35:18 IST" name="reportUp" finished-at="2021-05-26T04:35:18 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
                 <![CDATA[[TestResult name={null} status=CREATED method=Scenario_8.getEnvelopes_ClosedWithNoFormData(java.lang.String)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@7e5afaa6] output={null}]]]>
+=======
+        <test-method is-config="true" signature="reportUp(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@483f6d77]" started-at="2021-05-26T04:57:08 IST" name="reportUp" finished-at="2021-05-26T04:57:08 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=Scenario_8.getEnvelopes_ClosedWithNoFormData(java.lang.String)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@483f6d77] output={null}]]]>
+>>>>>>> master
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportUp -->
+<<<<<<< HEAD
         <test-method signature="getEnvelopes_ClosedWithNoFormData(java.lang.String)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@7e5afaa6]" started-at="2021-05-26T04:35:18 IST" name="getEnvelopes_ClosedWithNoFormData" data-provider="version-data-provider" finished-at="2021-05-26T04:35:22 IST" duration-ms="4492" status="PASS">
+=======
+        <test-method signature="getEnvelopes_ClosedWithNoFormData(java.lang.String)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@483f6d77]" started-at="2021-05-26T04:57:08 IST" name="getEnvelopes_ClosedWithNoFormData" data-provider="version-data-provider" finished-at="2021-05-26T04:57:13 IST" duration-ms="4834" status="PASS">
+>>>>>>> master
           <params>
             <param index="0">
               <value>
@@ -437,29 +666,49 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getEnvelopes_ClosedWithNoFormData -->
+<<<<<<< HEAD
         <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@7e5afaa6]" started-at="2021-05-26T04:35:22 IST" name="tearDown" finished-at="2021-05-26T04:35:22 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
                 <![CDATA[[TestResult name=getEnvelopes_ClosedWithNoFormData status=SUCCESS method=Scenario_8.getEnvelopes_ClosedWithNoFormData(java.lang.String)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@7e5afaa6] output={null}]]]>
+=======
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@483f6d77]" started-at="2021-05-26T04:57:13 IST" name="tearDown" finished-at="2021-05-26T04:57:13 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=getEnvelopes_ClosedWithNoFormData status=SUCCESS method=Scenario_8.getEnvelopes_ClosedWithNoFormData(java.lang.String)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@483f6d77] output={null}]]]>
+>>>>>>> master
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
+<<<<<<< HEAD
         <test-method is-config="true" signature="reportUp(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@7e5afaa6]" started-at="2021-05-26T04:35:22 IST" name="reportUp" finished-at="2021-05-26T04:35:22 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
                 <![CDATA[[TestResult name={null} status=CREATED method=Scenario_8.getEnvelopes_EmptyEnvelopID(java.lang.String)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@7e5afaa6] output={null}]]]>
+=======
+        <test-method is-config="true" signature="reportUp(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@483f6d77]" started-at="2021-05-26T04:57:13 IST" name="reportUp" finished-at="2021-05-26T04:57:13 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=Scenario_8.getEnvelopes_EmptyEnvelopID(java.lang.String)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@483f6d77] output={null}]]]>
+>>>>>>> master
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportUp -->
+<<<<<<< HEAD
         <test-method signature="getEnvelopes_EmptyEnvelopID(java.lang.String)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@7e5afaa6]" started-at="2021-05-26T04:35:22 IST" name="getEnvelopes_EmptyEnvelopID" data-provider="version-data-provider" finished-at="2021-05-26T04:35:31 IST" duration-ms="8999" status="FAIL">
+=======
+        <test-method signature="getEnvelopes_EmptyEnvelopID(java.lang.String)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@483f6d77]" started-at="2021-05-26T04:57:13 IST" name="getEnvelopes_EmptyEnvelopID" data-provider="version-data-provider" finished-at="2021-05-26T04:57:24 IST" duration-ms="11323" status="FAIL">
+>>>>>>> master
           <params>
             <param index="0">
               <value>
@@ -509,29 +758,49 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getEnvelopes_EmptyEnvelopID -->
+<<<<<<< HEAD
         <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@7e5afaa6]" started-at="2021-05-26T04:35:31 IST" name="tearDown" finished-at="2021-05-26T04:35:31 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
                 <![CDATA[[TestResult name=getEnvelopes_EmptyEnvelopID status=FAILURE method=Scenario_8.getEnvelopes_EmptyEnvelopID(java.lang.String)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@7e5afaa6] output={null}]]]>
+=======
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@483f6d77]" started-at="2021-05-26T04:57:24 IST" name="tearDown" finished-at="2021-05-26T04:57:24 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=getEnvelopes_EmptyEnvelopID status=FAILURE method=Scenario_8.getEnvelopes_EmptyEnvelopID(java.lang.String)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@483f6d77] output={null}]]]>
+>>>>>>> master
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
+<<<<<<< HEAD
         <test-method is-config="true" signature="reportUp(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@7e5afaa6]" started-at="2021-05-26T04:35:31 IST" name="reportUp" finished-at="2021-05-26T04:35:31 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
                 <![CDATA[[TestResult name={null} status=CREATED method=Scenario_8.getEnvelopes_InvalidEnvelopID(java.lang.String)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@7e5afaa6] output={null}]]]>
+=======
+        <test-method is-config="true" signature="reportUp(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@483f6d77]" started-at="2021-05-26T04:57:24 IST" name="reportUp" finished-at="2021-05-26T04:57:24 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=Scenario_8.getEnvelopes_InvalidEnvelopID(java.lang.String)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@483f6d77] output={null}]]]>
+>>>>>>> master
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportUp -->
+<<<<<<< HEAD
         <test-method signature="getEnvelopes_InvalidEnvelopID(java.lang.String)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@7e5afaa6]" started-at="2021-05-26T04:35:31 IST" name="getEnvelopes_InvalidEnvelopID" data-provider="version-data-provider" finished-at="2021-05-26T04:35:37 IST" duration-ms="6059" status="PASS">
+=======
+        <test-method signature="getEnvelopes_InvalidEnvelopID(java.lang.String)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@483f6d77]" started-at="2021-05-26T04:57:24 IST" name="getEnvelopes_InvalidEnvelopID" data-provider="version-data-provider" finished-at="2021-05-26T04:57:30 IST" duration-ms="5960" status="PASS">
+>>>>>>> master
           <params>
             <param index="0">
               <value>
@@ -542,11 +811,19 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getEnvelopes_InvalidEnvelopID -->
+<<<<<<< HEAD
         <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@7e5afaa6]" started-at="2021-05-26T04:35:37 IST" name="tearDown" finished-at="2021-05-26T04:35:37 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
                 <![CDATA[[TestResult name=getEnvelopes_InvalidEnvelopID status=SUCCESS method=Scenario_8.getEnvelopes_InvalidEnvelopID(java.lang.String)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@7e5afaa6] output={null}]]]>
+=======
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@483f6d77]" started-at="2021-05-26T04:57:30 IST" name="tearDown" finished-at="2021-05-26T04:57:30 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=getEnvelopes_InvalidEnvelopID status=SUCCESS method=Scenario_8.getEnvelopes_InvalidEnvelopID(java.lang.String)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@483f6d77] output={null}]]]>
+>>>>>>> master
               </value>
             </param>
           </params>

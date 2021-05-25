@@ -72,7 +72,7 @@ public class Base {
 		if (result.getStatus() == ITestResult.FAILURE) {
 			extentTest.log(LogStatus.FAIL, "TEST CASE FAILED IS " + result.getName()); // to add name in extent report
 			extentTest.log(LogStatus.FAIL, "Status Code : " + statusCode);
-			if(!responseBody.contains("<html")) {
+			if(!responseBody.contains("<")) {
 				extentTest.log(LogStatus.FAIL, "Reasons for failure : " + responseBody);
 			}
 			extentTest.log(LogStatus.FAIL, "TEST CASE FAILED IS " + result.getThrowable()); // to add error/exception in
