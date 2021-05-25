@@ -21,7 +21,6 @@ public class ListenersTestNG extends Base implements ITestListener {
 
 	 TestUtils.sendEmail("dmohan@assuresign.com");
 	 TestUtils.sendEmail("mvadgave@assuresign.com");
-	 TestUtils.sendEmail("mvadgave@assuresign.com");
 	 }
 	 
 	 /*
