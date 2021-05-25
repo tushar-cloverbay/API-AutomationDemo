@@ -9,41 +9,34 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">31,783</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">10</td><td class="num">0</td><td class="num">0</td><td class="num attn">3</td><td class="num">81,395</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">net.assuresign.scenario_3.Scenario_3_12</td><td><a href="#m0">submitSSTemplate_signerPassword</a></td><td rowspan="1">1621981716907</td><td rowspan="1">6239</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">net.assuresign.scenario_3.Scenario_3_12</td><td><a href="#m1">submitSSTemplate_delayedStep</a></td><td rowspan="1">1621981691685</td><td rowspan="1">13745</td></tr><tr class="passedeven"><td><a href="#m2">submitSSTemplate_invalidID</a></td><td rowspan="1">1621981705442</td><td rowspan="1">6013</td></tr><tr class="passedeven"><td><a href="#m3">submitSSTemplate_pwdOpenFile</a></td><td rowspan="1">1621981711462</td><td rowspan="1">5442</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="3">net.assuresign.scenario_8.Scenario_8</td><td><a href="#m0">getEnvelope_ForEmptyEnvelopes</a></td><td rowspan="1">1621983866658</td><td rowspan="1">4801</td></tr><tr class="failedeven"><td><a href="#m1">getEnvelope_ForInvalidEnvelopes</a></td><td rowspan="1">1621983871466</td><td rowspan="1">4797</td></tr><tr class="failedeven"><td><a href="#m2">getEnvelopes_EmptyEnvelopID</a></td><td rowspan="1">1621983922770</td><td rowspan="1">8999</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="10">net.assuresign.scenario_8.Scenario_8</td><td><a href="#m3">getEnvelope_EmptyEnvelopID</a></td><td rowspan="1">1621983856728</td><td rowspan="1">9919</td></tr><tr class="passedeven"><td><a href="#m4">getEnvelope_InvalidDocType</a></td><td rowspan="1">1621983876269</td><td rowspan="1">7403</td></tr><tr class="passedeven"><td><a href="#m5">getEnvelope_InvalidEnvelopID</a></td><td rowspan="1">1621983883677</td><td rowspan="1">4533</td></tr><tr class="passedeven"><td><a href="#m6">getEnvelope_WithoutDocType</a></td><td rowspan="1">1621983888214</td><td rowspan="1">4541</td></tr><tr class="passedeven"><td><a href="#m7">getEnvelope_WrongDocType</a></td><td rowspan="1">1621983892760</td><td rowspan="1">4789</td></tr><tr class="passedeven"><td><a href="#m8">getEnvelopesAnyFilter</a></td><td rowspan="1">1621983897557</td><td rowspan="1">10615</td></tr><tr class="passedeven"><td><a href="#m9">getEnvelopes_ClosedWithFromDateLaterTodate</a></td><td rowspan="1">1621983908175</td><td rowspan="1">5024</td></tr><tr class="passedeven"><td><a href="#m10">getEnvelopes_ClosedWithInvalidFormData</a></td><td rowspan="1">1621983913204</td><td rowspan="1">5066</td></tr><tr class="passedeven"><td><a href="#m11">getEnvelopes_ClosedWithNoFormData</a></td><td rowspan="1">1621983918274</td><td rowspan="1">4492</td></tr><tr class="passedeven"><td><a href="#m12">getEnvelopes_InvalidEnvelopID</a></td><td rowspan="1">1621983931776</td><td rowspan="1">6059</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">net.assuresign.scenario_3.Scenario_3_12#submitSSTemplate_signerPassword</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>3.7</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NoSuchMethodError: org.hamcrest.Matcher.describeMismatch(Ljava/lang/Object;Lorg/hamcrest/Description;)V
-	at io.restassured.internal.util.MatcherErrorMessageBuilder.buildError(MatcherErrorMessageBuilder.java:35)
-	at io.restassured.internal.util.MatcherErrorMessageBuilder$buildError.call(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:148)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validateStatusCodeAndStatusLine(ResponseSpecificationImpl.groovy:549)
-	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:471)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
-	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)
-	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
-	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:126)
-	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:84)
-	at io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
-	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
-	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:136)
-	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)
-	at net.assuresign.scenario_3.Scenario_3_12.submitSSTemplate_signerPassword(Scenario_3_12.java:43)
+<h2>Test</h2><h3 id="m0">net.assuresign.scenario_8.Scenario_8#getEnvelope_ForEmptyEnvelopes</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>3.7</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NoSuchMethodError: org.hamcrest.core.AnyOf.anyOf([Lorg/hamcrest/Matcher;)Lorg/hamcrest/core/AnyOf;
+	at org.hamcrest.Matchers.anyOf(Matchers.java:102)
+	at net.assuresign.scenario_8.Scenario_8.getEnvelope_ForEmptyEnvelopes(Scenario_8.java:179)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
-... Removed 40 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">net.assuresign.scenario_3.Scenario_3_12#submitSSTemplate_delayedStep</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>3.7</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">net.assuresign.scenario_3.Scenario_3_12#submitSSTemplate_invalidID</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>3.7</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">net.assuresign.scenario_3.Scenario_3_12#submitSSTemplate_pwdOpenFile</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>3.7</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">net.assuresign.scenario_8.Scenario_8#getEnvelope_ForInvalidEnvelopes</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>3.7</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NoSuchMethodError: org.hamcrest.core.AnyOf.anyOf([Lorg/hamcrest/Matcher;)Lorg/hamcrest/core/AnyOf;
+	at org.hamcrest.Matchers.anyOf(Matchers.java:102)
+	at net.assuresign.scenario_8.Scenario_8.getEnvelope_ForInvalidEnvelopes(Scenario_8.java:160)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">net.assuresign.scenario_8.Scenario_8#getEnvelopes_EmptyEnvelopID</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>3.7</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NoSuchMethodError: org.hamcrest.core.AnyOf.anyOf([Lorg/hamcrest/Matcher;)Lorg/hamcrest/core/AnyOf;
+	at org.hamcrest.Matchers.anyOf(Matchers.java:102)
+	at net.assuresign.scenario_8.Scenario_8.getEnvelopes_EmptyEnvelopID(Scenario_8.java:141)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">net.assuresign.scenario_8.Scenario_8#getEnvelope_EmptyEnvelopID</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>3.7</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">net.assuresign.scenario_8.Scenario_8#getEnvelope_InvalidDocType</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>3.7</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">net.assuresign.scenario_8.Scenario_8#getEnvelope_InvalidEnvelopID</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>3.7</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">net.assuresign.scenario_8.Scenario_8#getEnvelope_WithoutDocType</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>3.7</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">net.assuresign.scenario_8.Scenario_8#getEnvelope_WrongDocType</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>3.7</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">net.assuresign.scenario_8.Scenario_8#getEnvelopesAnyFilter</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>3.7</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">net.assuresign.scenario_8.Scenario_8#getEnvelopes_ClosedWithFromDateLaterTodate</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>3.7</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">net.assuresign.scenario_8.Scenario_8#getEnvelopes_ClosedWithInvalidFormData</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>3.7</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">net.assuresign.scenario_8.Scenario_8#getEnvelopes_ClosedWithNoFormData</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>3.7</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">net.assuresign.scenario_8.Scenario_8#getEnvelopes_InvalidEnvelopID</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>3.7</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
