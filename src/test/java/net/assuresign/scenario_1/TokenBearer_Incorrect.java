@@ -32,6 +32,7 @@ public class TokenBearer_Incorrect extends Base {
 		Response response = request.post(URI);
 		log.info("Requeste Submited");
 		responseBody = response.asPrettyString();
+		statusCode = Integer.toString(response.getStatusCode());
 		System.out.println(responseBody);
 		response.then().assertThat()
 		.statusCode(equalTo(200));
@@ -50,6 +51,7 @@ public class TokenBearer_Incorrect extends Base {
 		request.header("Content-Type", "application/json");
 		Response response = request.post(URI);
 		responseBody = response.asString();
+		statusCode = Integer.toString(response.getStatusCode());
 		System.out.println(requestBody);
 		response.then().assertThat()
 		.statusCode(equalTo(400));
@@ -68,6 +70,7 @@ public class TokenBearer_Incorrect extends Base {
 		request.header("Content-Type", "application/json");
 		Response response = request.post(URI);
 		responseBody = response.asPrettyString();
+		statusCode = Integer.toString(response.getStatusCode());
 		System.out.println(responseBody);
 		response.then().assertThat()
 		.statusCode(equalTo(400))
@@ -88,6 +91,7 @@ public class TokenBearer_Incorrect extends Base {
 		request.header("Content-Type", "application/json");
 		Response response = request.post(URI);
 		responseBody = response.asPrettyString();
+		statusCode = Integer.toString(response.getStatusCode());
 		System.out.println(responseBody);
 		response.then().assertThat()
 		.statusCode(equalTo(400))
@@ -107,6 +111,7 @@ public class TokenBearer_Incorrect extends Base {
 		request.header("Content-Type", "application/json");
 		Response response = request.post(URI);
 		responseBody = response.asString();
+		statusCode = Integer.toString(response.getStatusCode());
 		System.out.println(responseBody);
 		response.then().assertThat()
 		.statusCode(equalTo(401))
@@ -126,6 +131,7 @@ public class TokenBearer_Incorrect extends Base {
 		request.header("Content-Type", "application/json");
 		Response response = request.post(URI);
 		responseBody = response.asPrettyString();
+		statusCode = Integer.toString(response.getStatusCode());
 		System.out.println(responseBody);
 		System.out.println(response.getStatusCode());
 		response.then().assertThat()
