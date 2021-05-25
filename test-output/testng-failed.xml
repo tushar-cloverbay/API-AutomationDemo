@@ -7,6 +7,7 @@
   <test thread-count="5" name="Test(failed)">
     <classes>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <class name="net.assuresign.scenario_3.Scenario_3_5">
         <methods>
           <include name="reportUp"/>
@@ -18,13 +19,21 @@
       </class> <!-- net.assuresign.scenario_3.Scenario_3_5 -->
 =======
       <class name="net.assuresign.scenario_13.Scenario_13">
+=======
+      <class name="net.assuresign.scenario_8.Scenario_8">
+>>>>>>> master
         <methods>
+          <include name="getEnvelope_ForInvalidEnvelopes" invocation-numbers="0"/>
           <include name="reportUp"/>
-          <include name="submitValidate_ssTemplate" invocation-numbers="0"/>
           <include name="tearDown"/>
-          <include name="submitValidate_hybridCall" invocation-numbers="0"/>
+          <include name="getEnvelope_ForEmptyEnvelopes" invocation-numbers="0"/>
+          <include name="getEnvelopes_EmptyEnvelopID" invocation-numbers="0"/>
         </methods>
+<<<<<<< HEAD
       </class> <!-- net.assuresign.scenario_13.Scenario_13 -->
+>>>>>>> master
+=======
+      </class> <!-- net.assuresign.scenario_8.Scenario_8 -->
 >>>>>>> master
     </classes>
   </test> <!-- Test(failed) -->
