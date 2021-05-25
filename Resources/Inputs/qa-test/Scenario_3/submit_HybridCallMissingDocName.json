@@ -170,7 +170,7 @@
                 "templatesApplied": [],
                 "senderInputs": [],
                 "notificationSettings": {
-                    "enableNotifications": false,
+                    "enableNotifications": true,
                     "addCustomRecipientsToEnvelopeComplete": true
                 }
             },
@@ -195,7 +195,7 @@
     "placeholders": [],
     "templates": [
       {
-        "templateID": "f81236ac-b29d-4ccb-92b8-acf700e9a42a",
+        "templateID": "4544b986-edcb-49f6-96fe-ace5017a002b",
         "values": [
           {
             "name": "Envelope Name ",

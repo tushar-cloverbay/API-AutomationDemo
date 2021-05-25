@@ -3,14 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="net.assuresign.scenario_4.Scenario_4_7">
+      <class name="net.assuresign.scenario_5.Scenario_5">
         <methods>
           <include name="reportUp"/>
-          <include name="submit_enUSSMS2FactorAuth"/>
+          <include name="getInValidTemplate"/>
+          <include name="getTemplate"/>
+          <include name="getTemplateByEmptyID"/>
           <include name="tearDown"/>
-          <include name="submitPrepare_enUSSMS2FactorAuth"/>
+          <include name="getValidUnAuthorizedTemplate"/>
+          <include name="getValidTemplate"/>
         </methods>
-      </class> <!-- net.assuresign.scenario_4.Scenario_4_7 -->
+      </class> <!-- net.assuresign.scenario_5.Scenario_5 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
