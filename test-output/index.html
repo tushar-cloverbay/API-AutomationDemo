@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,7 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="net.assuresign.scenario_3.Scenario_3_12" class="method navigator-link" hash-for-method="submitSSTemplate_signerPassword(3.7)">submitSSTemplate_signerPassword(3.7)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -117,11 +131,6 @@
                         <a href="#" panel-name="suite-Suite" title="net.assuresign.scenario_3.Scenario_3_12" class="method navigator-link" hash-for-method="submitSSTemplate_pwdOpenFile(3.7)">submitSSTemplate_pwdOpenFile(3.7)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="net.assuresign.scenario_3.Scenario_3_12" class="method navigator-link" hash-for-method="submitSSTemplate_signerPassword(3.7)">submitSSTemplate_signerPassword(3.7)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
@@ -134,6 +143,52 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">net.assuresign.scenario_3.Scenario_3_12</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="submitSSTemplate_signerPassword(3.7)">
+                  </a> <!-- submitSSTemplate_signerPassword(3.7) -->
+                  <span class="method-name">submitSSTemplate_signerPassword</span>
+                  <span class="parameters">(3.7)</span>
+                  <div class="stack-trace">java.lang.NoSuchMethodError: org.hamcrest.Matcher.describeMismatch(Ljava/lang/Object;Lorg/hamcrest/Description;)V
+	at io.restassured.internal.util.MatcherErrorMessageBuilder.buildError(MatcherErrorMessageBuilder.java:35)
+	at io.restassured.internal.util.MatcherErrorMessageBuilder$buildError.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:148)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validateStatusCodeAndStatusLine(ResponseSpecificationImpl.groovy:549)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:471)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:126)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:84)
+	at io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
+	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:136)
+	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)
+	at net.assuresign.scenario_3.Scenario_3_12.submitSSTemplate_signerPassword(Scenario_3_12.java:43)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+... Removed 40 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -161,14 +216,6 @@
                   <a name="submitSSTemplate_pwdOpenFile(3.7)">
                   </a> <!-- submitSSTemplate_pwdOpenFile(3.7) -->
                   <span class="method-name">submitSSTemplate_pwdOpenFile</span>
-                  <span class="parameters">(3.7)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="submitSSTemplate_signerPassword(3.7)">
-                  </a> <!-- submitSSTemplate_signerPassword(3.7) -->
-                  <span class="method-name">submitSSTemplate_signerPassword</span>
                   <span class="parameters">(3.7)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -245,24 +292,24 @@ data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'submitSSTemplate_delayedStep')
 data.setCell(0, 2, 'net.assuresign.scenario_3.Scenario_3_12')
-data.setCell(0, 3, 14846);
+data.setCell(0, 3, 13745);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'submitSSTemplate_invalidID')
+data.setCell(1, 1, 'submitSSTemplate_signerPassword')
 data.setCell(1, 2, 'net.assuresign.scenario_3.Scenario_3_12')
-data.setCell(1, 3, 7246);
+data.setCell(1, 3, 6239);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'submitSSTemplate_signerPassword')
+data.setCell(2, 1, 'submitSSTemplate_invalidID')
 data.setCell(2, 2, 'net.assuresign.scenario_3.Scenario_3_12')
-data.setCell(2, 3, 6726);
+data.setCell(2, 3, 6013);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'submitSSTemplate_pwdOpenFile')
 data.setCell(3, 2, 'net.assuresign.scenario_3.Scenario_3_12')
-data.setCell(3, 3, 5718);
+data.setCell(3, 3, 5442);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 34 seconds</span>
+              <span class="suite-total-time">Total running time: 31 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -295,47 +342,49 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">submitSSTemplate_delayedStep(3.7)</span>
-                <span class="method-start">8 ms</span>
+                <span class="method-start">9 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=submitSSTemplate_delayedStep status=SUCCESS method=Scenario_3_12.submitSSTemplate_d...)</span>
-                <span class="method-start">14859 ms</span>
+                <span class="method-start">13760 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">reportUp([TestResult name={null} status=CREATED method=Scenario_3_12.submitSSTemplate_invalidID(java.lang.Str...)</span>
-                <span class="method-start">14865 ms</span>
+                <span class="method-start">13765 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">submitSSTemplate_invalidID(3.7)</span>
-                <span class="method-start">14866 ms</span>
+                <span class="method-start">13766 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=submitSSTemplate_invalidID status=SUCCESS method=Scenario_3_12.submitSSTemplate_inv...)</span>
-                <span class="method-start">22114 ms</span>
+                <span class="method-start">19782 ms</span>
               </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">reportUp([TestResult name={null} status=CREATED method=Scenario_3_12.submitSSTemplate_pwdOpenFile(java.lang.S...)</span>
-                <span class="method-start">22120 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">submitSSTemplate_pwdOpenFile(3.7)</span>
-                <span class="method-start">22121 ms</span>
+                <span class="method-start">19786 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">reportUp([TestResult name={null} status=CREATED method=Scenario_3_12.submitSSTemplate_pwdOpenFile(java.lang.S...)</span>
+                <span class="method-start">19786 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=submitSSTemplate_pwdOpenFile status=SUCCESS method=Scenario_3_12.submitSSTemplate_p...)</span>
-                <span class="method-start">27843 ms</span>
+                <span class="method-start">25229 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">reportUp([TestResult name={null} status=CREATED method=Scenario_3_12.submitSSTemplate_signerPassword(java.lan...)</span>
-                <span class="method-start">27849 ms</span>
+                <span class="method-start">25230 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">submitSSTemplate_signerPassword(3.7)</span>
-                <span class="method-start">27853 ms</span>
+                <span class="method-start">25231 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=submitSSTemplate_signerPassword status=SUCCESS method=Scenario_3_12.submitSSTemplat...)</span>
-                <span class="method-start">34582 ms</span>
+                <span class="method-name">tearDown([TestResult name=submitSSTemplate_signerPassword status=FAILURE method=Scenario_3_12.submitSSTemplat...)</span>
+                <span class="method-start">31479 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
