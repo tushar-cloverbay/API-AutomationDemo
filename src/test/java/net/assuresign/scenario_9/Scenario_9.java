@@ -30,6 +30,7 @@ public class Scenario_9 extends Base{
 		.header("X-AS-User-Agent", "site24x7/1.0.0");
 		Response response = request.post(URI);
 		responseBody = response.asPrettyString();
+		statusCode = Integer.toString(response.getStatusCode());
 		extentTest.log(LogStatus.PASS, "Response Time : " + response.getTime() +" milliseconds");
 		System.out.println(response.getBody().asString());
 		response.then().assertThat()
@@ -50,6 +51,7 @@ public class Scenario_9 extends Base{
 		.header("X-AS-UserContext", "mvadgave@assuresign.com:e66c80af-0014-4f9e-9c4d-94851aa28ac8");
 		Response response = request.post(URI);
 		responseBody = response.asPrettyString();
+		statusCode = Integer.toString(response.getStatusCode());
 		extentTest.log(LogStatus.PASS, "Response Time : " + response.getTime() +" milliseconds");
 		System.out.println(response.getBody().asString());
 		response.then().assertThat()

@@ -25,6 +25,7 @@ public class Base {
 	public static String responseBody;
 	public static String requestBody;
 	public static String apiVersion;
+	public static String statusCode;
 	public static FileInputStream fis;
 
 	public Base() {
@@ -62,7 +63,7 @@ public class Base {
 		requestBody = null;
 		responseBody = null;
 		apiVersion = null;
-
+		statusCode = null;
 	}
 
 	@AfterMethod
@@ -70,16 +71,24 @@ public class Base {
 
 		if (result.getStatus() == ITestResult.FAILURE) {
 			extentTest.log(LogStatus.FAIL, "TEST CASE FAILED IS " + result.getName()); // to add name in extent report
-			extentTest.log(LogStatus.FAIL, "TEST CASE FAILED IS " + result.getThrowable()); // to add error/exception in
-																							// extent report
-
+			if(statusCode!=null) {
+				extentTest.log(LogStatus.FAIL, "Status Code : " + statusCode);
+			}
+			if(responseBody==null) {
+				extentTest.log(LogStatus.FAIL, "TEST CASE FAILED IS " + result.getThrowable()); // to add error/exception in
+			}else {
+				extentTest.log(LogStatus.FAIL, "Reasons for failure : " + responseBody);	
+			}																				
 		} else if (result.getStatus() == ITestResult.SKIP) {
 			extentTest.log(LogStatus.SKIP, "Test Case SKIPPED IS " + result.getName());
 		} else if (result.getStatus() == ITestResult.SUCCESS) {
 			extentTest.log(LogStatus.PASS, "Test Case PASSED IS : " + result.getName());
 			extentTest.log(LogStatus.PASS, "API Version : " + apiVersion + "\n");
 //			extentTest.log(LogStatus.PASS, "Request : " + requestBody + "\n");
-			extentTest.log(LogStatus.PASS, "Response : " + responseBody);
+			if(statusCode!=null) {
+				extentTest.log(LogStatus.PASS, "Status Code : " + statusCode);
+			}
+//			extentTest.log(LogStatus.PASS, "Response : " + responseBody);
 		}
 		extent.endTest(extentTest); // ending test and ends the current test and prepare to create html report
 	}
