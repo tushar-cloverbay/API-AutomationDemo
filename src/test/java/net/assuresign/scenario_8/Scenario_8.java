@@ -18,7 +18,7 @@ import net.assuresign.utils.TestUtils;
 public class Scenario_8 extends Base{
 	@Test(dataProvider = "version-data-provider",enabled = true)	//1
 	public void getEnvelopesAnyFilter(String version) throws IOException {
-		extentTest.log(LogStatus.PASS, "Test Description : " + "Test for get envelops for any filter.");
+		extentTest.log(LogStatus.PASS, "Test Description : " + "Scenario_8 : Test for get envelops for any filter.");
 		apiVersion = version;
 		String token =TestUtils.getToken(version);
 		String URI = "https://"+Constants.ENV+".assuresign.net/api/documentnow/v"+ version +"/envelopes/";
@@ -28,6 +28,7 @@ public class Scenario_8 extends Base{
 		.header("X-AS-User-Agent", "site24x7/1.0.0");
 		Response response = request.get(URI);
 		responseBody = response.asPrettyString();
+		statusCode = Integer.toString(response.getStatusCode());
 		extentTest.log(LogStatus.PASS, "Response Time : " + response.getTime() +" milliseconds");
 		System.out.println(response.getBody().asString());
 		response.then().assertThat()
@@ -35,7 +36,7 @@ public class Scenario_8 extends Base{
 	}
 	@Test(dataProvider = "version-data-provider",enabled = true)	//2
 	public void getEnvelopes_ClosedWithNoFormData(String version) throws IOException {
-		extentTest.log(LogStatus.PASS, "Test Description : " + "Test for get envelops with closed no formdate.");
+		extentTest.log(LogStatus.PASS, "Test Description : " + "Scenario_8 : Test for get envelops with closed no formdate.");
 		apiVersion = version;
 		String token =TestUtils.getToken(version);
 		String URI = "https://"+Constants.ENV+".assuresign.net/api/documentnow/v"+ version +"/envelopes";
@@ -45,6 +46,7 @@ public class Scenario_8 extends Base{
 		.header("X-AS-User-Agent", "site24x7/1.0.0");
 		Response response = request.get(URI);
 		responseBody = response.asPrettyString();
+		statusCode = Integer.toString(response.getStatusCode());
 		extentTest.log(LogStatus.PASS, "Response Time : " + response.getTime() +" milliseconds");
 		System.out.println(response.getBody().asString());
 		response.then().assertThat()
@@ -55,7 +57,7 @@ public class Scenario_8 extends Base{
 	
 	@Test(dataProvider = "version-data-provider",enabled = true)	//4
 	public void getEnvelopes_ClosedWithInvalidFormData(String version) throws IOException {
-		extentTest.log(LogStatus.PASS, "Test Description : " + "Test for get envelops with closed invalid formdate.");
+		extentTest.log(LogStatus.PASS, "Test Description : " + "Scenario_8 : Test for get envelops with closed invalid formdate.");
 		apiVersion = version;
 		String token =TestUtils.getToken(version);
 		String URI = "https://"+Constants.ENV+".assuresign.net/api/documentnow/v"+ version +"/envelopes";
@@ -66,6 +68,7 @@ public class Scenario_8 extends Base{
 		.header("X-AS-User-Agent", "site24x7/1.0.0");
 		Response response = request.get(URI);
 		responseBody = response.asPrettyString();
+		statusCode = Integer.toString(response.getStatusCode());
 		extentTest.log(LogStatus.PASS, "Response Time : " + response.getTime() +" milliseconds");
 		System.out.println(response.getBody().asString());
 		response.then().assertThat()
@@ -76,7 +79,7 @@ public class Scenario_8 extends Base{
 	
 	@Test(dataProvider = "version-data-provider",enabled = true)	//5
 	public void getEnvelopes_ClosedWithFromDateLaterTodate(String version) throws IOException {
-		extentTest.log(LogStatus.PASS, "Test Description : " + "Test for get envelops with closed formdate later then todate.");
+		extentTest.log(LogStatus.PASS, "Test Description : " + "Scenario_8 : Test for get envelops with closed formdate later then todate.");
 		apiVersion = version;
 		String token =TestUtils.getToken(version);
 		String URI = "https://"+Constants.ENV+".assuresign.net/api/documentnow/v"+ version +"/envelopes";
@@ -87,6 +90,7 @@ public class Scenario_8 extends Base{
 		.header("X-AS-User-Agent", "site24x7/1.0.0");
 		Response response = request.get(URI);
 		responseBody = response.asPrettyString();
+		statusCode = Integer.toString(response.getStatusCode());
 		extentTest.log(LogStatus.PASS, "Response Time : " + response.getTime() +" milliseconds");
 		System.out.println(response.getBody().asString());
 		response.then().assertThat()
@@ -98,7 +102,7 @@ public class Scenario_8 extends Base{
 	
 	@Test(dataProvider = "version-data-provider",enabled = true)	//7
 	public void getEnvelopes_InvalidEnvelopID(String version) throws IOException {
-		extentTest.log(LogStatus.PASS, "Test Description : " + "Test for get envelops with invalid envelope id.");
+		extentTest.log(LogStatus.PASS, "Test Description : " + "Scenario_8 : Test for get envelops with invalid envelope id.");
 		apiVersion = version;
 		String token =TestUtils.getToken(version);
 		String URI = "https://"+Constants.ENV+".assuresign.net/api/documentnow/v"+ version 
@@ -108,6 +112,7 @@ public class Scenario_8 extends Base{
 		.header("X-AS-User-Agent", "site24x7/1.0.0");
 		Response response = request.get(URI);
 		responseBody = response.asPrettyString();
+		statusCode = Integer.toString(response.getStatusCode());
 		extentTest.log(LogStatus.PASS, "Response Time : " + response.getTime() +" milliseconds");
 		System.out.println(response.getBody().asString());
 		response.then().assertThat()
@@ -119,7 +124,7 @@ public class Scenario_8 extends Base{
 	
 	@Test(dataProvider = "version-data-provider",enabled = true)	//8 ISSUE : Getting 200,Should be 400/404
 	public void getEnvelopes_EmptyEnvelopID(String version) throws IOException {
-		extentTest.log(LogStatus.PASS, "Test Description : " + "Test for get envelops with empty envelope id.");
+		extentTest.log(LogStatus.PASS, "Test Description : " + "Scenario_8 : Test for get envelops with empty envelope id.");
 		apiVersion = version;
 		String token =TestUtils.getToken(version);
 		String URI = "https://"+Constants.ENV+".assuresign.net/api/documentnow/v"+ version 
@@ -129,6 +134,7 @@ public class Scenario_8 extends Base{
 		.header("X-AS-User-Agent", "site24x7/1.0.0");
 		Response response = request.get(URI);
 		responseBody = response.asPrettyString();
+		statusCode = Integer.toString(response.getStatusCode());
 		extentTest.log(LogStatus.PASS, "Response Time : " + response.getTime() +" milliseconds");
 		System.out.println(response.getBody().asString());
 		response.then().assertThat()
@@ -137,7 +143,7 @@ public class Scenario_8 extends Base{
 	
 	@Test(dataProvider = "version-data-provider",enabled = true)	//10 ISSUE : Getting 200,Should be 400/404
 	public void getEnvelope_ForInvalidEnvelopes(String version) throws IOException {
-		extentTest.log(LogStatus.PASS, "Test Description : " + "Test for get envelop with invalid envelope id.");
+		extentTest.log(LogStatus.PASS, "Test Description : " + "Scenario_8 : Test for get envelop with invalid envelope id.");
 		apiVersion = version;
 		String token =TestUtils.getToken(version);
 		String URI = "https://"+Constants.ENV+".assuresign.net/api/documentnow/v"+ version 
@@ -147,6 +153,7 @@ public class Scenario_8 extends Base{
 		.header("X-AS-User-Agent", "site24x7/1.0.0");
 		Response response = request.get(URI);
 		responseBody = response.asPrettyString();
+		statusCode = Integer.toString(response.getStatusCode());
 		extentTest.log(LogStatus.PASS, "Response Time : " + response.getTime() +" milliseconds");
 		System.out.println(response.getBody().asString());
 		response.then().assertThat()
@@ -155,7 +162,7 @@ public class Scenario_8 extends Base{
 	
 	@Test(dataProvider = "version-data-provider",enabled = true)	//11 ISSUE : Getting 200,Should be 400/404
 	public void getEnvelope_ForEmptyEnvelopes(String version) throws IOException {
-		extentTest.log(LogStatus.PASS, "Test Description : " + "Test for get envelop with empty envelope id.");
+		extentTest.log(LogStatus.PASS, "Test Description : " + "Scenario_8 : Test for get envelop with empty envelope id.");
 		apiVersion = version;
 		String token =TestUtils.getToken(version);
 		String URI = "https://"+Constants.ENV+".assuresign.net/api/documentnow/v"+ version 
@@ -165,6 +172,7 @@ public class Scenario_8 extends Base{
 		.header("X-AS-User-Agent", "site24x7/1.0.0");
 		Response response = request.get(URI);
 		responseBody = response.asPrettyString();
+		statusCode = Integer.toString(response.getStatusCode());
 		extentTest.log(LogStatus.PASS, "Response Time : " + response.getTime() +" milliseconds");
 		System.out.println(response.getBody().asString());
 		response.then().assertThat()
@@ -173,7 +181,7 @@ public class Scenario_8 extends Base{
 	
 	@Test(dataProvider = "version-data-provider",enabled = true)	//14
 	public void getEnvelope_WrongDocType(String version) throws IOException {
-		extentTest.log(LogStatus.PASS, "Test Description : " + "Test for get envelops with wrong document type.");
+		extentTest.log(LogStatus.PASS, "Test Description : " + "Scenario_8 : Test for get envelops with wrong document type.");
 		apiVersion = version;
 		String token =TestUtils.getToken(version);
 		String URI = "https://"+Constants.ENV+".assuresign.net/api/documentnow/v"+ version 
@@ -183,14 +191,15 @@ public class Scenario_8 extends Base{
 		.header("X-AS-User-Agent", "site24x7/1.0.0");
 		Response response = request.get(URI);
 		responseBody = response.asPrettyString();
+		statusCode = Integer.toString(response.getStatusCode());
 		extentTest.log(LogStatus.PASS, "Response Time : " + response.getTime() +" milliseconds");
 		System.out.println(response.getBody().asString());
 		response.then().assertThat()
-		.statusCode(anyOf(equalTo(400),equalTo(401)));
+		.statusCode(equalTo(401));
 	}
 	@Test(dataProvider = "version-data-provider",enabled = true)	//15
 	public void getEnvelope_WithoutDocType(String version) throws IOException {
-		extentTest.log(LogStatus.PASS, "Test Description : " + "Test for get envelops without document type.");
+		extentTest.log(LogStatus.PASS, "Test Description : " + "Scenario_8 : Test for get envelops without document type.");
 		apiVersion = version;
 		String token =TestUtils.getToken(version);
 		String URI = "https://"+Constants.ENV+".assuresign.net/api/documentnow/v"+ version 
@@ -200,6 +209,7 @@ public class Scenario_8 extends Base{
 		.header("X-AS-User-Agent", "site24x7/1.0.0");
 		Response response = request.get(URI);
 		responseBody = response.asPrettyString();
+		statusCode = Integer.toString(response.getStatusCode());
 		extentTest.log(LogStatus.PASS, "Response Time : " + response.getTime() +" milliseconds");
 		System.out.println(response.getBody().asString());
 		response.then().assertThat()
@@ -210,7 +220,7 @@ public class Scenario_8 extends Base{
 	
 	@Test(dataProvider = "version-data-provider",enabled = true)	//16
 	public void getEnvelope_InvalidDocType(String version) throws IOException {
-		extentTest.log(LogStatus.PASS, "Test Description : " + "Test for get envelops with invalid document type.");
+		extentTest.log(LogStatus.PASS, "Test Description : " + "Scenario_8 : Test for get envelops with invalid document type.");
 		apiVersion = version;
 		String token =TestUtils.getToken(version);
 		String URI = "https://"+Constants.ENV+".assuresign.net/api/documentnow/v"+ version 
@@ -220,14 +230,15 @@ public class Scenario_8 extends Base{
 		.header("X-AS-User-Agent", "site24x7/1.0.0");
 		Response response = request.get(URI);
 		responseBody = response.asPrettyString();
+		statusCode = Integer.toString(response.getStatusCode());
 		extentTest.log(LogStatus.PASS, "Response Time : " + response.getTime() +" milliseconds");
 		System.out.println(response.getBody().asString());
 		response.then().assertThat()
-		.statusCode(anyOf(equalTo(400),equalTo(401)));
+		.statusCode(equalTo(401));
 	}
 	@Test(dataProvider = "version-data-provider",enabled = true)	//17
 	public void getEnvelope_InvalidEnvelopID(String version) throws IOException {
-		extentTest.log(LogStatus.PASS, "Test Description : " + "Test for get envelops with invalid envelope id.");
+		extentTest.log(LogStatus.PASS, "Test Description : " + "Scenario_8 : Test for get envelops with invalid envelope id.");
 		apiVersion = version;
 		String token =TestUtils.getToken(version);
 		String URI = "https://"+Constants.ENV+".assuresign.net/api/documentnow/v"+ version 
@@ -237,6 +248,7 @@ public class Scenario_8 extends Base{
 		.header("X-AS-User-Agent", "site24x7/1.0.0");
 		Response response = request.get(URI);
 		responseBody = response.asPrettyString();
+		statusCode = Integer.toString(response.getStatusCode());
 		extentTest.log(LogStatus.PASS, "Response Time : " + response.getTime() +" milliseconds");
 		System.out.println(response.getBody().asString());
 		response.then().assertThat()
@@ -246,7 +258,7 @@ public class Scenario_8 extends Base{
 	}
 	@Test(dataProvider = "version-data-provider",enabled = true)	//18
 	public void getEnvelope_EmptyEnvelopID(String version) throws IOException {
-		extentTest.log(LogStatus.PASS, "Test Description : " + "Test for get envelops with invalid envelope id.");
+		extentTest.log(LogStatus.PASS, "Test Description : " + "Scenario_8 : Test for get envelops with invalid envelope id.");
 		apiVersion = version;
 		String token =TestUtils.getToken(version);
 		String URI = "https://"+Constants.ENV+".assuresign.net/api/documentnow/v"+ version 
@@ -256,6 +268,7 @@ public class Scenario_8 extends Base{
 		.header("X-AS-User-Agent", "site24x7/1.0.0");
 		Response response = request.get(URI);
 		responseBody = response.asPrettyString();
+		statusCode = Integer.toString(response.getStatusCode());
 		extentTest.log(LogStatus.PASS, "Response Time : " + response.getTime() +" milliseconds");
 		System.out.println(response.getBody().asString());
 		response.then().assertThat()

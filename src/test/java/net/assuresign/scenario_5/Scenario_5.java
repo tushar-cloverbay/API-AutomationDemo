@@ -29,6 +29,7 @@ public class Scenario_5 extends Base{
 		request.header("X-AS-User-Agent", "site24x7/1.0.0");
 		Response response = request.get(URI);
 		responseBody = response.asPrettyString();
+		statusCode = Integer.toString(response.getStatusCode());
 		extentTest.log(LogStatus.PASS, "Response Time : " + response.getTime() +" milliseconds");
 		System.out.println(response.getBody().asString());
 		response.then().assertThat()
@@ -44,8 +45,13 @@ public class Scenario_5 extends Base{
 		Response response = request.get(URI);
 		responseBody = response.asPrettyString();
 		System.out.println(response.getBody().asString());
-		String templateID = JsonUtils.getKeyValue(response, "result.templates[0].templateID");
-		
+		String templateID;
+		if(version.equals("3.0")||version.equals("3.1")){
+			templateID = JsonUtils.getKeyValue(response, "result.templates[0].templateId");
+		}else {
+			templateID = JsonUtils.getKeyValue(response, "result.templates[0].templateID");
+		}
+		System.out.println("************************************"+templateID);
 		extentTest.log(LogStatus.PASS, "Test Description : " + "Scenario_5 : Test for get valid template.");
 		apiVersion = version;
 		String URI2 = "https://"+Constants.ENV+".assuresign.net/api/documentnow/v"+ version +"/templates/"+templateID;
@@ -54,6 +60,7 @@ public class Scenario_5 extends Base{
 		request2.header("X-AS-User-Agent", "site24x7/1.0.0");
 		Response response2 = request2.get(URI2);
 		responseBody = response2.asPrettyString();
+		statusCode = Integer.toString(response.getStatusCode());
 		extentTest.log(LogStatus.PASS, "Response Time : " + response2.getTime() +" milliseconds");
 		System.out.println(response2.getBody().asString());
 		System.out.println(response2.getStatusCode());
@@ -73,11 +80,14 @@ public class Scenario_5 extends Base{
 		request.header("X-AS-User-Agent", "site24x7/1.0.0");
 		Response response = request.get(URI);
 		responseBody = response.asPrettyString();
+		statusCode = Integer.toString(response.getStatusCode());
 		extentTest.log(LogStatus.PASS, "Response Time : " + response.getTime() +" milliseconds");
 		System.out.println(response.getBody().asString());
 		System.out.println(response.getStatusCode());
 		response.then().assertThat()
-		.statusCode(anyOf(equalTo(401),equalTo(404)));
+		.statusCode(equalTo(401))
+		.body("errorCode", is("UNAUTHORIZED"))
+		.body("summary", notNullValue());
 	}
 	
 	@Test(dataProvider = "version-data-provider",enabled = true)
@@ -92,11 +102,12 @@ public class Scenario_5 extends Base{
 		request.header("X-AS-User-Agent", "site24x7/1.0.0");
 		Response response = request.get(URI);
 		responseBody = response.asPrettyString();
+		statusCode = Integer.toString(response.getStatusCode());
 		extentTest.log(LogStatus.PASS, "Response Time : " + response.getTime() +" milliseconds");
 		System.out.println(response.getBody().asString());
 		System.out.println(response.getStatusCode());
 		response.then().assertThat()
-		.statusCode(anyOf(equalTo(400),equalTo(404)))
+		.statusCode(equalTo(404))
 		.body("errorCode", is("NOT_FOUND"))
 		.body("summary", notNullValue());
 	}
@@ -113,6 +124,7 @@ public class Scenario_5 extends Base{
 		request.header("X-AS-User-Agent", "site24x7/1.0.0");
 		Response response = request.get(URI);
 		responseBody = response.asPrettyString();
+		statusCode = Integer.toString(response.getStatusCode());
 		extentTest.log(LogStatus.PASS, "Response Time : " + response.getTime() +" milliseconds");
 		System.out.println(response.getBody().asString());
 		System.out.println(response.getStatusCode());

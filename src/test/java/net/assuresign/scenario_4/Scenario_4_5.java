@@ -64,14 +64,15 @@ public class Scenario_4_5 extends Base{
 			preparedEID = TestUtils.getPreparedEnvelopeID(version, "Scenario_4\\preparedEID-MissingDocName.json",token);
 		}
 		String URI = "https://"+Constants.ENV+".assuresign.net/api/documentnow/v"+ version +"/submit/" + preparedEID;
-		String payload = JsonUtils.payloadGenerator("Inputs\\"+Constants.ENV+"\\Scenario_4\\getEnvelopID.json");
-		RequestSpecification request = RestAssured.given().header("Authorization", "Bearer "+token).body(payload);
+//		String payload = JsonUtils.payloadGenerator("Inputs\\"+Constants.ENV+"\\Scenario_4\\getEnvelopID.json");
+		RequestSpecification request = RestAssured.given().header("Authorization", "Bearer "+token);
 		request.header("Content-Type", "application/json");
 		Response response = request.post(URI);
 		responseBody = response.asPrettyString();
 		extentTest.log(LogStatus.PASS, "Response Time : " + response.getTime() +" milliseconds");
 		System.out.println(response.getBody().asString());
-		response.then().assertThat().statusCode(equalTo(500))
-		.body("errorCode", is("INTERNAL_SERVER_ERROR"));
+		response.then().assertThat().statusCode(equalTo(400))
+		.body("errorCode", is("VALIDATION_FAILED"))
+		.body("details", notNullValue());
 	}
 }

@@ -5,19 +5,13 @@
     <listener class-name="net.assuresign.utils.ListenersTestNG"/>
   </listeners>
   <test thread-count="5" name="Test(failed)">
-    <groups>
-      <run>
-        <exclude name="ExcludeForOld"/>
-      </run>
-    </groups>
     <classes>
-      <class name="net.assuresign.scenario_3.Scenario_3_9">
+      <class name="net.assuresign.scenario_13.Scenario_13">
         <methods>
           <include name="reportUp"/>
-          <include name="submit_DocMoreThen128Char" invocation-numbers="0 1 2"/>
+          <include name="submitValidate_ssTemplate" invocation-numbers="0"/>
           <include name="tearDown"/>
+          <include name="submitValidate_hybridCall" invocation-numbers="0"/>
         </methods>
-      </class> <!-- net.assuresign.scenario_3.Scenario_3_9 -->
+      </class> <!-- net.assuresign.scenario_13.Scenario_13 -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
