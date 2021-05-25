@@ -1,24 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="11" passed="9" failed="2" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-05-25T12:00:43 IST" name="Suite" finished-at="2021-05-25T12:03:21 IST" duration-ms="157855">
+  <suite started-at="2021-05-25T12:29:21 IST" name="Suite" finished-at="2021-05-25T12:29:56 IST" duration-ms="34889">
     <groups>
+      <group name="ExcludeForOld">
+        <method signature="Scenario_3_12.submitSSTemplate_delayedStep(java.lang.String)[pri:0, instance:net.assuresign.scenario_3.Scenario_3_12@4d02f94e]" name="submitSSTemplate_delayedStep" class="net.assuresign.scenario_3.Scenario_3_12"/>
+        <method signature="Scenario_3_12.submitSSTemplate_invalidID(java.lang.String)[pri:0, instance:net.assuresign.scenario_3.Scenario_3_12@4d02f94e]" name="submitSSTemplate_invalidID" class="net.assuresign.scenario_3.Scenario_3_12"/>
+      </group> <!-- ExcludeForOld -->
     </groups>
-    <test started-at="2021-05-25T12:00:43 IST" name="Test" finished-at="2021-05-25T12:03:21 IST" duration-ms="157855">
-      <class name="net.assuresign.scenario_13.Scenario_13">
-        <test-method is-config="true" signature="reportUp(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_13.Scenario_13@73700b80]" started-at="2021-05-25T12:00:43 IST" name="reportUp" finished-at="2021-05-25T12:00:43 IST" duration-ms="6" status="PASS">
+    <test started-at="2021-05-25T12:29:21 IST" name="Test" finished-at="2021-05-25T12:29:56 IST" duration-ms="34889">
+      <class name="net.assuresign.scenario_3.Scenario_3_12">
+        <test-method is-config="true" signature="reportUp(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_3.Scenario_3_12@4d02f94e]" started-at="2021-05-25T12:29:21 IST" name="reportUp" finished-at="2021-05-25T12:29:21 IST" duration-ms="6" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=Scenario_13.submitPrepare_documents(java.lang.String)[pri:0, instance:net.assuresign.scenario_13.Scenario_13@73700b80] output={null}]]]>
+                <![CDATA[[TestResult name={null} status=CREATED method=Scenario_3_12.submitSSTemplate_delayedStep(java.lang.String)[pri:0, instance:net.assuresign.scenario_3.Scenario_3_12@4d02f94e] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportUp -->
-        <test-method signature="submitPrepare_documents(java.lang.String)[pri:0, instance:net.assuresign.scenario_13.Scenario_13@73700b80]" started-at="2021-05-25T12:00:43 IST" name="submitPrepare_documents" data-provider="version-data-provider" finished-at="2021-05-25T12:00:59 IST" duration-ms="15896" status="PASS">
+        <test-method signature="submitSSTemplate_delayedStep(java.lang.String)[pri:0, instance:net.assuresign.scenario_3.Scenario_3_12@4d02f94e]" started-at="2021-05-25T12:29:21 IST" name="submitSSTemplate_delayedStep" data-provider="version-data-provider" finished-at="2021-05-25T12:29:36 IST" duration-ms="14846" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -28,30 +32,30 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- submitPrepare_documents -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_13.Scenario_13@73700b80]" started-at="2021-05-25T12:00:59 IST" name="tearDown" finished-at="2021-05-25T12:00:59 IST" duration-ms="3" status="PASS">
+        </test-method> <!-- submitSSTemplate_delayedStep -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_3.Scenario_3_12@4d02f94e]" started-at="2021-05-25T12:29:36 IST" name="tearDown" finished-at="2021-05-25T12:29:36 IST" duration-ms="4" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=submitPrepare_documents status=SUCCESS method=Scenario_13.submitPrepare_documents(java.lang.String)[pri:0, instance:net.assuresign.scenario_13.Scenario_13@73700b80] output={null}]]]>
+                <![CDATA[[TestResult name=submitSSTemplate_delayedStep status=SUCCESS method=Scenario_3_12.submitSSTemplate_delayedStep(java.lang.String)[pri:0, instance:net.assuresign.scenario_3.Scenario_3_12@4d02f94e] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="reportUp(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_13.Scenario_13@73700b80]" started-at="2021-05-25T12:00:59 IST" name="reportUp" finished-at="2021-05-25T12:00:59 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="reportUp(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_3.Scenario_3_12@4d02f94e]" started-at="2021-05-25T12:29:36 IST" name="reportUp" finished-at="2021-05-25T12:29:36 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=Scenario_13.submitPrepare_documentsEmptyID(java.lang.String)[pri:0, instance:net.assuresign.scenario_13.Scenario_13@73700b80] output={null}]]]>
+                <![CDATA[[TestResult name={null} status=CREATED method=Scenario_3_12.submitSSTemplate_invalidID(java.lang.String)[pri:0, instance:net.assuresign.scenario_3.Scenario_3_12@4d02f94e] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportUp -->
-        <test-method signature="submitPrepare_documentsEmptyID(java.lang.String)[pri:0, instance:net.assuresign.scenario_13.Scenario_13@73700b80]" started-at="2021-05-25T12:00:59 IST" name="submitPrepare_documentsEmptyID" data-provider="version-data-provider" finished-at="2021-05-25T12:01:05 IST" duration-ms="5665" status="PASS">
+        <test-method signature="submitSSTemplate_invalidID(java.lang.String)[pri:0, instance:net.assuresign.scenario_3.Scenario_3_12@4d02f94e]" started-at="2021-05-25T12:29:36 IST" name="submitSSTemplate_invalidID" data-provider="version-data-provider" finished-at="2021-05-25T12:29:44 IST" duration-ms="7246" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -61,16 +65,85 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- submitPrepare_documentsEmptyID -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_13.Scenario_13@73700b80]" started-at="2021-05-25T12:01:05 IST" name="tearDown" finished-at="2021-05-25T12:01:05 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- submitSSTemplate_invalidID -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_3.Scenario_3_12@4d02f94e]" started-at="2021-05-25T12:29:44 IST" name="tearDown" finished-at="2021-05-25T12:29:44 IST" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=submitPrepare_documentsEmptyID status=SUCCESS method=Scenario_13.submitPrepare_documentsEmptyID(java.lang.String)[pri:0, instance:net.assuresign.scenario_13.Scenario_13@73700b80] output={null}]]]>
+                <![CDATA[[TestResult name=submitSSTemplate_invalidID status=SUCCESS method=Scenario_3_12.submitSSTemplate_invalidID(java.lang.String)[pri:0, instance:net.assuresign.scenario_3.Scenario_3_12@4d02f94e] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method signature="submitPrepare_documentsInvalidID(java.lang.String)[pri:0, instance:net.assuresign.scenario_13.Scenario_13@73700b80]" started-at="2021-05-25T12:01:05 IST" name="submit
+        <test-method is-config="true" signature="reportUp(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_3.Scenario_3_12@4d02f94e]" started-at="2021-05-25T12:29:44 IST" name="reportUp" finished-at="2021-05-25T12:29:44 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=Scenario_3_12.submitSSTemplate_pwdOpenFile(java.lang.String)[pri:0, instance:net.assuresign.scenario_3.Scenario_3_12@4d02f94e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportUp -->
+        <test-method signature="submitSSTemplate_pwdOpenFile(java.lang.String)[pri:0, instance:net.assuresign.scenario_3.Scenario_3_12@4d02f94e]" started-at="2021-05-25T12:29:44 IST" name="submitSSTemplate_pwdOpenFile" data-provider="version-data-provider" finished-at="2021-05-25T12:29:49 IST" duration-ms="5718" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3.7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitSSTemplate_pwdOpenFile -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_3.Scenario_3_12@4d02f94e]" started-at="2021-05-25T12:29:49 IST" name="tearDown" finished-at="2021-05-25T12:29:49 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=submitSSTemplate_pwdOpenFile status=SUCCESS method=Scenario_3_12.submitSSTemplate_pwdOpenFile(java.lang.String)[pri:0, instance:net.assuresign.scenario_3.Scenario_3_12@4d02f94e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="reportUp(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_3.Scenario_3_12@4d02f94e]" started-at="2021-05-25T12:29:49 IST" name="reportUp" finished-at="2021-05-25T12:29:49 IST" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=Scenario_3_12.submitSSTemplate_signerPassword(java.lang.String)[pri:0, instance:net.assuresign.scenario_3.Scenario_3_12@4d02f94e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportUp -->
+        <test-method signature="submitSSTemplate_signerPassword(java.lang.String)[pri:0, instance:net.assuresign.scenario_3.Scenario_3_12@4d02f94e]" started-at="2021-05-25T12:29:49 IST" name="submitSSTemplate_signerPassword" data-provider="version-data-provider" finished-at="2021-05-25T12:29:56 IST" duration-ms="6726" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3.7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitSSTemplate_signerPassword -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_3.Scenario_3_12@4d02f94e]" started-at="2021-05-25T12:29:56 IST" name="tearDown" finished-at="2021-05-25T12:29:56 IST" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=submitSSTemplate_signerPassword status=SUCCESS method=Scenario_3_12.submitSSTemplate_signerPassword(java.lang.String)[pri:0, instance:net.assuresign.scenario_3.Scenario_3_12@4d02f94e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- net.assuresign.scenario_3.Scenario_3_12 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

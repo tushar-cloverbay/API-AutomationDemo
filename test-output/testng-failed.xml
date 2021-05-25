@@ -15,3 +15,5 @@
         </methods>
       </class> <!-- net.assuresign.scenario_13.Scenario_13 -->
     </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
