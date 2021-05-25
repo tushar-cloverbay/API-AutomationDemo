@@ -72,7 +72,9 @@ public class Base {
 		if (result.getStatus() == ITestResult.FAILURE) {
 			extentTest.log(LogStatus.FAIL, "TEST CASE FAILED IS " + result.getName()); // to add name in extent report
 			extentTest.log(LogStatus.FAIL, "Status Code : " + statusCode);
-			extentTest.log(LogStatus.FAIL, "Reasons for failure : " + responseBody);
+			if(!responseBody.contains("<html")) {
+				extentTest.log(LogStatus.FAIL, "Reasons for failure : " + responseBody);
+			}
 			extentTest.log(LogStatus.FAIL, "TEST CASE FAILED IS " + result.getThrowable()); // to add error/exception in
 																						
 		} else if (result.getStatus() == ITestResult.SKIP) {
