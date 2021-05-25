@@ -36,6 +36,7 @@ public class Scenario_3_5 extends Base {
 		request.header("Content-Type", "application/json");
 		Response response = request.post(URI);
 		responseBody = response.asPrettyString();
+		statusCode = Integer.toString(response.getStatusCode());
 		extentTest.log(LogStatus.PASS, "Response Time : " + response.getTime() + " milliseconds");
 		System.out.println(response.getBody().asString());
 		System.out.println(response.getStatusCode());
@@ -76,6 +77,7 @@ public class Scenario_3_5 extends Base {
 		request.header("Content-Type", "application/json");
 		Response response = request.post(URI);
 		responseBody = response.asPrettyString();
+		statusCode = Integer.toString(response.getStatusCode());
 		extentTest.log(LogStatus.PASS, "Response Time : " + response.getTime() + " milliseconds");
 		System.out.println(response.getBody().asString());
 		System.out.println(response.getStatusCode());
@@ -104,6 +106,7 @@ public class Scenario_3_5 extends Base {
 		request.header("Content-Type", "application/json");
 		Response response = request.post(URI);
 		responseBody = response.asPrettyString();
+		statusCode = Integer.toString(response.getStatusCode());
 		extentTest.log(LogStatus.PASS, "Response Time : " + response.getTime() + " milliseconds");
 		System.out.println(response.getBody().asString());
 		System.out.println(response.getStatusCode());
@@ -144,6 +147,7 @@ public class Scenario_3_5 extends Base {
 		request.header("Content-Type", "application/json");
 		Response response = request.post(URI);
 		responseBody = response.asPrettyString();
+		statusCode = Integer.toString(response.getStatusCode());
 		extentTest.log(LogStatus.PASS, "Response Time : " + response.getTime() + " milliseconds");
 		System.out.println(response.getBody().asString());
 		System.out.println(response.getStatusCode());
@@ -172,6 +176,7 @@ public class Scenario_3_5 extends Base {
 		request.header("Content-Type", "application/json");
 		Response response = request.post(URI);
 		responseBody = response.asPrettyString();
+		statusCode = Integer.toString(response.getStatusCode());
 		extentTest.log(LogStatus.PASS, "Response Time : " + response.getTime() + " milliseconds");
 		System.out.println(response.getBody().asString());
 		if(version.equals("3.0")||version.equals("3.1"))
@@ -211,6 +216,7 @@ public class Scenario_3_5 extends Base {
 		request.header("Content-Type", "application/json");
 		Response response = request.post(URI);
 		responseBody = response.asPrettyString();
+		statusCode = Integer.toString(response.getStatusCode());
 		extentTest.log(LogStatus.PASS, "Response Time : " + response.getTime() + " milliseconds");
 		System.out.println(response.getBody().asString());
 		System.out.println(response.getStatusCode());
@@ -239,6 +245,7 @@ public class Scenario_3_5 extends Base {
 		request.header("Content-Type", "application/json");
 		Response response = request.post(URI);
 		responseBody = response.asPrettyString();
+		statusCode = Integer.toString(response.getStatusCode());
 		extentTest.log(LogStatus.PASS, "Response Time : " + response.getTime() + " milliseconds");
 		System.out.println(response.getBody().asString());
 		System.out.println(response.getStatusCode());
@@ -266,6 +273,7 @@ public class Scenario_3_5 extends Base {
 		request.header("Content-Type", "application/json");
 		Response response = request.post(URI);
 		responseBody = response.asPrettyString();
+		statusCode = Integer.toString(response.getStatusCode());
 		extentTest.log(LogStatus.PASS, "Response Time : " + response.getTime() + " milliseconds");
 		System.out.println(response.getBody().asString());
 		System.out.println(response.getStatusCode());
@@ -293,6 +301,7 @@ public class Scenario_3_5 extends Base {
 		request.header("Content-Type", "application/json");
 		Response response = request.post(URI);
 		responseBody = response.asPrettyString();
+		statusCode = Integer.toString(response.getStatusCode());
 		extentTest.log(LogStatus.PASS, "Response Time : " + response.getTime() + " milliseconds");
 		System.out.println(response.getBody().asString());
 		System.out.println(response.getStatusCode());
@@ -320,6 +329,7 @@ public class Scenario_3_5 extends Base {
 		request.header("Content-Type", "application/json");
 		Response response = request.post(URI);
 		responseBody = response.asPrettyString();
+		statusCode = Integer.toString(response.getStatusCode());
 		extentTest.log(LogStatus.PASS, "Response Time : " + response.getTime() + " milliseconds");
 		System.out.println(response.getBody().asString());
 		System.out.println(response.getStatusCode());
