@@ -32,6 +32,7 @@ public class Scenario_7 extends Base {
 		request.header("X-AS-User-Agent", "site24x7/1.0.0");
 		Response response = request.get(URI);
 		responseBody = response.asPrettyString();
+		statusCode = Integer.toString(response.getStatusCode());
 		extentTest.log(LogStatus.PASS, "Response Time : " + response.getTime() +" milliseconds");
 		System.out.println(response.getBody().asString());
 		response.then().assertThat()
@@ -50,15 +51,17 @@ public class Scenario_7 extends Base {
 		request.header("X-AS-User-Agent", "site24x7/1.0.0");
 		Response response = request.get(URI);
 		responseBody = response.asPrettyString();
+		statusCode = Integer.toString(response.getStatusCode());
 		extentTest.log(LogStatus.PASS, "Response Time : " + response.getTime() +" milliseconds");
 		System.out.println(response.getBody().asString());
+		System.out.println(statusCode);
 		response.then().assertThat()
-		.statusCode(anyOf(equalTo(403),equalTo(404)))
+		.statusCode(equalTo(404))
 		.body("errorCode", is("NOT_FOUND"))
 		.body("summary", notNullValue());
 	}
 	
-	@Test(dataProvider = "version-data-provider",enabled = true)
+	@Test(dataProvider = "version-data-provider",enabled = true)  //7 ISSUE:getting 200,should be 400/404
 	public void listsAccounts_EmptyUsername(String version) throws IOException {
 		extentTest.log(LogStatus.PASS, "Test Description : " + "Scenario_7 : Test for lists of accounts the specified user may access.");
 		apiVersion = version;
@@ -69,9 +72,11 @@ public class Scenario_7 extends Base {
 		request.header("X-AS-User-Agent", "site24x7/1.0.0");
 		Response response = request.get(URI);
 		responseBody = response.asPrettyString();
+		statusCode = Integer.toString(response.getStatusCode());
 		extentTest.log(LogStatus.PASS, "Response Time : " + response.getTime() +" milliseconds");
 		System.out.println(response.getBody().asString());
+		System.out.println(statusCode);
 		response.then().assertThat()
-		.statusCode(anyOf(equalTo(400),equalTo(404)));
+		.statusCode(equalTo(404));
 	}
 }
