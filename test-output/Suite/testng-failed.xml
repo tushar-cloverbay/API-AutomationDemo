@@ -6,15 +6,13 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="net.assuresign.scenario_8.Scenario_8">
+      <class name="net.assuresign.scenario_4.Scenario_4_9_1">
         <methods>
-          <include name="getEnvelope_ForInvalidEnvelopes" invocation-numbers="0"/>
           <include name="reportUp"/>
+          <include name="putCall_submitPrepare" invocation-numbers="0 1"/>
           <include name="tearDown"/>
-          <include name="getEnvelope_ForEmptyEnvelopes" invocation-numbers="0"/>
-          <include name="getEnvelopes_EmptyEnvelopID" invocation-numbers="0"/>
         </methods>
-      </class> <!-- net.assuresign.scenario_8.Scenario_8 -->
+      </class> <!-- net.assuresign.scenario_4.Scenario_4_9_1 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
