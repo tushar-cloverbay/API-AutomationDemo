@@ -6,6 +6,7 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="net.assuresign.scenario_5.Scenario_5">
         <methods>
           <include name="reportUp"/>
@@ -29,6 +30,15 @@
           <include name="tearDown"/>
         </methods>
       </class> <!-- net.assuresign.scenario_7.Scenario_7 -->
+=======
+      <class name="net.assuresign.scenario_4.Scenario_4_9_1">
+        <methods>
+          <include name="reportUp"/>
+          <include name="putCall_submitPrepare" invocation-numbers="0 1"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- net.assuresign.scenario_4.Scenario_4_9_1 -->
+>>>>>>> master
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
