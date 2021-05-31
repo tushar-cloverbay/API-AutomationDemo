@@ -6,13 +6,13 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="net.assuresign.scenario_4.Scenario_4_9_1">
+      <class name="net.assuresign.scenario_4.Scenario_4_9_2">
         <methods>
           <include name="reportUp"/>
-          <include name="putCall_submitPrepare" invocation-numbers="0 1"/>
           <include name="tearDown"/>
+          <include name="submitPrepare_DynamicJB_withoutParseDoc" invocation-numbers="0"/>
         </methods>
-      </class> <!-- net.assuresign.scenario_4.Scenario_4_9_1 -->
+      </class> <!-- net.assuresign.scenario_4.Scenario_4_9_2 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="net.assuresign.scenario_8.Scenario_8">
+      <class name="net.assuresign.scenario_4.Scenario_4_9_2">
         <methods>
           <include name="reportUp"/>
+          <include name="submitPrepare_DynamicJotBlockParsing_SpecifiedSchema"/>
           <include name="tearDown"/>
-          <include name="getEnvelopes_EmptyEnvelopID"/>
         </methods>
-      </class> <!-- net.assuresign.scenario_8.Scenario_8 -->
+      </class> <!-- net.assuresign.scenario_4.Scenario_4_9_2 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
