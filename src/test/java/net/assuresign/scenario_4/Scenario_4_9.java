@@ -82,8 +82,9 @@ public class Scenario_4_9 extends Base{
 	}
 	
 	@Test(dataProvider = "version-data-provider",groups = { "ExcludeForOld" },enabled = true)
-	public void submitPrepare_DynamicJotBlockParsing_parseDocumentTrueJotblockOnMultipleDoc(String version) throws IOException {
-		extentTest.log(LogStatus.PASS, "Test Description : " + "Scenario_4_9 : Test for getting Prepared Enveloped ID with Dynamic Jot Block Parsing");
+	public void submitPrepare_DynamicJB_withOnlyparseDocumentTrueANDSameNameJotblockOnMultipleDoc(String version) throws IOException {
+		extentTest.log(LogStatus.PASS, "Test Description : " + "Scenario_4_9 : Test for getting Prepared Enveloped ID with Dynamic Jot Block Parsing "
+				+ "with only parse document true and same name Jotblock on multiple document.");
 		apiVersion = version;
 		String token =TestUtils.getToken(version);
 		String URI = "https://"+Constants.ENV+".assuresign.net/api/documentnow/v"+ version +"/submit/prepare";
