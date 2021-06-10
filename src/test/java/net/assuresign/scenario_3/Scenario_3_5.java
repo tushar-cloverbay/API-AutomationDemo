@@ -220,9 +220,7 @@ public class Scenario_3_5 extends Base {
 		extentTest.log(LogStatus.PASS, "Response Time : " + response.getTime() + " milliseconds");
 		System.out.println(response.getBody().asString());
 		System.out.println(response.getStatusCode());
-		response.then().assertThat().statusCode(equalTo(200))
-		.body("$", hasKey("messages"))
-		.body("result", notNullValue());
+		response.then().assertThat().statusCode(equalTo(400));
 	}
 	
 	@Test(dataProvider = "version-data-provider", enabled = true)

@@ -3,6 +3,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <testsuite ignored="0" hostname="tussar-PC" failures="3" tests="10" name="Test" time="267.43" errors="0" timestamp="2021-05-11T10:08:07 IST">
   <testcase classname="net.assuresign.scenario_3.Scenario_3_5" name="submitValidate_jotBlockParsingDocTrueDuplicateJotBlock" time="59.6">
 =======
@@ -175,5 +176,15 @@ at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
     </failure>
   </testcase> <!-- getEnvelopes_EmptyEnvelopID -->
   <testcase classname="net.assuresign.scenario_8.Scenario_8" name="getEnvelopes_InvalidEnvelopID" time="5.96"/>
+>>>>>>> master
+=======
+<testsuite ignored="2" hostname="DESKTOP-1AVQ4LH" failures="0" tests="1" name="Test" time="21.555" errors="0" timestamp="2021-05-31T09:52:47 IST">
+  <testcase classname="net.assuresign.scenario_4.Scenario_4_9_2" name="submitPrepare_addDocumentCall" time="21.318"/>
+  <testcase classname="net.assuresign.scenario_4.Scenario_4_9_2" name="submitPrepare_DynamicJB_withoutParseDoc" time="0.0">
+    <ignored/>
+  </testcase> <!-- submitPrepare_DynamicJB_withoutParseDoc -->
+  <testcase classname="net.assuresign.scenario_4.Scenario_4_9_2" name="addDocument_DynamicJBParsing_parseDocFalse" time="0.0">
+    <ignored/>
+  </testcase> <!-- addDocument_DynamicJBParsing_parseDocFalse -->
 >>>>>>> master
 </testsuite> <!-- Test -->

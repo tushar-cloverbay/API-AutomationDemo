@@ -27,6 +27,23 @@ public class Scenario_4_11 extends Base{
 	}
 	
 	@Test(dataProvider = "version-data-provider",enabled = true)
+	public void deprecatedUserSessionToken(String version) throws IOException{
+		extentTest.log(LogStatus.PASS, "Test Description : " + "Scenario_4_11 : Test for getting deprecated User Session Token");
+		apiVersion = version;
+		String URI = " https://"+Constants.ENV+".assuresign.net/api/documentnow/v"+version+"/authentication/credentials";
+		String payload = JsonUtils.payloadGenerator("Inputs\\"+Constants.ENV+"\\Scenario_4\\sessionTokenDeprecated_44009.json");
+		RequestSpecification request = RestAssured.given().body(payload);
+		request.header("Content-Type", "application/json");
+		Response response = request.post(URI);
+		responseBody = response.asPrettyString();
+		statusCode = Integer.toString(response.getStatusCode());
+		extentTest.log(LogStatus.PASS, "Response Time : " + response.getTime() +" milliseconds");
+		System.out.println(response.getBody().asString());
+		response.then().assertThat().statusCode(equalTo(200))
+		.body("result.sessionToken", notNullValue());;
+	}
+	
+	@Test(dataProvider = "version-data-provider",enabled = true)
 	public void submitPrepare_deprecated(String version) throws IOException {
 		extentTest.log(LogStatus.PASS, "Test Description : " + "Scenario_4_11 : Test for getting Prepared Enveloped ID with different file type");
 		apiVersion = version;
@@ -56,6 +73,7 @@ public class Scenario_4_11 extends Base{
 					.body("result.preparedEnvelopeID", notNullValue());
 		}
 	}
+<<<<<<< HEAD
 	@Test(dataProvider = "version-data-provider",groups = { "ExcludeFor3.0" },enabled = true)
 	public void submit_deprecated(String version) throws IOException {
 		extentTest.log(LogStatus.PASS, "Test Description : " + "Scenario_4_11 : Test for Submit Prepare with WithSigner Password");
@@ -101,4 +119,7 @@ public class Scenario_4_11 extends Base{
 					.body("result.authToken", notNullValue());
 		}
 	}
+=======
+	
+>>>>>>> master
 }

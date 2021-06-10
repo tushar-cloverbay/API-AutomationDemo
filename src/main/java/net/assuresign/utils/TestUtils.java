@@ -60,6 +60,7 @@ public class TestUtils extends Base{
 		RequestSpecification request = RestAssured.given().header("Authorization", "Bearer "+token).body(payload);
 		request.header("Content-Type", "application/json");
 		Response response = request.post(URI);
+		System.out.println(response.asPrettyString());
 		String preparedEnvelopeID = JsonUtils.getKeyValue(response, "result.preparedEnvelopeID");
 		if(preparedEnvelopeID==null)
 		{
