@@ -65,6 +65,6 @@ public class Scenario_8_2 extends Base{
 		extentTest.log(LogStatus.PASS, "Response Time : " + response.getTime() +" milliseconds");
 		System.out.println(response.getBody().asString());
 		response.then().assertThat()
-		.statusCode(equalTo(200));
+		.statusCode(equalTo(400));
 	}
 }

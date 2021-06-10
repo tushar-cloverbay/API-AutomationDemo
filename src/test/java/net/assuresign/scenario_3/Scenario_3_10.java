@@ -18,8 +18,8 @@ import net.assuresign.utils.TestUtils;
 
 public class Scenario_3_10 extends Base{
 	@Test(dataProvider = "version-data-provider",groups = { "ExcludeFor3.0" },enabled = true)
-	public void submit_missingDocName(String version) throws IOException {
-		extentTest.log(LogStatus.PASS, "Test Description : " + "Scenario_3_10 : Test for submit with missing Document Name.");
+	public void submit_withGetTemplateSchema_missingDocName(String version) throws IOException {
+		extentTest.log(LogStatus.PASS, "Test Description : " + "Scenario_3_10 : Test for submit with get template schema - missing Document Name.");
 		apiVersion = version;
 		String token =TestUtils.getToken(version);
 		String URI = "https://"+Constants.ENV+".assuresign.net/api/documentnow/v"+ version +"/submit";

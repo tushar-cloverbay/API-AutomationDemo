@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <testng-results ignored="0" total="10" passed="7" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
@@ -19,17 +20,21 @@
 =======
 <testng-results ignored="0" total="13" passed="10" failed="3" skipped="0">
 >>>>>>> master
+=======
+<testng-results ignored="2" total="3" passed="1" failed="0" skipped="0">
+>>>>>>> master
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-05-26T04:56:06 IST" name="Suite" finished-at="2021-05-26T04:57:30 IST" duration-ms="84244">
+  <suite started-at="2021-05-31T09:52:25 IST" name="Suite" finished-at="2021-05-31T09:52:47 IST" duration-ms="21555">
     <groups>
     </groups>
-    <test started-at="2021-05-26T04:56:06 IST" name="Test" finished-at="2021-05-26T04:57:30 IST" duration-ms="84244">
-      <class name="net.assuresign.scenario_8.Scenario_8">
-        <test-method is-config="true" signature="reportUp(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@483f6d77]" started-at="2021-05-26T04:56:06 IST" name="reportUp" finished-at="2021-05-26T04:56:06 IST" duration-ms="6" status="PASS">
+    <test started-at="2021-05-31T09:52:25 IST" name="Test" finished-at="2021-05-31T09:52:47 IST" duration-ms="21555">
+      <class name="net.assuresign.scenario_4.Scenario_4_9_2">
+        <test-method is-config="true" signature="reportUp(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_4.Scenario_4_9_2@3fb1549b]" started-at="2021-05-31T09:52:26 IST" name="reportUp" finished-at="2021-05-31T09:52:26 IST" duration-ms="5" status="PASS">
           <params>
             <param index="0">
               <value>
+<<<<<<< HEAD
 <<<<<<< HEAD
                 <![CDATA[[TestResult name={null} status=CREATED method=Scenario_3_12.submitSSTemplate_delayedStep(java.lang.String)[pri:0, instance:net.assuresign.scenario_3.Scenario_3_12@4d02f94e] output={null}]]]>
 >>>>>>> master
@@ -186,12 +191,16 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 =======
                 <![CDATA[[TestResult name={null} status=CREATED method=Scenario_8.getEnvelope_EmptyEnvelopID(java.lang.String)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@483f6d77] output={null}]]]>
 >>>>>>> master
+=======
+                <![CDATA[[TestResult name={null} status=CREATED method=Scenario_4_9_2.submitPrepare_addDocumentCall(java.lang.String)[pri:0, instance:net.assuresign.scenario_4.Scenario_4_9_2@3fb1549b] output={null}]]]>
+>>>>>>> master
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportUp -->
+<<<<<<< HEAD
 <<<<<<< HEAD
         <test-method signature="submitValidate_jotBlockParsingParseDocFalse(java.lang.String)[pri:0, instance:net.assuresign.scenario_3.Scenario_3_5@3e84448c]" started-at="2021-05-11T10:05:27 IST" name="submitValidate_jotBlockParsingParseDocFalse" data-provider="version-data-provider" finished-at="2021-05-11T10:06:05 IST" duration-ms="37643" status="PASS">
           <params>
@@ -203,6 +212,9 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 =======
         <test-method signature="getEnvelope_EmptyEnvelopID(java.lang.String)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@483f6d77]" started-at="2021-05-26T04:56:06 IST" name="getEnvelope_EmptyEnvelopID" data-provider="version-data-provider" finished-at="2021-05-26T04:56:14 IST" duration-ms="8312" status="PASS">
 >>>>>>> master
+=======
+        <test-method signature="submitPrepare_addDocumentCall(java.lang.String)[pri:0, instance:net.assuresign.scenario_4.Scenario_4_9_2@3fb1549b]" started-at="2021-05-31T09:52:26 IST" name="submitPrepare_addDocumentCall" data-provider="version-data-provider" finished-at="2021-05-31T09:52:47 IST" duration-ms="21318" status="PASS">
+>>>>>>> master
           <params>
             <param index="0">
               <value>
@@ -213,6 +225,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </params>
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         </test-method> <!-- submitValidate_jotBlockParsingParseDocFalse -->
@@ -237,12 +250,21 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
               <value>
                 <![CDATA[[TestResult name=getEnvelope_EmptyEnvelopID status=SUCCESS method=Scenario_8.getEnvelope_EmptyEnvelopID(java.lang.String)[pri:0, instance:net.assuresign.scenario_8.Scenario_8@483f6d77] output={null}]]]>
 >>>>>>> master
+=======
+        </test-method> <!-- submitPrepare_addDocumentCall -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_4.Scenario_4_9_2@3fb1549b]" started-at="2021-05-31T09:52:47 IST" name="tearDown" finished-at="2021-05-31T09:52:47 IST" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=submitPrepare_addDocumentCall status=SUCCESS method=Scenario_4_9_2.submitPrepare_addDocumentCall(java.lang.String)[pri:0, instance:net.assuresign.scenario_4.Scenario_4_9_2@3fb1549b] output={null}]]]>
+>>>>>>> master
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <test-method is-config="true" signature="reportUp(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_3.Scenario_3_5@3e84448c]" started-at="2021-05-11T10:06:05 IST" name="reportUp" finished-at="2021-05-11T10:06:05 IST" duration-ms="1" status="PASS">
@@ -1138,6 +1160,9 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- net.assuresign.scenario_8.Scenario_8 -->
+>>>>>>> master
+=======
+      </class> <!-- net.assuresign.scenario_4.Scenario_4_9_2 -->
 >>>>>>> master
     </test> <!-- Test -->
   </suite> <!-- Suite -->

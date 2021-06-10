@@ -61,7 +61,7 @@ public class Base {
 	public void reportUp(ITestResult result) {
 		extentTest = extent.startTest(result.getMethod().getMethodName());
 		requestBody = null;
-		responseBody = null;
+		responseBody = "";
 		apiVersion = null;
 		statusCode = null;
 	}
@@ -84,7 +84,7 @@ public class Base {
 			extentTest.log(LogStatus.PASS, "API Version : " + apiVersion + "\n");
 //			extentTest.log(LogStatus.PASS, "Request : " + requestBody + "\n");
 			extentTest.log(LogStatus.PASS, "Status Code : " + statusCode);
-//			extentTest.log(LogStatus.PASS, "Response : " + responseBody);
+			extentTest.log(LogStatus.PASS, "Response : " + responseBody);
 		}
 		extent.endTest(extentTest); // ending test and ends the current test and prepare to create html report
 	}
