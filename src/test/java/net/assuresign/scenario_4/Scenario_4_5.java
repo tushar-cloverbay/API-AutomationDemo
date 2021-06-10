@@ -66,6 +66,7 @@ public class Scenario_4_5 extends Base{
 		}
 		String URI = "https://"+Constants.ENV+".assuresign.net/api/documentnow/v"+ version +"/submit/" + preparedEID;
 //		String payload = JsonUtils.payloadGenerator("Inputs\\"+Constants.ENV+"\\Scenario_4\\getEnvelopID.json");
+		extentTest.log(LogStatus.PASS, "API URI : " + URI);
 		RequestSpecification request = RestAssured.given().header("Authorization", "Bearer "+token);
 		request.header("Content-Type", "application/json");
 		Response response = request.post(URI);
