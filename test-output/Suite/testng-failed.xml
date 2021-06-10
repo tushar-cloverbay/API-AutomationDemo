@@ -7,6 +7,7 @@
   <test thread-count="5" name="Test(failed)">
     <classes>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <class name="net.assuresign.scenario_5.Scenario_5">
         <methods>
           <include name="reportUp"/>
@@ -32,12 +33,19 @@
       </class> <!-- net.assuresign.scenario_7.Scenario_7 -->
 =======
       <class name="net.assuresign.scenario_4.Scenario_4_9_1">
+=======
+      <class name="net.assuresign.scenario_4.Scenario_4_9_2">
+>>>>>>> master
         <methods>
           <include name="reportUp"/>
-          <include name="putCall_submitPrepare" invocation-numbers="0 1"/>
           <include name="tearDown"/>
+          <include name="submitPrepare_DynamicJB_withoutParseDoc" invocation-numbers="0"/>
         </methods>
+<<<<<<< HEAD
       </class> <!-- net.assuresign.scenario_4.Scenario_4_9_1 -->
+>>>>>>> master
+=======
+      </class> <!-- net.assuresign.scenario_4.Scenario_4_9_2 -->
 >>>>>>> master
     </classes>
   </test> <!-- Test(failed) -->
