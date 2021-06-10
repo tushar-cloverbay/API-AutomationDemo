@@ -35,9 +35,10 @@
 			<class name="net.assuresign.scenario_4.Scenario_4_7" />
 			<class name="net.assuresign.scenario_4.Scenario_4_8" />
 			<class name="net.assuresign.scenario_4.Scenario_4_9" />
+			<class name="net.assuresign.scenario_4.Scenario_4_9_1" />
+			<class name="net.assuresign.scenario_4.Scenario_4_9_2" />
 			<class name="net.assuresign.scenario_4.Scenario_4_10" />
 			<class name="net.assuresign.scenario_4.Scenario_4_11" />
-			<class name="net.assuresign.scenario_4.Scenario_4_12" />
 			<class name="net.assuresign.scenario_4.Scenario_4_14" />
 			<class name="net.assuresign.scenario_4.Scenario_4_15" />
 			<class name="net.assuresign.scenario_5.Scenario_5" />

@@ -128,17 +128,19 @@ public class Scenario_8 extends Base{
 		apiVersion = version;
 		String token =TestUtils.getToken(version);
 		String URI = "https://"+Constants.ENV+".assuresign.net/api/documentnow/v"+ version 
-				+"/envelopes/";
+				+"/envelopes/null";
 		extentTest.log(LogStatus.PASS, "API URI : " + URI);
 		RequestSpecification request = RestAssured.given().header("Authorization", "Bearer "+token)
 		.header("X-AS-User-Agent", "site24x7/1.0.0");
 		Response response = request.get(URI);
 		responseBody = response.asPrettyString();
 		statusCode = Integer.toString(response.getStatusCode());
+		System.out.println(statusCode);
 		extentTest.log(LogStatus.PASS, "Response Time : " + response.getTime() +" milliseconds");
 		System.out.println(response.getBody().asString());
 		response.then().assertThat()
-		.statusCode(anyOf(equalTo(400),equalTo(404)));
+		.statusCode(equalTo(400))
+		.body("errorCode", is("VALIDATION_FAILED"));
 	}
 	
 	@Test(dataProvider = "version-data-provider",enabled = true)	//10 ISSUE : Getting 200,Should be 400/404
@@ -157,7 +159,8 @@ public class Scenario_8 extends Base{
 		extentTest.log(LogStatus.PASS, "Response Time : " + response.getTime() +" milliseconds");
 		System.out.println(response.getBody().asString());
 		response.then().assertThat()
-		.statusCode(anyOf(equalTo(400),equalTo(404)));
+		.statusCode(equalTo(400))
+		.body("errorCode", is("VALIDATION_FAILED"));
 	}
 	
 	@Test(dataProvider = "version-data-provider",enabled = true)	//11 ISSUE : Getting 200,Should be 400/404
