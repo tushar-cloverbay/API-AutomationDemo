@@ -3,6 +3,7 @@ package net.assuresign.scenario_12;
 import static org.hamcrest.Matchers.*;
 import java.io.IOException;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.relevantcodes.extentreports.LogStatus;
@@ -21,6 +22,11 @@ public class Scenario_12 extends Base{
 		extentTest.log(LogStatus.PASS, "Test Description : " + "Scenario_12 : Test for collection run submit.");
 		apiVersion = version;
 		String token =TestUtils.getToken(version);
+		extentTest.log(LogStatus.PASS, "Token Bearer request:: ::token : " + token);
+		if(token==null) {
+			extentTest.log(LogStatus.FAIL, "Token Bearer request:: ::token : " + token);
+			Assert.assertTrue(false);
+		}
 		String preparedEnvelopeID;
 		if(version.equals("3.0")||version.equals("3.1")||version.equals("3.2"))
 		{
@@ -29,28 +35,43 @@ public class Scenario_12 extends Base{
 		{
 			preparedEnvelopeID = TestUtils.getPreparedEnvelopeID(version, "Scenario_12\\submitPrepare.json",token);
 		}
-		System.out.println(preparedEnvelopeID);		
-//		//SubmitPrepare 
-//		String URI = "https://"+Constants.ENV+".assuresign.net/api/documentnow/v"+version+"/submit/prepare/"+preparedEnvelopeID+"/documents";
-//		System.out.println(URI);
-//		String payload = JsonUtils.payloadGenerator("Inputs\\"+Constants.ENV+"\\Scenario_12\\submitPrepareDoc.json");
-//		RequestSpecification request = RestAssured.given().header("Authorization", "Bearer "+token).body(payload)
-//		.header("X-AS-User-Agent", "site24x7/1.0.0");
-//		Response response = request.post(URI);
-//		System.out.println(response.asPrettyString());
-//		System.out.println("SubmitPrepare --------------"+response.statusCode());
-//		response.then().assertThat()
-//		.statusCode(equalTo(200));
-//		//PUT Call
-//		String URI2 = "https://"+Constants.ENV+".assuresign.net/api/documentnow/v"+version+"/submit/prepare/"+preparedEnvelopeID;
-//		String payload2 = JsonUtils.payloadGenerator("Inputs\\"+Constants.ENV+"\\Scenario_12\\putCall.json");
-//		RequestSpecification request2 = RestAssured.given().header("Authorization", "Bearer "+token).body(payload2)
-//		.header("X-AS-User-Agent", "site24x7/1.0.0");
-//		Response response2 = request2.put(URI2);
-//		System.out.println(response2.asPrettyString());
-//		System.out.println("PUT Call --------------"+response2.statusCode());
-//		response2.then().assertThat()
-//		.statusCode(equalTo(200));
+		System.out.println(preparedEnvelopeID);	
+		extentTest.log(LogStatus.PASS, "::: SubmitPrepare envelope pdf ::: ::: preparedEnvelopeID : " + preparedEnvelopeID);
+		if(preparedEnvelopeID==null) {
+			extentTest.log(LogStatus.FAIL, "::: SubmitPrepare envelope pdf ::: ::: preparedEnvelopeID : " + preparedEnvelopeID);
+			Assert.assertTrue(false);
+		}
+		//SubmitPrepare 
+		String URI = "https://"+Constants.ENV+".assuresign.net/api/documentnow/v"+version+"/submit/prepare/"+preparedEnvelopeID+"/documents";
+		System.out.println(URI);
+		String payload = JsonUtils.payloadGenerator("Inputs\\"+Constants.ENV+"\\Scenario_12\\submitPrepareDoc.json");
+		RequestSpecification request = RestAssured.given().header("Authorization", "Bearer "+token).body(payload)
+		.header("X-AS-User-Agent", "site24x7/1.0.0");
+		Response response = request.post(URI);
+		System.out.println(response.asPrettyString());
+		System.out.println("SubmitPrepare --------------"+response.statusCode());
+		if(response.statusCode()==200) {
+			extentTest.log(LogStatus.PASS, "::: SubmitPrepare envelope pdf ::: ::: Status Code : "+response.statusCode()
+			+" ::: Response : "+response.asPrettyString());
+		}else {
+			extentTest.log(LogStatus.FAIL, "::: SubmitPrepare envelope pdf ::: ::: Status Code : "+response.statusCode()
+			+" ::: Response : "+response.asPrettyString());
+		}
+		//PUT Call
+		String URI2 = "https://"+Constants.ENV+".assuresign.net/api/documentnow/v"+version+"/submit/prepare/"+preparedEnvelopeID;
+		String payload2 = JsonUtils.payloadGenerator("Inputs\\"+Constants.ENV+"\\Scenario_12\\putCall.json");
+		RequestSpecification request2 = RestAssured.given().header("Authorization", "Bearer "+token).body(payload2)
+		.header("X-AS-User-Agent", "site24x7/1.0.0");
+		Response response2 = request2.put(URI2);
+		System.out.println(response2.asPrettyString());
+		System.out.println("PUT Call --------------"+response2.statusCode());
+		if(response2.statusCode()==200) {
+			extentTest.log(LogStatus.PASS, "::: PUT Call ::: ::: Status Code : "+response2.statusCode()
+			+" ::: Response : "+response2.asPrettyString());
+		}else {
+			extentTest.log(LogStatus.FAIL, ":::PUT Call::: :::Status Code : "+response2.statusCode()
+			+" ::: Response : "+response2.asPrettyString());
+		}
 		//Get Envelop id
 		String URI3 = "https://"+Constants.ENV+".assuresign.net/api/documentnow/v"+version+"/submit/"+preparedEnvelopeID;
 		String payload3 = JsonUtils.payloadGenerator("Inputs\\"+Constants.ENV+"\\Scenario_12\\getEnvelopeid.json");
@@ -64,8 +85,13 @@ public class Scenario_12 extends Base{
 			envelopeID = JsonUtils.getKeyValue(response3, "result.id");
 		}
 		System.out.println("Get Envelop id --------------"+response3.statusCode());
-		response3.then().assertThat()
-		.statusCode(equalTo(200));
+		if(response3.statusCode()==200) {
+			extentTest.log(LogStatus.PASS, "::: Get Envelop id ::: ::: Status Code : "+response3.statusCode()
+			+" ::: Response : "+response3.asPrettyString());
+		}else {
+			extentTest.log(LogStatus.FAIL, "::: Get Envelop id ::: ::: Status Code : "+response3.statusCode()
+			+" ::: Response : "+response3.asPrettyString());
+		}
 		//Get Status
 		String URI4 = "https://"+Constants.ENV+".assuresign.net/api/documentnow/v"+version+"/envelopes/"+envelopeID+"/status";
 		RequestSpecification request4 = RestAssured.given().header("Authorization", "Bearer "+token)
@@ -73,8 +99,13 @@ public class Scenario_12 extends Base{
 		Response response4 = request4.get(URI4);
 		System.out.println(response4.asPrettyString());
 		System.out.println("Get Status --------------"+response4.statusCode());
-		response4.then().assertThat()
-		.statusCode(equalTo(200));
+		if(response4.statusCode()==200) {
+			extentTest.log(LogStatus.PASS, "::: Get Status ::: ::: Status Code : "+response4.statusCode()
+			+" ::: Response : "+response4.asPrettyString());
+		}else {
+			extentTest.log(LogStatus.FAIL, "::: Get Status ::: ::: Status Code : "+response4.statusCode()
+			+" ::: Response : "+response4.asPrettyString());
+		}
 		//Get Values
 		String URI5 = "https://"+Constants.ENV+".assuresign.net/api/documentnow/v"+version+"/envelopes/"+envelopeID+"/values";
 		RequestSpecification request5 = RestAssured.given().header("Authorization", "Bearer "+token)
@@ -82,8 +113,13 @@ public class Scenario_12 extends Base{
 		Response response5 = request5.get(URI5);
 		System.out.println(response5.asPrettyString());
 		System.out.println("Get Values --------------"+response5.statusCode());
-		response5.then().assertThat()
-		.statusCode(equalTo(200));
+		if(response5.statusCode()==200) {
+			extentTest.log(LogStatus.PASS, "::: Get Values ::: ::: Status Code : "+response5.statusCode()
+			+" ::: Response : "+response5.asPrettyString());
+		}else {
+			extentTest.log(LogStatus.FAIL, "::: Get Values ::: ::: Status Code : "+response5.statusCode()
+			+" ::: Response : "+response5.asPrettyString());
+		}
 		//Get Envelopes
 		String URI6 = "https://"+Constants.ENV+".assuresign.net/api/documentnow/v"+version+"/envelopes/"+envelopeID;
 		RequestSpecification request6 = RestAssured.given().header("Authorization", "Bearer "+token)
@@ -91,8 +127,13 @@ public class Scenario_12 extends Base{
 		Response response6 = request6.get(URI6);
 		System.out.println(response6.asPrettyString());
 		System.out.println("Get Envelopes --------------"+response6.statusCode());
-		response6.then().assertThat()
-		.statusCode(equalTo(200));
+		if(response6.statusCode()==200) {
+			extentTest.log(LogStatus.PASS, "::: Get Envelopes ::: ::: Status Code : "+response6.statusCode()
+			+" ::: Response : "+response6.asPrettyString());
+		}else {
+			extentTest.log(LogStatus.FAIL, "::: Get Envelopes ::: ::: Status Code : "+response6.statusCode()
+			+" ::: Response : "+response6.asPrettyString());
+		}
 		//Put Signers
 		String URI7 = "https://"+Constants.ENV+".assuresign.net/api/documentnow/v"+version+"/envelopes/"+envelopeID+"/signers/"+Constants.envelopeSignerID;
 		String payload7 = JsonUtils.payloadGenerator("Inputs\\"+Constants.ENV+"\\Scenario_12\\putEnvelope.json");
@@ -101,8 +142,13 @@ public class Scenario_12 extends Base{
 		Response response7 = request7.put(URI7);
 		System.out.println(response7.asPrettyString());
 		System.out.println("Put Signers --------------"+response7.statusCode());
-		response7.then().assertThat()
-		.statusCode(equalTo(200));
+		if(response7.statusCode()==200) {
+			extentTest.log(LogStatus.PASS, "::: Put Signers ::: ::: Status Code : "+response7.statusCode()
+			+" ::: Response : "+response7.asPrettyString());
+		}else {
+			extentTest.log(LogStatus.FAIL, "::: Put Signers ::: ::: Status Code : "+response7.statusCode()
+			+" ::: Response : "+response7.asPrettyString());
+		}
 		//Get signingLinks
 		String URI8 = "https://"+Constants.ENV+".assuresign.net/api/documentnow/v"+version+"/envelope/"+envelopeID+"/signingLinks";
 		RequestSpecification request8 = RestAssured.given().header("Authorization", "Bearer "+token)
@@ -110,8 +156,13 @@ public class Scenario_12 extends Base{
 		Response response8 = request8.get(URI8);
 		System.out.println(response8.asPrettyString());
 		System.out.println("Get signingLinks --------------"+response8.statusCode());
-		response8.then().assertThat()
-		.statusCode(equalTo(200));
+		if(response8.statusCode()==200) {
+			extentTest.log(LogStatus.PASS, "::: Get signingLinks ::: ::: Status Code : "+response8.statusCode()
+			+" ::: Response : "+response8.asPrettyString());
+		}else {
+			extentTest.log(LogStatus.FAIL, "::: Get signingLinks ::: ::: Status Code : "+response8.statusCode()
+			+" ::: Response : "+response8.asPrettyString());
+		}
 		//Put Cancel
 		String URI9 = "https://"+Constants.ENV+".assuresign.net/api/documentnow/v"+version+"/envelopes/"+envelopeID+"/cancel";
 		String payload9 = JsonUtils.payloadGenerator("Inputs\\"+Constants.ENV+"\\Scenario_12\\putCancel.json");
@@ -120,8 +171,13 @@ public class Scenario_12 extends Base{
 		Response response9 = request9.put(URI9);
 		System.out.println(response9.asPrettyString());
 		System.out.println("Put Signers --------------"+response9.statusCode());
-		response9.then().assertThat()
-		.statusCode(equalTo(200));
+		if(response9.statusCode()==200) {
+			extentTest.log(LogStatus.PASS, "::: Put Cancel ::: ::: Status Code : "+response9.statusCode()
+			+" ::: Response : "+response9.asPrettyString());
+		}else {
+			extentTest.log(LogStatus.FAIL, "::: Put Cancel ::: ::: Status Code : "+response9.statusCode()
+			+" ::: Response : "+response9.asPrettyString());
+		}
 		//Get History
 		String URI10 = "https://"+Constants.ENV+".assuresign.net/api/documentnow/v"+version+"/envelopes/"+envelopeID+"/history";
 		RequestSpecification request10 = RestAssured.given().header("Authorization", "Bearer "+token)
@@ -129,7 +185,12 @@ public class Scenario_12 extends Base{
 		Response response10 = request10.get(URI10);
 		System.out.println(response10.asPrettyString());
 		System.out.println("Get signingLinks --------------"+response10.statusCode());
-		response10.then().assertThat()
-		.statusCode(equalTo(200));
+		if(response10.statusCode()==200) {
+			extentTest.log(LogStatus.PASS, "::: Get History ::: ::: Status Code : "+response10.statusCode()
+			+" ::: Response : "+response10.asPrettyString());
+		}else {
+			extentTest.log(LogStatus.FAIL, "::: Get History ::: ::: Status Code : "+response10.statusCode()
+			+" ::: Response : "+response10.asPrettyString());
+		}
 	}
 }

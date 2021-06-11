@@ -60,10 +60,10 @@ public class Base {
 	@BeforeMethod
 	public void reportUp(ITestResult result) {
 		extentTest = extent.startTest(result.getMethod().getMethodName());
-		requestBody = null;
+		requestBody = "";
 		responseBody = "";
-		apiVersion = null;
-		statusCode = null;
+		apiVersion = "";
+		statusCode = "";
 	}
 
 	@AfterMethod
