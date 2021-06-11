@@ -182,17 +182,11 @@ public class Scenario_3_5 extends Base {
 		if(version.equals("3.0")||version.equals("3.1"))
 		{
 			response.then().assertThat()
-			.statusCode(equalTo(200))
-			.body("$", hasKey("messages"))
-			.body("result.id", notNullValue())
-			.body("result.authToken", notNullValue());
+			.statusCode(equalTo(400));
 		}else
 		{
 			response.then().assertThat()
-			.statusCode(equalTo(200))
-			.body("$", hasKey("messages"))
-			.body("result.envelopeID", notNullValue())
-			.body("result.authToken", notNullValue());
+			.statusCode(equalTo(400));
 		}
 	}
 
