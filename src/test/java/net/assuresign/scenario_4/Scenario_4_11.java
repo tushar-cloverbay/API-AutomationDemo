@@ -73,7 +73,7 @@ public class Scenario_4_11 extends Base{
 					.body("result.preparedEnvelopeID", notNullValue());
 		}
 	}
-<<<<<<< HEAD
+
 	@Test(dataProvider = "version-data-provider",groups = { "ExcludeFor3.0" },enabled = true)
 	public void submit_deprecated(String version) throws IOException {
 		extentTest.log(LogStatus.PASS, "Test Description : " + "Scenario_4_11 : Test for Submit Prepare with WithSigner Password");
@@ -119,7 +119,5 @@ public class Scenario_4_11 extends Base{
 					.body("result.authToken", notNullValue());
 		}
 	}
-=======
-	
->>>>>>> master
+
 }
