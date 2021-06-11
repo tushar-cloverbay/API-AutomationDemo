@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="3" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-05-31T09:52:25 IST" name="Suite" finished-at="2021-05-31T09:52:47 IST" duration-ms="21555">
+  <suite started-at="2021-06-11T10:11:27 IST" name="Suite" finished-at="2021-06-11T10:12:08 IST" duration-ms="40384">
     <groups>
     </groups>
-    <test started-at="2021-05-31T09:52:25 IST" name="Test" finished-at="2021-05-31T09:52:47 IST" duration-ms="21555">
-      <class name="net.assuresign.scenario_4.Scenario_4_9_2">
-        <test-method is-config="true" signature="reportUp(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_4.Scenario_4_9_2@3fb1549b]" started-at="2021-05-31T09:52:26 IST" name="reportUp" finished-at="2021-05-31T09:52:26 IST" duration-ms="5" status="PASS">
+    <test started-at="2021-06-11T10:11:27 IST" name="Test" finished-at="2021-06-11T10:12:08 IST" duration-ms="40384">
+      <class name="net.assuresign.scenario_12.Scenario_12">
+        <test-method is-config="true" signature="reportUp(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_12.Scenario_12@24fcf36f]" started-at="2021-06-11T10:11:27 IST" name="reportUp" finished-at="2021-06-11T10:11:27 IST" duration-ms="6" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=Scenario_4_9_2.submitPrepare_addDocumentCall(java.lang.String)[pri:0, instance:net.assuresign.scenario_4.Scenario_4_9_2@3fb1549b] output={null}]]]>
+                <![CDATA[[TestResult name={null} status=CREATED method=Scenario_12.collectionRun_submit(java.lang.String)[pri:0, instance:net.assuresign.scenario_12.Scenario_12@24fcf36f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportUp -->
-        <test-method signature="submitPrepare_addDocumentCall(java.lang.String)[pri:0, instance:net.assuresign.scenario_4.Scenario_4_9_2@3fb1549b]" started-at="2021-05-31T09:52:26 IST" name="submitPrepare_addDocumentCall" data-provider="version-data-provider" finished-at="2021-05-31T09:52:47 IST" duration-ms="21318" status="PASS">
+        <test-method signature="collectionRun_submit(java.lang.String)[pri:0, instance:net.assuresign.scenario_12.Scenario_12@24fcf36f]" started-at="2021-06-11T10:11:27 IST" name="collectionRun_submit" data-provider="version-data-provider" finished-at="2021-06-11T10:12:08 IST" duration-ms="40114" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -28,19 +28,19 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- submitPrepare_addDocumentCall -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_4.Scenario_4_9_2@3fb1549b]" started-at="2021-05-31T09:52:47 IST" name="tearDown" finished-at="2021-05-31T09:52:47 IST" duration-ms="4" status="PASS">
+        </test-method> <!-- collectionRun_submit -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_12.Scenario_12@24fcf36f]" started-at="2021-06-11T10:12:08 IST" name="tearDown" finished-at="2021-06-11T10:12:08 IST" duration-ms="14" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=submitPrepare_addDocumentCall status=SUCCESS method=Scenario_4_9_2.submitPrepare_addDocumentCall(java.lang.String)[pri:0, instance:net.assuresign.scenario_4.Scenario_4_9_2@3fb1549b] output={null}]]]>
+                <![CDATA[[TestResult name=collectionRun_submit status=SUCCESS method=Scenario_12.collectionRun_submit(java.lang.String)[pri:0, instance:net.assuresign.scenario_12.Scenario_12@24fcf36f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- net.assuresign.scenario_4.Scenario_4_9_2 -->
+      </class> <!-- net.assuresign.scenario_12.Scenario_12 -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
