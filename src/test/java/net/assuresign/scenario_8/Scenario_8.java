@@ -264,8 +264,9 @@ public class Scenario_8 extends Base{
 		extentTest.log(LogStatus.PASS, "Test Description : " + "Scenario_8 : Test for get envelops with invalid envelope id.");
 		apiVersion = version;
 		String token =TestUtils.getToken(version);
+		String emptyenvelopeid = null;
 		String URI = "https://"+Constants.ENV+".assuresign.net/api/documentnow/v"+ version 
-				+"/envelope/"+""+"/accessLinks/ORIGINAL";
+				+"/envelope/"+emptyenvelopeid+"/accessLinks/ORIGINAL";
 		extentTest.log(LogStatus.PASS, "API URI : " + URI);
 		RequestSpecification request = RestAssured.given().header("Authorization", "Bearer "+token)
 		.header("X-AS-User-Agent", "site24x7/1.0.0");
@@ -275,9 +276,8 @@ public class Scenario_8 extends Base{
 		extentTest.log(LogStatus.PASS, "Response Time : " + response.getTime() +" milliseconds");
 		System.out.println(response.getBody().asString());
 		response.then().assertThat()
-		.statusCode(equalTo(404))
-		.body("errorCode", is("NOT_FOUND"))
-		.body("summary", is("The requested resource was not found."));
+		.statusCode(equalTo(400))
+		.body("errorCode", is("VALIDATION_FAILED"));
 	}
 
 }
