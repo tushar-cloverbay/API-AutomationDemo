@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <testng-results ignored="0" total="28" passed="23" failed="5" skipped="0">
   <reporter-output>
   </reporter-output>
@@ -46,12 +47,28 @@
               <value>
                 <![CDATA[[TestResult name={null} status=CREATED method=Scenario_4_9_2.submitPrepare_addDocumentCall(java.lang.String)[pri:0, instance:net.assuresign.scenario_4.Scenario_4_9_2@3fb1549b] output={null}]]]>
 >>>>>>> master
+=======
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-06-11T10:11:27 IST" name="Suite" finished-at="2021-06-11T10:12:08 IST" duration-ms="40384">
+    <groups>
+    </groups>
+    <test started-at="2021-06-11T10:11:27 IST" name="Test" finished-at="2021-06-11T10:12:08 IST" duration-ms="40384">
+      <class name="net.assuresign.scenario_12.Scenario_12">
+        <test-method is-config="true" signature="reportUp(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_12.Scenario_12@24fcf36f]" started-at="2021-06-11T10:11:27 IST" name="reportUp" finished-at="2021-06-11T10:11:27 IST" duration-ms="6" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=Scenario_12.collectionRun_submit(java.lang.String)[pri:0, instance:net.assuresign.scenario_12.Scenario_12@24fcf36f] output={null}]]]>
+>>>>>>> master
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportUp -->
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <test-method signature="getAllEmailDesignForValidEmail(java.lang.String)[pri:0, instance:net.assuresign.scenario_6.Scenario_6@54bff557]" started-at="2021-05-26T05:05:37 IST" name="getAllEmailDesignForValidEmail" data-provider="version-data-provider" finished-at="2021-05-26T05:05:42 IST" duration-ms="4691" status="PASS">
@@ -488,6 +505,9 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </reporter-output>
         </test-method> <!-- reportUp -->
         <test-method signature="getInValidTemplate(java.lang.String)[pri:0, instance:net.assuresign.scenario_5.Scenario_5@2a54a73f]" started-at="2021-05-26T05:05:07 IST" name="getInValidTemplate" data-provider="version-data-provider" finished-at="2021-05-26T05:05:17 IST" duration-ms="9723" status="PASS">
+=======
+        <test-method signature="collectionRun_submit(java.lang.String)[pri:0, instance:net.assuresign.scenario_12.Scenario_12@24fcf36f]" started-at="2021-06-11T10:11:27 IST" name="collectionRun_submit" data-provider="version-data-provider" finished-at="2021-06-11T10:12:08 IST" duration-ms="40114" status="PASS">
+>>>>>>> master
           <params>
             <param index="0">
               <value>
@@ -497,6 +517,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </params>
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- getInValidTemplate -->
         <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_5.Scenario_5@2a54a73f]" started-at="2021-05-26T05:05:17 IST" name="tearDown" finished-at="2021-05-26T05:05:17 IST" duration-ms="3" status="PASS">
           <params>
@@ -1222,6 +1243,14 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
               <value>
                 <![CDATA[[TestResult name=submitPrepare_addDocumentCall status=SUCCESS method=Scenario_4_9_2.submitPrepare_addDocumentCall(java.lang.String)[pri:0, instance:net.assuresign.scenario_4.Scenario_4_9_2@3fb1549b] output={null}]]]>
 >>>>>>> master
+=======
+        </test-method> <!-- collectionRun_submit -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_12.Scenario_12@24fcf36f]" started-at="2021-06-11T10:12:08 IST" name="tearDown" finished-at="2021-06-11T10:12:08 IST" duration-ms="14" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=collectionRun_submit status=SUCCESS method=Scenario_12.collectionRun_submit(java.lang.String)[pri:0, instance:net.assuresign.scenario_12.Scenario_12@24fcf36f] output={null}]]]>
+>>>>>>> master
               </value>
             </param>
           </params>
@@ -1229,12 +1258,16 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </reporter-output>
         </test-method> <!-- tearDown -->
 <<<<<<< HEAD
+<<<<<<< HEAD
       </class> <!-- net.assuresign.scenario_13.Scenario_13 -->
 =======
       </class> <!-- net.assuresign.scenario_4.Scenario_4_9_1 -->
 >>>>>>> master
 =======
       </class> <!-- net.assuresign.scenario_4.Scenario_4_9_2 -->
+>>>>>>> master
+=======
+      </class> <!-- net.assuresign.scenario_12.Scenario_12 -->
 >>>>>>> master
     </test> <!-- Test -->
   </suite> <!-- Suite -->
