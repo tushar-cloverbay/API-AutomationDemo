@@ -4,6 +4,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <testsuite ignored="0" hostname="tussar-PC" failures="3" tests="10" name="Test" time="267.43" errors="0" timestamp="2021-05-11T10:08:07 IST">
   <testcase classname="net.assuresign.scenario_3.Scenario_3_5" name="submitValidate_jotBlockParsingDocTrueDuplicateJotBlock" time="59.6">
     <failure type="java.lang.NoSuchMethodError" message="org.hamcrest.Matcher.describeMismatch(Ljava/lang/Object;Lorg/hamcrest/Description;)V">
@@ -174,3 +175,7 @@ at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
   <testcase classname="net.assuresign.scenario_12.Scenario_12" name="collectionRun_submit" time="40.114"/>
 >>>>>>> master
 </testsuite> <!-- Test -->
+=======
+<testsuite ignored="0" hostname="DESKTOP-1AVQ4LH" failures="0" tests="0" time="0.147" errors="0" timestamp="2021-06-15T08:13:13 IST">
+</testsuite>
+>>>>>>> master

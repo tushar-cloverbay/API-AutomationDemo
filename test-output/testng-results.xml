@@ -3,6 +3,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <testng-results ignored="0" total="10" passed="7" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
@@ -27,11 +28,15 @@
 =======
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
 >>>>>>> master
+=======
+<testng-results ignored="0" total="0" passed="0" failed="0" skipped="0">
+>>>>>>> master
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-06-11T10:11:27 IST" name="Suite" finished-at="2021-06-11T10:12:08 IST" duration-ms="40384">
+  <suite started-at="2021-06-15T08:13:13 IST" name="Suite" finished-at="2021-06-15T08:13:13 IST" duration-ms="147">
     <groups>
     </groups>
+<<<<<<< HEAD
     <test started-at="2021-06-11T10:11:27 IST" name="Test" finished-at="2021-06-11T10:12:08 IST" duration-ms="40384">
       <class name="net.assuresign.scenario_12.Scenario_12">
         <test-method is-config="true" signature="reportUp(org.testng.ITestResult)[pri:0, instance:net.assuresign.scenario_12.Scenario_12@24fcf36f]" started-at="2021-06-11T10:11:27 IST" name="reportUp" finished-at="2021-06-11T10:11:27 IST" duration-ms="6" status="PASS">
@@ -1188,6 +1193,9 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 >>>>>>> master
 =======
       </class> <!-- net.assuresign.scenario_12.Scenario_12 -->
+>>>>>>> master
+=======
+    <test started-at="2021-06-15T08:13:13 IST" name="Test" finished-at="2021-06-15T08:13:13 IST" duration-ms="147">
 >>>>>>> master
     </test> <!-- Test -->
   </suite> <!-- Suite -->

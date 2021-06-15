@@ -154,7 +154,7 @@ public class TestUtils extends Base{
         Session session = Session.getInstance(properties, new javax.mail.Authenticator() {
 
             protected PasswordAuthentication getPasswordAuthentication() {
-                return new PasswordAuthentication("tushar.behera@cloverbaytechnologies.com", "npvuzyayovwfosvn");
+                return new PasswordAuthentication("tushar.behera@cloverbaytechnologies.com", "tolffzlmvtiwivzw");
             }
 
         });
