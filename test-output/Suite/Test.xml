@@ -3,6 +3,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <testsuite ignored="0" hostname="tussar-PC" failures="5" tests="28" name="Test" time="263.259" errors="0" timestamp="2021-05-26T05:09:30 IST">
   <testcase classname="net.assuresign.scenario_5.Scenario_5" name="getInValidTemplate" time="9.723"/>
   <testcase classname="net.assuresign.scenario_5.Scenario_5" name="getTemplate" time="4.272"/>
@@ -115,3 +116,7 @@ at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
   <testcase classname="net.assuresign.scenario_12.Scenario_12" name="collectionRun_submit" time="40.114"/>
 >>>>>>> master
 </testsuite> <!-- Test -->
+=======
+<testsuite ignored="0" hostname="DESKTOP-1AVQ4LH" failures="0" tests="0" time="0.147" errors="0" timestamp="2021-06-15T08:13:13 IST">
+</testsuite>
+>>>>>>> master
